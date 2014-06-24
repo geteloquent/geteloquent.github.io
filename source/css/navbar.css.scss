@@ -1,0 +1,54 @@
+@import "compass/typography/text/replacement";
+@import "compass/css3/box-shadow";
+@import "compass/css3/border-radius";
+
+/* Needed because of .navbar-fixed-top */
+body { padding-top: 112px; }
+
+.navbar {
+  background-color: white;
+  border-bottom: 1px solid rgb(210, 211, 212);
+
+  .boxshadow & { @include box-shadow(rgb(210, 211, 212) 0 1px 10px); }
+  .borderradius & { @include border-radius(0); }
+
+  .navbar-container {
+    padding: 0 50px;
+  }
+
+  .navbar-header {
+    margin: 15px 0;
+
+    .navbar-brand {
+      @include replace-text('logo-navbar.png');
+      width: 128px;
+      height: 58px;
+    }
+  }
+
+  .navbar-nav {
+    font-family: 'Mission Gothic Light';
+    font-size: 1.2em;
+    margin: 15px 0;
+    text-transform: uppercase;
+
+    li {
+      padding: 16px;
+
+      a {
+        background-color: transparent !important;
+        padding: 3px 0;
+        color: black;
+      }
+
+      &:hover {
+        a { color: #8d8d8d; }
+      }
+
+      &.active a {
+        color: black;
+        border-bottom: 3px solid rgb(240, 72, 73);
+      }
+    }
+  }
+}
