@@ -2,3 +2,104 @@
  * = require fonts
  * = require navbar
  */
+
+@import  "compass";
+
+.services {
+  background-color: rgb(245, 245, 245);
+  background: url("/img/services-background.png");
+  padding-bottom: 85px;
+  padding-top: 60px;
+  margin-top: -20px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      text-align: center;
+      margin-top: 30px;
+    }
+  }
+
+  p {
+    font-family: 'Mission Gothic', sans-serif;
+    font-weight: 100;
+    color: rgb(89, 89, 89);
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .service-btn {
+    font-family: 'Mission Gothic', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: .9em;
+    color: rgb(89, 89, 89);
+    text-transform: uppercase;
+    border: 1px solid rgb(120,120,120);
+    padding: 10px 15px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 25px;
+
+    .borderradius & {
+      @include border-radius(2px);
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .section-title {
+    color: rgb(89, 89, 89);
+    font-family: 'Mission Gothic', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin-top: 0;
+
+    &:before {
+      content: "//";
+    }
+  }
+
+  .service-title {
+    font-family: 'Mission Gothic', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    text-align: center;
+
+    strong {
+      font-weight: bold;
+    }
+  }
+
+  .service-dds {
+    background: url("/img/service-dds.png") no-repeat center top;
+    padding-top: 130px;
+
+    .service-btn {
+      margin-top: 30px;
+    }
+  }
+
+  .service-enterprise {
+    background: url("/img/service-enterprise.png") no-repeat center top;
+    padding-top: 130px;
+
+    .service-btn {
+      margin-top: 25px;
+    }
+  }
+
+  .service-redu {
+    padding-top: 130px;
+    .service-btn {
+      margin-top: 70px;
+    }
+  }
+}
