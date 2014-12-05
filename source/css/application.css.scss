@@ -7,7 +7,7 @@
 
 .services {
   background-color: rgb(245, 245, 245);
-  background: url("/img/services-background.png");
+  background: url("../img/services-background.png");
   padding-bottom: 85px;
   padding-top: 60px;
   margin-top: -20px;
@@ -79,7 +79,7 @@
   }
 
   .service-dds {
-    background: url("/img/service-dds.png") no-repeat center top;
+    background: url("../img/service-dds.png") no-repeat center top;
     padding-top: 130px;
 
     .service-btn {
@@ -88,7 +88,7 @@
   }
 
   .service-enterprise {
-    background: url("/img/service-enterprise.png") no-repeat center top;
+    background: url("../img/service-enterprise.png") no-repeat center top;
     padding-top: 130px;
 
     .service-btn {
