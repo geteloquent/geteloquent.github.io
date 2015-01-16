@@ -1,6 +1,7 @@
 @import "compass/typography/text/replacement";
 @import "compass/css3/box-shadow";
 @import "compass/css3/border-radius";
+@import "vars";
 
 /* Needed because of .navbar-fixed-top */
 body { padding-top: 112px; }
@@ -47,7 +48,7 @@ body { padding-top: 112px; }
 
       &.active a {
         color: black;
-        border-bottom: 3px solid rgb(240, 72, 73);
+        border-bottom: 3px solid $guava;
       }
     }
   }

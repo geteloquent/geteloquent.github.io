@@ -1,9 +1,31 @@
 /*
  * = require fonts
- * = require navbar
  */
 
-@import  "compass";
+@import "compass";
+@import "navbar";
+@import "vars";
+@import 'bootstrap';
+
+.section-title {
+  color: $lightgray;
+  font-family: 'Mission Gothic', sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin-top: 0;
+
+  &:before {
+    content: "//";
+  }
+}
+
+p {
+  font-family: 'Mission Gothic', sans-serif;
+  font-weight: 100;
+  color: rgb(89, 89, 89);
+}
 
 .services {
   background-color: rgb(245, 245, 245);
@@ -23,9 +45,6 @@
   }
 
   p {
-    font-family: 'Mission Gothic', sans-serif;
-    font-weight: 100;
-    color: rgb(89, 89, 89);
     text-align: center;
     padding: 0 15px;
   }
@@ -49,20 +68,6 @@
 
     &:hover {
       text-decoration: none;
-    }
-  }
-
-  .section-title {
-    color: rgb(89, 89, 89);
-    font-family: 'Mission Gothic', sans-serif;
-    font-style: italic;
-    font-weight: 100;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    margin-top: 0;
-
-    &:before {
-      content: "//";
     }
   }
 
@@ -103,3 +108,134 @@
     }
   }
 }
+
+.clients {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  .client-name {
+    font-family: 'Mission Gothic', sans-serif;
+    font-weight: bold;
+    font-size: 2.7em;
+    text-transform: uppercase;
+    color: $guava;
+  }
+
+  .client-pitch {
+    font-size: 1.1em;
+  }
+
+  .role {
+    color: black;
+    font-size: 1.1em;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .quote {
+    border: none;
+    border-top: 3px solid rgb(242,242,242);
+    border-bottom: 3px solid rgb(242,242,242);
+    overflow: hidden;
+    text-align: center;
+
+    font-family: 'Mission Gothic', sans-serif;
+    font-size: 1.1em;
+    font-style: italic;
+    color: $lightgray;
+
+    .quote-author-image {
+      width: 90px;
+      height: 90px;
+      margin-right: 20px;
+      vertical-align: middle;
+      float: none;
+      display: none;
+
+      .borderradius & {
+        @include border-radius(90px);
+      }
+
+      @media (min-width: $screen-md-min) {
+        float: left;
+        display: block;
+      }
+    }
+
+    .quote-author {
+      display: block;
+      margin-top: 5px;
+      font-size: .9em;
+      font-style: normal;
+    }
+
+    strong {
+      color: black;
+    }
+
+    @media (min-width: $screen-md-min) {
+      text-align: left;
+    }
+  }
+
+  .client-image {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .carousel-indicators {
+    bottom: -50px;
+    display: none;
+
+    li {
+      background-color: rgb(215,215,215);
+      width: 13px;
+      height: 13px;
+
+      &.active {
+        width: 13px;
+        height: 13px;
+        background-color: $guava;
+      }
+    }
+
+    @media (min-width: $screen-md-min) {
+      display: block;
+    }
+  }
+
+  .carousel-inner {
+    .item {
+      display: block;
+      padding-bottom: 20px;
+
+      @media (min-width: $screen-md-min) {
+        display: none;
+
+        &.active {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .carousel-control {
+    background: none;
+    width: 10%;
+    display: none;
+
+    @media (min-width: $screen-md-min) {
+      display: block;
+
+      &.left {
+        left: -10%;
+        background: url("../img/left.png") center center no-repeat;
+      }
+      &.right {
+        right: -10%;
+        background: url("../img/right.png") center center no-repeat;
+      }
+    }
+  }
+}
+
