@@ -3,4 +3,4 @@
 //= require bootstrap/carousel
 
 $ ->
-  $('.hero').height $(window).height()
+  $('.full-height').height $(window).height()

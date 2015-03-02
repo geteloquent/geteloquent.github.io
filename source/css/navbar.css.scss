@@ -3,7 +3,18 @@
 @import "compass/css3/border-radius";
 @import "vars";
 
-/* Needed because of .navbar-fixed-top */
+.vertical-align {
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical-align > [class^="col-"],
+.vertical-align > [class*=" col-"] {
+  display: flex;
+  align-items: center;     /* Align the flex-items vertically */
+  justify-content: center; /* Optional, to align inner flex-items
+  horizontally within the column  */
+}
 
 .hero {
   width: 100%;
@@ -11,11 +22,16 @@
 
   .logo-hero {
     @include replace-text-with-dimensions('logo-hero.png');
+    float: right;
   }
 
   .call {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+
     font-family: 'Mission Gothic Light';
     font-style: italic;
+    font-size: 23px;
     text-transform: uppercase;
     line-height: 130%;
     color: white;
@@ -26,8 +42,19 @@
     }
   }
 
-  .got-to-site {
+  position: relative;
+
+  .go-to-site-wrapper {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+  }
+
+  .go-to-site {
+    @include replace-text-with-dimensions('hero-link.png');
     display: block;
+    margin: 0 auto;
   }
 }
 
