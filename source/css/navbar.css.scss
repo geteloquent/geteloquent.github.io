@@ -16,7 +16,7 @@
 
 .hero {
   width: 100%;
-  background: url("/img/hero-backdrop.png");
+  background: url("../img/hero-backdrop.png");
 
   .logo-hero {
     @include replace-text-with-dimensions('logo-hero.png');
