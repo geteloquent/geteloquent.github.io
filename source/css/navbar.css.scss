@@ -4,7 +4,32 @@
 @import "vars";
 
 /* Needed because of .navbar-fixed-top */
-body { padding-top: 112px; }
+
+.hero {
+  width: 100%;
+  background: url("/img/hero-backdrop.png");
+
+  .logo-hero {
+    @include replace-text-with-dimensions('logo-hero.png');
+  }
+
+  .call {
+    font-family: 'Mission Gothic Light';
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: 130%;
+    color: white;
+
+    strong {
+      font-family: 'Mission Gothic';
+      font-weight: bold;
+    }
+  }
+
+  .got-to-site {
+    display: block;
+  }
+}
 
 .navbar {
   background-color: white;
