@@ -1,0 +1,56 @@
+@import "compass";
+
+.footer {
+  background: rgb(36,36,36);
+  color: rgb(147,147,147);
+  padding-top: 60px;
+  padding-bottom: 40px;
+  border-bottom: 50px solid black;
+
+
+  .footer-nav {
+    li {
+      margin-bottom: 5px;
+    }
+    a {
+      text-transform: uppercase;
+      font-family: 'Mission Gothic', sans-serif;
+      font-weight: normal;
+      font-size: 13px;
+    }
+   }
+
+   .sn {
+     a { display: block; }
+     li {
+       display: inline-block;
+       margin-right: 5px;
+       &:hover {
+         opacity: .9;
+       }
+     }
+
+     .facebook {
+       @include replace-text-with-dimensions('sn-facebook.png');
+     }
+     .github {
+       @include replace-text-with-dimensions('sn-github.png');
+     }
+     .twitter {
+       @include replace-text-with-dimensions('sn-twitter.png');
+     }
+   }
+
+  ul {
+    list-style: none;
+    list-style-position: inside;
+  }
+  a {
+    color: rgb(147,147,147);
+
+    &:hover {
+      color: rgb(240,72,73);
+      text-decoration: none;
+    }
+  }
+}
