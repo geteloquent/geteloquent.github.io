@@ -1,5 +1,5 @@
 compass_config do |config|
-  # config.output_style = :compact
+  config.output_style = :compact
 end
 
 set :css_dir, 'stylesheets'
@@ -11,10 +11,10 @@ set :fonts_dir, 'fonts'
 activate :directory_indexes
 
 configure :development do
-  # activate :livereload
+  activate :livereload
 end
 
 configure :build do
-  # activate :minify_css
-  # activate :minify_javascript
+  activate :minify_css
+  activate :minify_javascript
 end
