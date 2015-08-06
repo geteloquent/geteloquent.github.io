@@ -3,10 +3,8 @@
 source 'https://rubygems.org'
 
 gem "middleman", "~>3.3.12"
-gem 'sass-rails', '>= 3.2'
 
-# Custom Middleman Extensions
-gem "middleman-blog"
+# Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 
 # For faster file watcher updates on Windows:

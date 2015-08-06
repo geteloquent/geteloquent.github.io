@@ -1,4 +1,4 @@
-$bootstrap-sass-asset-helper: false !default;
+$bootstrap-sass-asset-helper: true !default;
 //
 // Variables
 // --------------------------------------------------
@@ -85,7 +85,7 @@ $icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/bootst
 //** File name for all font files.
 $icon-font-name:          "glyphicons-halflings-regular" !default;
 //** Element ID within SVG icon file.
-$icon-font-svg-id:        "glyphicons_halflingsregular" !default;
+$icon-font-svg-id:        "glyphicons-halflings-regular" !default;
 
 
 //== Components
