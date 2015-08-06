@@ -1,7 +1,7 @@
 @import "bootstrap";
 @import "fonts";
 @import "theme";
-$icon-font-path: "../fonts/bootstrap/";
+
 
 .vertical-align {
 	display:flex;
@@ -15,14 +15,14 @@ $icon-font-path: "../fonts/bootstrap/";
 }
 .hero{
 	width:100%;
-	background: image-url("hero-backdrop-3e7a3371.png");
+	background:url("../images/hero-backdrop.png");
 	position:relative;
 }
 .hero .logo-hero{
 	text-indent:-119988px;
 	overflow:hidden;
 	text-align:left;
-	background-image:url("../images/logo-hero-b3ca0c15.png");
+	background-image:url("../images/logo-hero.png");
 	background-repeat:no-repeat;
 	background-position:50% 50%;
 	width:357px;
@@ -53,7 +53,7 @@ $icon-font-path: "../fonts/bootstrap/";
 	text-indent:-119988px;
 	overflow:hidden;
 	text-align:left;
-	background-image:url("../images/hero-link-cac0a934.png");
+	background-image:url("../images/hero-link.png");
 	background-repeat:no-repeat;
 	background-position:50% 50%;
 	width:61px;
@@ -87,7 +87,7 @@ $icon-font-path: "../fonts/bootstrap/";
 	text-indent:-119988px;
 	overflow:hidden;
 	text-align:left;
-	background-image:url("../images/logo-navbar-9ac7651b.png");
+	background-image:url("../images/logo-navbar.png");
 	background-repeat:no-repeat;
 	background-position:50% 50%;
 	width:128px;
@@ -132,7 +132,7 @@ p {
 }
 .services {
     background-color: whitesmoke;
-    background: url("../images/services-background-f4635b43.png");
+    background: url("../images/services-background.png");
     padding-bottom: 85px;
     padding-top: 60px;
     margin-top: -20px;
@@ -183,14 +183,14 @@ p {
     font-weight: bold;
 }
 .services .service-dds {
-    background: url("../images/service-dds-e75cbb0e.png") no-repeat center top;
+    background: url("../images/service-dds.png") no-repeat center top;
     padding-top: 130px;
 }
 .services .service-dds .service-btn {
     margin-top: 30px;
 }
 .services .service-enterprise {
-    background: url("../images/service-enterprise-5be62e73.png") no-repeat center top;
+    background: url("../images/service-enterprise.png") no-repeat center top;
     padding-top: 130px;
 }
 .services .service-enterprise .service-btn {
@@ -321,9 +321,9 @@ p {
 }
 .clients .carousel-control.left {
     left: -10%;
-    background: url("../images/left-c05ff2c8.png") center center no-repeat;
+    background: url("../images/left.png") center center no-repeat;
 }
 .clients .carousel-control.right {
     right: -10%;
-    background: url("../images/right-d9a6ebde.png") center center no-repeat;
+    background: url("../images/right.png") center center no-repeat;
 }
