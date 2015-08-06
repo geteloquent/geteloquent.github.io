@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import "fonts";
 @import "theme";
+$icon-font-path: "../fonts/bootstrap/";
 
 .vertical-align {
 	display:flex;
@@ -14,14 +15,14 @@
 }
 .hero{
 	width:100%;
-	background:url("../img/hero-backdrop-3e7a3371.png");
+	background:url("../images/hero-backdrop-3e7a3371.png");
 	position:relative;
 }
 .hero .logo-hero{
 	text-indent:-119988px;
 	overflow:hidden;
 	text-align:left;
-	background-image:url("../img/logo-hero-b3ca0c15.png");
+	background-image:url("../images/logo-hero-b3ca0c15.png");
 	background-repeat:no-repeat;
 	background-position:50% 50%;
 	width:357px;
@@ -52,7 +53,7 @@
 	text-indent:-119988px;
 	overflow:hidden;
 	text-align:left;
-	background-image:url("../img/hero-link-cac0a934.png");
+	background-image:url("../images/hero-link-cac0a934.png");
 	background-repeat:no-repeat;
 	background-position:50% 50%;
 	width:61px;
@@ -86,7 +87,7 @@
 	text-indent:-119988px;
 	overflow:hidden;
 	text-align:left;
-	background-image:url("../img/logo-navbar-9ac7651b.png");
+	background-image:url("../images/logo-navbar-9ac7651b.png");
 	background-repeat:no-repeat;
 	background-position:50% 50%;
 	width:128px;
@@ -131,7 +132,7 @@ p {
 }
 .services {
     background-color: whitesmoke;
-    background: url("../img/services-background-f4635b43.png");
+    background: url("../images/services-background-f4635b43.png");
     padding-bottom: 85px;
     padding-top: 60px;
     margin-top: -20px;
@@ -182,14 +183,14 @@ p {
     font-weight: bold;
 }
 .services .service-dds {
-    background: url("../img/service-dds-e75cbb0e.png") no-repeat center top;
+    background: url("../images/service-dds-e75cbb0e.png") no-repeat center top;
     padding-top: 130px;
 }
 .services .service-dds .service-btn {
     margin-top: 30px;
 }
 .services .service-enterprise {
-    background: url("../img/service-enterprise-5be62e73.png") no-repeat center top;
+    background: url("../images/service-enterprise-5be62e73.png") no-repeat center top;
     padding-top: 130px;
 }
 .services .service-enterprise .service-btn {
@@ -249,30 +250,38 @@ p {
 }
 @media (min-width: 992px) {
     .clients .quote .quote-author-image {
-    float: left;
-    display: block;
+        float: left;
+        display: block;
+    }
 }
-}.clients .quote .quote-author {
+
+.clients .quote .quote-author {
     display: block;
     margin-top: 5px;
     font-size: .9em;
     font-style: normal;
 }
+
 .clients .quote strong {
     color: black;
 }
+
 @media (min-width: 992px) {
     .clients .quote {
-    text-align: left;
+        text-align: left;
+    }
 }
-}.clients .client-image {
+
+.clients .client-image {
     margin: 0 auto;
     display: block;
 }
+
 .clients .carousel-indicators {
     bottom: -50px;
     display: none;
 }
+
 .clients .carousel-indicators li {
     background-color: #d7d7d7;
     width: 13px;
@@ -287,7 +296,8 @@ p {
     .clients .carousel-indicators {
     display: block;
 }
-}.clients .carousel-inner .item {
+}
+.clients .carousel-inner .item {
     display: block;
     padding-bottom: 20px;
 }
@@ -295,10 +305,11 @@ p {
     .clients .carousel-inner .item {
     display: none;
 }
+}
 .clients .carousel-inner .item.active {
     display: block;
 }
-}.clients .carousel-control {
+.clients .carousel-control {
     background: none;
     width: 10%;
     display: none;
@@ -307,12 +318,12 @@ p {
     .clients .carousel-control {
     display: block;
 }
+}
 .clients .carousel-control.left {
     left: -10%;
-    background: url("../img/left-c05ff2c8.png") center center no-repeat;
+    background: url("../images/left-c05ff2c8.png") center center no-repeat;
 }
 .clients .carousel-control.right {
     right: -10%;
-    background: url("../img/right-d9a6ebde.png") center center no-repeat;
-}
+    background: url("../images/right-d9a6ebde.png") center center no-repeat;
 }
