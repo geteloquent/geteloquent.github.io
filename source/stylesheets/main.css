@@ -5805,7 +5805,7 @@ button.close {
   padding: 60px 0 80px 0; }
 
 .pretty-text.odd {
-  background-image: url("../images/services-background-f4635b43.png"); }
+  background-image: url("../images/services-background.png"); }
 
 .pretty-text h1,
 .pretty-text h2,
@@ -5888,13 +5888,13 @@ button.close {
   height: 30px; }
 
 .footer .sn .facebook {
-  background-image: url("../images/sn-facebook-47838955.png"); }
+  background-image: url("../images/sn-facebook.png"); }
 
 .footer .sn .github {
-  background-image: url("../images/sn-github-bc0645b2.png"); }
+  background-image: url("../images/sn-github.png"); }
 
 .footer .sn .twitter {
-  background-image: url("../images/sn-twitter-739983f2.png"); }
+  background-image: url("../images/sn-twitter.png"); }
 
 .footer ul {
   list-style: none;
@@ -6102,6 +6102,7 @@ p {
   margin-top: 25px; }
 
 .services .service-redu {
+  background: url("../images/service-redu.png") no-repeat center top;
   padding-top: 130px; }
 
 .services .service-redu .service-btn {
