@@ -6,7 +6,6 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <!-- Use title if it's in the page YAML frontmatter -->
         <title>HTML5 Boilerplate Middleman</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
@@ -22,46 +21,22 @@
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
 
-          <div class="container-fluid hero full-height hidden-sm hidden-xs">
-  <div class="full-height row vertical-align">
-    <div class="col-sm-4 col-sm-offset-1">
-      <h1 class="logo-hero">Eloquent Studio</h1>
-    </div>
-    <h3 class="call col-sm-6">
-      <em>Olá, nós somos Eloquent. Somos uma empresa de <strong>Designers</strong>, <strong>Hackers</strong> e <strong>Empreeendedores experientes</strong> capazes de construir aplicações para negócios ambiciosos.</em>
-    </h3>
+          <div class="container-fluid hero full-height hidden-xs">
+            <div class="full-height row vertical-align">
+              <div class="col-sm-4 col-sm-offset-1">
+                <h1 class="logo-hero">Eloquent Studio</h1>
+              </div>
+              <h3 class="call col-sm-6">
+                <em>Olá, nós somos Eloquent. Somos uma empresa de <strong>Designers</strong>, <strong>Hackers</strong> e <strong>Empreeendedores experientes</strong> capazes de construir aplicações para negócios ambiciosos.</em>
+              </h3>
 
-    <div class="go-to-site-wrapper">
-      <a class="go-to-site" href="#site">Ir para o site</a>
-    </div>
-  </div>
-</div>
+              <div class="go-to-site-wrapper">
+                <a class="go-to-site" href="#site">Ir para o site</a>
+              </div>
+            </div>
+          </div>
 
-  <nav class="navbar navbar-default navbar-static-top " role="navigation" id="site">
-  <div class="navbar-container">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Eloquent Studio</a>
-      </div>
-
-      <div class="collapse navbar-collapse" id="navbar">
-        <ul class="nav navbar-nav pull-right">
-          <li class="active"><a href="#">Valores</a></li>
-          <li><a href="/o-que-fazemos.html">O que fazemos?</a></li>
-          <li><a href="#">Como trabalhamos</a></li>
-          <li><a href="#">Contato</a></li>
-          <li><a href="#">Feed</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </div><!-- /.navbar-container -->
-</nav>
+          <%= partial "nav" %>
 
   <div class="container-fluid">
   <section class="services row">
@@ -176,6 +151,9 @@
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
+
+        <script src="js/main.js"></script>
+
     </body>
 </html>
 
