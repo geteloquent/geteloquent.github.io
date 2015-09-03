@@ -345,4 +345,65 @@ p {
 /* CONTATO PAGE */
 #contato {
     background: #cd3e40;
+    padding: 70px 0px;
+}
+
+#contato h3 {
+    font-family:"Mission Gothic";
+    font-size: 46px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #FFF;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+#contato .form-group {
+    margin-bottom: 0px;
+}
+
+#contato input,  {
+    font-family:"Mission Gothic";
+    font-size: 14px;
+    color: #FFF;
+    border: solid 1px #bd2c2e;
+    border-bottom: none;
+    background: #ee5052;
+    border-radius: 0px;
+}
+
+#contato textarea {
+    font-family:"Mission Gothic";
+    font-size: 14px;
+    color: #FFF;
+    border: solid 1px #bd2c2e;
+    background: #ee5052;
+    border-radius: 0px;
+}
+
+#contato button {
+    background: #000;
+    color: #FFF;
+    font-family:"Mission Gothic";
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border: solid 1px #000;
+    border-radius: 0px;
+    margin-top: 10px;
+}
+
+::-webkit-input-placeholder {
+   color: #f9b6b6;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #f9b6b6;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #f9b6b6;  
+}
+
+:-ms-input-placeholder {  
+   color: #f9b6b6;  
 }
