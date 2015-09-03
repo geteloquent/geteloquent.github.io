@@ -19,6 +19,7 @@ configure :build do
   activate :minify_javascript
   activate :relative_assets
   activate :asset_hash
+  set :relative_links, true
 end
 
 # Asset pipeline
