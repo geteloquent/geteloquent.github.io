@@ -1,0 +1,409 @@
+@import "bootstrap";
+@import "fonts";
+@import "theme";
+
+
+.vertical-align {
+	display:flex;
+	flex-direction:row;
+}
+.vertical-align>[class^="col-"],
+.vertical-align>[class*=" col-"] {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.hero{
+	width:100%;
+	background:url("../images/hero-backdrop.png");
+	position:relative;
+}
+.hero .logo-hero{
+	text-indent:-119988px;
+	overflow:hidden;
+	text-align:left;
+	background-image:url("../images/logo-hero.png");
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	width:357px;
+	height:164px;
+	float:right;
+}
+.hero .call{
+	-webkit-font-smoothing:antialiased;
+	text-shadow:1px 1px 1px rgba(0,0,0,0.004);
+	font-family:'Mission Gothic Light';
+	font-style:italic;
+	font-size:23px;
+	text-transform:uppercase;
+	line-height:130%;
+	color:white;
+}
+.hero .call strong{
+	font-family:'Mission Gothic Light';
+	font-weight:bold;
+}
+.hero .go-to-site-wrapper{
+	position:absolute;
+	bottom:20%;
+	left:0;
+	right:0;
+}
+.hero .go-to-site{
+	text-indent:-119988px;
+	overflow:hidden;
+	text-align:left;
+	background-image:url("../images/hero-link.png");
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	width:61px;
+	height:60px;
+	display:block;
+	margin:0 auto
+}
+.navbar{
+	background-color:white;
+	border-bottom:1px solid #d2d3d4;
+}
+.boxshadow .navbar{
+	-webkit-box-shadow:#d2d3d4 0 1px 10px;
+	-moz-box-shadow:#d2d3d4 0 1px 10px;
+	box-shadow:#d2d3d4 0 1px 10px
+}
+.borderradius .navbar{
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	-ms-border-radius:0;
+	-o-border-radius:0;
+	border-radius:0;
+}
+.navbar .navbar-container{
+	padding:0 50px;
+}
+.navbar .navbar-header{
+	margin:15px 0;
+}
+.navbar .navbar-header .navbar-brand{
+	text-indent:-119988px;
+	overflow:hidden;
+	text-align:left;
+	background-image:url("../images/logo-navbar.png");
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	width:128px;
+	height:58px;
+}
+.navbar .navbar-nav{
+	font-family:'Mission Gothic Light';
+	font-size:1.2em;
+	margin:15px 0;
+	text-transform:uppercase;
+}
+.navbar .navbar-nav li{
+	padding:16px;
+}
+.navbar .navbar-nav li a{
+	background-color:transparent !important;
+	padding:3px 0;
+	color:#000;
+}
+.navbar .navbar-nav li:hover a{
+	color:#8d8d8d;
+}
+.navbar .navbar-nav li.active a{
+	color:#000;
+	border-bottom:3px solid #f04849;
+}
+.section-title {
+    color: #595959;
+    font-family: 'Mission Gothic',  sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+.section-title:before {
+    content: "//"}
+p {
+    font-family: 'Mission Gothic',  sans-serif;
+    font-weight: 100;
+    color: #595959;
+}
+.services {
+    background-color: whitesmoke;
+    background: url("../images/services-background.png");
+    padding-bottom: 85px;
+    padding-top: 60px;
+    margin-top: -20px;
+}
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+.services ul li {
+    text-align: center;
+    margin-top: 30px;
+}
+.services p {
+    text-align: center;
+    padding: 0 15px;
+}
+.services .service-btn {
+    font-family: 'Mission Gothic',  sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: .9em;
+    color: #595959;
+    text-transform: uppercase;
+    border: 1px solid #787878;
+    padding: 10px 15px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 25px;
+}
+.borderradius .services .service-btn {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+.services .service-btn:hover {
+    text-decoration: none;
+}
+.services .service-title {
+    font-family: 'Mission Gothic',  sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    text-align: center;
+}
+.services .service-title strong {
+    font-weight: bold;
+}
+.services .service-dds {
+    background: url("../images/service-dds.png") no-repeat center top;
+    padding-top: 130px;
+}
+.services .service-dds .service-btn {
+    margin-top: 30px;
+}
+.services .service-enterprise {
+    background: url("../images/service-enterprise.png") no-repeat center top;
+    padding-top: 130px;
+}
+.services .service-enterprise .service-btn {
+    margin-top: 25px;
+}
+.services .service-redu {
+    background: url("../images/service-redu.png") no-repeat center top;
+    padding-top: 130px;
+}
+.services .service-redu .service-btn {
+    margin-top: 70px;
+}
+.clients {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.clients .client-name {
+    font-family: 'Mission Gothic',  sans-serif;
+    font-weight: bold;
+    font-size: 2.7em;
+    text-transform: uppercase;
+    color: #f04849;
+}
+.clients .client-pitch {
+    font-size: 1.1em;
+}
+.clients .role {
+    color: black;
+    font-size: 1.1em;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.clients .quote {
+    border: none;
+    border-top: 3px solid #f2f2f2;
+    border-bottom: 3px solid #f2f2f2;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Mission Gothic',  sans-serif;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #595959;
+}
+.clients .quote .quote-author-image {
+    width: 90px;
+    height: 90px;
+    margin-right: 20px;
+    vertical-align: middle;
+    float: none;
+    display: none;
+}
+.borderradius .clients .quote .quote-author-image {
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    -ms-border-radius: 90px;
+    -o-border-radius: 90px;
+    border-radius: 90px;
+}
+@media (min-width: 992px) {
+    .clients .quote .quote-author-image {
+        float: left;
+        display: block;
+    }
+}
+
+.clients .quote .quote-author {
+    display: block;
+    margin-top: 5px;
+    font-size: .9em;
+    font-style: normal;
+}
+
+.clients .quote strong {
+    color: black;
+}
+
+@media (min-width: 992px) {
+    .clients .quote {
+        text-align: left;
+    }
+}
+
+.clients .client-image {
+    margin: 0 auto;
+    display: block;
+}
+
+.clients .carousel-indicators {
+    bottom: -50px;
+    display: none;
+}
+
+.clients .carousel-indicators li {
+    background-color: #d7d7d7;
+    width: 13px;
+    height: 13px;
+}
+.clients .carousel-indicators li.active {
+    width: 13px;
+    height: 13px;
+    background-color: #f04849;
+}
+@media (min-width: 992px) {
+    .clients .carousel-indicators {
+    display: block;
+}
+}
+.clients .carousel-inner .item {
+    display: block;
+    padding-bottom: 20px;
+}
+@media (min-width: 992px) {
+    .clients .carousel-inner .item {
+    display: none;
+}
+}
+.clients .carousel-inner .item.active {
+    display: block;
+}
+.clients .carousel-control {
+    background: none;
+    width: 10%;
+    display: none;
+}
+@media (min-width: 992px) {
+    .clients .carousel-control {
+    display: block;
+}
+}
+.clients .carousel-control.left {
+    left: -10%;
+    background: url("../images/left.png") center center no-repeat;
+}
+.clients .carousel-control.right {
+    right: -10%;
+    background: url("../images/right.png") center center no-repeat;
+}
+
+/* TRABALHAMOS PAGE */
+#trabalhamos {
+    background: url("../images/header-page-como.jpg") center center repeat-x;
+    padding: 220px 0px;
+    font-family:"Mission Gothic";
+    font-weight: bold;
+    font-size: 55px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 1px 1px 0 #000000;
+}
+
+/* CONTATO PAGE */
+#contato {
+    background: #cd3e40;
+    padding: 70px 0px;
+}
+
+#contato h3 {
+    font-family:"Mission Gothic";
+    font-size: 46px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #FFF;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+#contato .form-group {
+    margin-bottom: 0px;
+}
+
+#contato input,  {
+    font-family:"Mission Gothic";
+    font-size: 14px;
+    color: #FFF;
+    border: solid 1px #bd2c2e;
+    border-bottom: none;
+    background: #ee5052;
+    border-radius: 0px;
+}
+
+#contato textarea {
+    font-family:"Mission Gothic";
+    font-size: 14px;
+    color: #FFF;
+    border: solid 1px #bd2c2e;
+    background: #ee5052;
+    border-radius: 0px;
+}
+
+#contato button {
+    background: #000;
+    color: #FFF;
+    font-family:"Mission Gothic";
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border: solid 1px #000;
+    border-radius: 0px;
+    margin-top: 10px;
+}
+
+::-webkit-input-placeholder {
+   color: #f9b6b6;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #f9b6b6;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #f9b6b6;  
+}
+
+:-ms-input-placeholder {  
+   color: #f9b6b6;  
+}
