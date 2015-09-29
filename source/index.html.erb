@@ -1,7 +1,23 @@
 ---
-title: HTML5 Boilerplate Middleman
-layout: hero
+title: Eloquent Studio
 ---
+
+<div class="container-fluid hero full-height hidden-xs">
+	<div class="full-height row vertical-align">
+	  <div class="col-sm-4 col-sm-offset-1">
+	    <h1 class="logo-hero">Eloquent Studio</h1>
+	  </div>
+	  <h3 class="call col-sm-6">
+	    <em>Olá, nós somos Eloquent. Somos uma empresa de <strong>Designers</strong>, <strong>Hackers</strong> e <strong>Empreeendedores experientes</strong> capazes de construir aplicações para negócios ambiciosos.</em>
+	  </h3>
+
+	  <div class="go-to-site-wrapper">
+	    <a class="go-to-site" href="#site">Ir para o site</a>
+	  </div>
+	</div>
+</div>
+
+<%= partial "partials/nav" %>
 
 <div class="container-fluid">
   <section class="services row">
@@ -9,32 +25,31 @@ layout: hero
       <h2 class="section-title col-sm-11 col-sm-push-1">O que fazemos?</h2>
       <ul>
         <li class="col-sm-4 service-dds">
-          <h2 class="service-title"><strong>Desgin</strong> e <strong>Desenvolvimento</strong> para <strong>Startups</strong></h2>
+          <h2 class="service-title"><strong>Design</strong> e <strong>Desenvolvimento</strong> para <strong>Startups</strong></h2>
           <p>
             Nós transformamos sua visão em produtos excepcionais, utilizando práticas e processos enxutos.
           </p>
-          <%= link_to "Criação de produtos escaláveis", '#', class: 'service-btn ' %>
+          <%= link_to 'Criação de produtos escaláveis', '/o-que-fazemos.html', :class => 'service-btn' %>
         </li>
         <li class="col-sm-4 service-enterprise">
           <h2 class="service-title"><strong>Agilidade</strong> em grandes <strong>empresas</strong></h2>
           <p>
             Seja mais competitivo através da melhoria de processos de desenvolvimento.
           </p>
-          <%= link_to "Empresas estabelecidas que querem melhorar um produto já existente.", '#', class: 'service-btn' %>
+          <%= link_to 'Empresas estabelecidas que querem melhorar um produto já existente', '/o-que-fazemos.html', :class => 'service-btn' %>
         </li>
         <li class="col-sm-4 service-redu">
           <h2 class="service-title">Implantação do <strong>Redu</strong></h2>
           <p>
             Ambiente motivador para cursos a distância
           </p>
-          <%= link_to "Criação de produtos escaláveis", "#", class: 'service-btn' %>
+          <%= link_to 'Criação de produtos escaláveis', '/o-que-fazemos.html', :class => 'service-btn' %>
         </li>
       </ul>
     </div>
   </section>
   <section class="clients row">
     <h2 class="section-title col-sm-11 col-sm-push-1">Clientes</h2>
-
     <div class="carousel slide col-md-10 col-md-offset-1" id="clients-carousel" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#client-carousel" data-slide-to="0" class="active"></li>
@@ -43,7 +58,6 @@ layout: hero
         <li data-target="#client-carousel" data-slide-to="3"></li>
       </ol>
 
-      <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
           <div class="col-md-5">
@@ -52,13 +66,13 @@ layout: hero
             <p class="role"><strong>Participação: API REST, Diretório de Preços</strong></p>
 
             <blockquote class="quote">
-              <img src="img/juliana.jpg" alt="" class="quote-author-image">
+              <%= image_tag 'juliana.jpg', :class => 'quote-author-image' %>
               “breve citação sobre e a experiência do projeto feita por Julaiana como Product wner”
               <p class="quote-author"><strong>Juliana Lucena</strong> <br> Product Owner</p>
             </blockquote>
           </div>
           <div class="col-md-7">
-            <img src="img/phone-preview-smallest.png" alt="" class="client-image">
+            <%= image_tag 'phone-preview-smallest.png', :class => 'client-image' %>
           </div>
         </div>
         <div class="item">
