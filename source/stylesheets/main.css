@@ -5049,6 +5049,25 @@ button.close {
 .pretty-text a {
   color: #f04849; }
 
+#valores .col-sm-6 {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+#bg-red {
+  background: #dd4244; }
+
+.service-btn-alt {
+  font-family: 'Mission Gothic',  sans-serif;
+  font-weight: 100;
+  font-size: .9em;
+  color: #FFF;
+  background: #58585a;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 25px; }
+
 .footer {
   background: #242424;
   color: #939393;

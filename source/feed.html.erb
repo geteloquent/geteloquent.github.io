@@ -3,3 +3,24 @@ title: Eloquent Studio
 ---
 
 <%= partial "partials/nav" %>
+
+<div class="container">
+
+	<div class="row">
+
+		<div id="tags" class="col-sm-12">
+		</div>
+
+		<% blog.articles[5].each do |article| %>
+			<article class="col-sm-12">
+				<p class="date"><time><%= article.date.strftime('%b %e %Y') %></time></p>
+				<p class="tag"><%= tag %></p>
+				##SHAREICONS
+				<h2><a href="<%= article.url %>"><%= article.title %></a></h2>
+				<%= article.summary %>
+			</article>
+		<% end %>
+
+	</div>
+
+</div>

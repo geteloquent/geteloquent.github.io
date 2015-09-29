@@ -8,6 +8,13 @@ configure :development do
   activate :livereload
 end
 
+activate :blog do |blog|
+  blog.permalink = "blog/{year}/{title}.html"
+  blog.paginate = true
+  blog.page_link = "p{num}"
+  blog.per_page = 5
+end
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
