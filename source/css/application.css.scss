@@ -3,15 +3,17 @@
  */
 
 @import "compass";
-@import "navbar";
 @import "vars";
-@import 'bootstrap';
+@import "bootstrap_override";
+
+@import "navbar";
+@import "buttons";
+@import "main";
 
 .section-title {
   color: $lightgray;
-  font-family: 'Mission Gothic', sans-serif;
   font-style: italic;
-  font-weight: 100;
+  font-weight: 300;
   text-transform: uppercase;
   font-size: 1.2em;
   margin-top: 0;
@@ -22,8 +24,7 @@
 }
 
 p {
-  font-family: 'Mission Gothic', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   color: rgb(89, 89, 89);
 }
 
@@ -50,8 +51,7 @@ p {
   }
 
   .service-btn {
-    font-family: 'Mission Gothic', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-style: italic;
     font-size: .9em;
     color: rgb(89, 89, 89);
@@ -72,7 +72,6 @@ p {
   }
 
   .service-title {
-    font-family: 'Mission Gothic', sans-serif;
     font-weight: 100;
     text-transform: uppercase;
     font-size: 1.8em;
@@ -114,7 +113,6 @@ p {
   padding-bottom: 80px;
 
   .client-name {
-    font-family: 'Mission Gothic', sans-serif;
     font-weight: bold;
     font-size: 2.7em;
     text-transform: uppercase;
@@ -139,7 +137,6 @@ p {
     overflow: hidden;
     text-align: center;
 
-    font-family: 'Mission Gothic', sans-serif;
     font-size: 1.1em;
     font-style: italic;
     color: $lightgray;
