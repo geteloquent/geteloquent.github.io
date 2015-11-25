@@ -11,12 +11,22 @@
 }
 
 
-.service-enterprise {
+.service-icon {
   &:before {
+    content: " ";
+    display: block;
     width: 83px;
-    height: 83px;
+    height: 82px;
+    margin: 0 auto 40px auto;
   }
 }
+
+.service-enterprise {
+  &:before {
+    background: url("../img/icon-small_03.png");
+  }
+}
+
 p {
   font-weight: 300;
   font-size: 16px;
