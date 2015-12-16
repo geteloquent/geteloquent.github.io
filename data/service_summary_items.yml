@@ -1,0 +1,29 @@
+services:
+  -
+    type: startup-design-dev
+    title:
+      <strong>Desgin</strong> e <strong>Desenvolvimento</strong> para <strong>Startups</strong>
+    description:
+      Nós transformamos sua visão em produtos excepcionais, utilizando práticas e processos enxutos.
+    call_to_action_text: &create_scalable_products
+      Criação de produtos escaláveis
+    call_to_action_link: &create_scalable_products_link
+      #
+  -
+    type: agile-enterprises
+    title:
+      <strong>Agilidade</strong> em grandes <strong>empresas</strong>
+    description:
+      Seja mais competitivo através da melhoria de processos de desenvolvimento.
+    call_to_action_text:
+      Empresas estabelecidas que querem melhorar um produto já existente
+    call_to_action_link:
+      #
+  -
+    type: redu-deployment
+    title:
+      Implantação do <strong>Redu</strong>
+    description:
+      Ambiente motivador para cursos a distância.
+    call_to_action_text: *create_scalable_products
+    call_to_action_link: *create_scalable_products_link

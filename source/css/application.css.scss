@@ -11,6 +11,10 @@
 @import "buttons";
 @import "main";
 @import "services";
+@import "section";
+@import "carousel";
+@import "services-summary";
+@import "clients-summary";
 
 .section-title {
   color: $lightgray;
@@ -180,60 +184,5 @@ p {
   .client-image {
     margin: 0 auto;
     display: block;
-  }
-
-  .carousel-indicators {
-    bottom: -50px;
-    display: none;
-
-    li {
-      background-color: rgb(215,215,215);
-      width: 13px;
-      height: 13px;
-
-      &.active {
-        width: 13px;
-        height: 13px;
-        background-color: $guava;
-      }
-    }
-
-    @media (min-width: $screen-md-min) {
-      display: block;
-    }
-  }
-
-  .carousel-inner {
-    .item {
-      display: block;
-      padding-bottom: 20px;
-
-      @media (min-width: $screen-md-min) {
-        display: none;
-
-        &.active {
-          display: block;
-        }
-      }
-    }
-  }
-
-  .carousel-control {
-    background: none;
-    width: 10%;
-    display: none;
-
-    @media (min-width: $screen-md-min) {
-      display: block;
-
-      &.left {
-        left: -10%;
-        background: url("../img/left.png") center center no-repeat;
-      }
-      &.right {
-        right: -10%;
-        background: url("../img/right.png") center center no-repeat;
-      }
-    }
   }
 }

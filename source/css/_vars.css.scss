@@ -1,10 +1,11 @@
 $guava: rgb(240, 72, 73);
 $lightgray: rgb(89, 89, 89);
+$white: rgb(255, 255, 255);
 
 $gray-1: rgb(112,112,112);
 $gray-2: rgb(242,242,242);
 $gray-3: rgb(211,211,211);
-$guava-1: rgb(240,72,73);
+$guava-1: $guava;
 
 
 $padding-base-vertical: 12px;
@@ -13,11 +14,14 @@ $border-radius-base: 2px;
 
 $btn-primary-bg: $guava;
 $btn-primary-border: $guava;
-$btn-primary-color: white;
+$btn-primary-color: $white;
 
-$btn-info-bg: rgb(89,89,89);
+$btn-info-bg: $lightgray;
 
 $font-family-sans-serif: "Mission Gothic", Heveltica, sans-serif;
 $btn-font-weight: 300;
 
 $link-color: $guava;
+
+$gutter: 15px;
+$gutter--outer: $gutter * 2;
