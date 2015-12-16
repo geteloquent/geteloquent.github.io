@@ -35,6 +35,18 @@
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
+activate :autoprefixer do |config|
+  config.browsers = [
+    'Explorer >= 10',
+    'Firefox >= 28',
+    'Chrome >= 34',
+    'Safari >= 7',
+    'iOS >= 7',
+    'ChromeAndroid >= 4.2',
+    'ExplorerMobile >= 10',
+  ]
+end
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
