@@ -1,0 +1,101 @@
+$items-count: 3;
+$image-height: 117px;
+$list-item-separator-color: rgb(198, 198, 198);
+$title-color: rgb(0, 0, 0);
+$call-to-action-color: $gray-1;
+$startup-design-dev-url: url("../img/service-dds.png");
+$agile-enterprises-url: url("../img/service-enterprise.png");
+$redu-deployment-url: url("../img/service-redu-deployment.png");
+
+.services-summary-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $screen-sm-min) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.services-summary-list__item {
+  padding: 0 $gutter;
+
+  & +
+  &:before {
+    display: block;
+    width: 80px;
+    height: 1px;
+    margin: $gutter auto;
+    content: "";
+    background-color: $list-item-separator-color;
+
+    @media (min-width: $screen-sm-min) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $screen-sm-min) {
+    width: calc(#{100% / $items-count} - #{$gutter * 2});
+    padding: 0;
+  }
+}
+
+.service-summary {
+  padding-top: $image-height + $gutter;
+  text-align: center;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.service-summary--startup-design-dev {
+  background-image: $startup-design-dev-url;
+}
+
+.service-summary--agile-enterprises {
+  background-image: $agile-enterprises-url;
+}
+
+.service-summary--redu-deployment {
+  background-image: $redu-deployment-url;
+}
+
+.service-summary__title {
+  margin: 0;
+  color: $title-color;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.service-summary__description {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 300;
+
+  .service-summary__title +
+  & {
+    margin-top: $gutter;
+  }
+}
+
+.service-summary__call-to-action {
+  display: inline-block;
+  padding: 10px;
+  font-style: italic;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+  border-radius: 1px;
+
+  &,
+  &:hover,
+  &:focus {
+    color: $call-to-action-color;
+    text-decoration: none;
+  }
+
+  .service-summary__description +
+  & {
+    margin-top: $gutter;
+  }
+}

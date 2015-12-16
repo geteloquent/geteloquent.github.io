@@ -1,0 +1,44 @@
+clients:
+  -
+    name: Fuelzee
+    pitch: &pitch
+      Aplicativo mobile presente em mais de 135 mil postos de gasolina dos EUA que ajuda a encontrar a melhor oferta perto de você. Ao utilizar você ganha pontos que podem ser trocados por prêmios nas lojas de conveniência dos postos.
+    role: &role
+      "Participação: API REST, Diretório de Preços"
+    author_name: &author_name
+      Juliana Lucena
+    author_avatar: &author_avatar
+      juliana.jpg
+    author_role: &author_role
+      Product Owner
+    quote: &quote
+      breve citação sobre e a experiência do projeto feita por Julaiana como Product wner
+    product_image: &product_image
+      phone-preview-smallest.png
+  -
+    name: Trustvox
+    pitch: *pitch
+    role: *role
+    author_name: *author_name
+    author_avatar: *author_avatar
+    author_role: *author_role
+    quote: *quote
+    product_image: *product_image
+  -
+    name: Mercado Eletrônico
+    pitch: *pitch
+    role: *role
+    author_name: *author_name
+    author_avatar: *author_avatar
+    author_role: *author_role
+    quote: *quote
+    product_image: *product_image
+  -
+    name: indk.me
+    pitch: *pitch
+    role: *role
+    author_name: *author_name
+    author_avatar: *author_avatar
+    author_role: *author_role
+    quote: *quote
+    product_image: *product_image

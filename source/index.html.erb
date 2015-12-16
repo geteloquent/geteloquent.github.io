@@ -1,87 +1,45 @@
 ---
-title: HTML5 Boilerplate Middleman
+title: Home
 layout: hero
 ---
 
-<div class="container-fluid">
-  <section class="services row">
-    <div class="col-sm-12">
-      <h2 class="section-title col-sm-11 col-sm-push-1">O que fazemos?</h2>
-      <ul>
-        <li class="col-sm-4 service-dds">
-          <h2 class="service-title"><strong>Desgin</strong> e <strong>Desenvolvimento</strong> para <strong>Startups</strong></h2>
-          <p>
-            Nós transformamos sua visão em produtos excepcionais, utilizando práticas e processos enxutos.
-          </p>
-          <%= link_to "Criação de produtos escaláveis", '#', class: 'service-btn ' %>
-        </li>
-        <li class="col-sm-4 service-enterprise">
-          <h2 class="service-title"><strong>Agilidade</strong> em grandes <strong>empresas</strong></h2>
-          <p>
-            Seja mais competitivo através da melhoria de processos de desenvolvimento.
-          </p>
-          <%= link_to "Empresas estabelecidas que querem melhorar um produto já existente.", '#', class: 'service-btn' %>
-        </li>
-        <li class="col-sm-4 service-redu">
-          <h2 class="service-title">Implantação do <strong>Redu</strong></h2>
-          <p>
-            Ambiente motivador para cursos a distância
-          </p>
-          <%= link_to "Criação de produtos escaláveis", "#", class: 'service-btn' %>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="clients row">
-    <h2 class="section-title col-sm-11 col-sm-push-1">Clientes</h2>
+<section class="section">
+  <h2 class="section__header">O que fazemos</h2>
+  <div class="section__body">
+    <ul class="services-summary-list">
+      <%= partial "home/service_summary", collection: data.service_summary_items.services %>
+    </ul>
+  </div>
+</section>
 
-    <div class="carousel slide col-md-10 col-md-offset-1" id="clients-carousel" data-ride="carousel">
+<section class="section">
+  <h2 class="section__header">Clientes</h2>
+  <div class="section__body">
+    <% clients_carousel_id = "clients-carousel" %>
+    <% clients = data.client_summary_items.clients %>
+    <% active_index = 0 %>
+
+    <div class="carousel slide" id="<%= clients_carousel_id %>" data-ride="carousel">
       <ol class="carousel-indicators">
-        <li data-target="#client-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#client-carousel" data-slide-to="1"></li>
-        <li data-target="#client-carousel" data-slide-to="2"></li>
-        <li data-target="#client-carousel" data-slide-to="3"></li>
+        <% clients.size.times do |i| %>
+          <%= content_tag :li, nil, class: (i == active_index ? "active" : ""), data: { target: "##{clients_carousel_id}", slide: { to: i } } %>
+        <% end %>
       </ol>
 
-      <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <div class="col-md-5">
-            <h3 class="client-name">Fuelzee</h3>
-            <p class="client-pitch">Aplicativo mobile presente em mais de 135 mil postos de gasolina dos EUA que ajuda a encontrar a melhor oferta perto de você. Ao utilizar você ganha pontos que podem ser trocados por prêmios nas lojas de conveniência dos postos.</p>
-            <p class="role"><strong>Participação: API REST, Diretório de Preços</strong></p>
-
-            <blockquote class="quote">
-              <img src="img/juliana.jpg" alt="" class="quote-author-image">
-              “breve citação sobre e a experiência do projeto feita por Julaiana como Product wner”
-              <p class="quote-author"><strong>Juliana Lucena</strong> <br> Product Owner</p>
-            </blockquote>
+        <% clients.each_with_index do |client, i| %>
+          <div class="<%= (i == active_index ? "item active" : "item") %>">
+            <%= partial "home/client_summary", locals: { client: client } %>
           </div>
-          <div class="col-md-7">
-            <img src="img/phone-preview-smallest.png" alt="" class="client-image">
-          </div>
-        </div>
-        <div class="item">
-          <h3 class="client-name">Trustvox</h3>
-          <p class="client-pitch">Aplicativo mobile presente em mais de 135 mil postos de gasolina dos EUA que ajuda a encontrar a melhor oferta perto de você. Ao utilizar você ganha pontos que podem ser trocados por prêmios nas lojas de conveniência dos postos.</p>
-        </div>
-        <div class="item">
-          <h3 class="client-name">Mercado Eletrônico</h3>
-          <p class="client-pitch">Aplicativo mobile presente em mais de 135 mil postos de gasolina dos EUA que ajuda a encontrar a melhor oferta perto de você. Ao utilizar você ganha pontos que podem ser trocados por prêmios nas lojas de conveniência dos postos.</p>
-        </div>
-        <div class="item">
-          <h3 class="client-name">indk.me</h3>
-          <p class="client-pitch">Aplicativo mobile presente em mais de 135 mil postos de gasolina dos EUA que ajuda a encontrar a melhor oferta perto de você. Ao utilizar você ganha pontos que podem ser trocados por prêmios nas lojas de conveniência dos postos.</p>
-        </div>
+        <% end %>
       </div>
 
-      <!-- Controls -->
-      <a class="left carousel-control" href="#clients-carousel" role="button" data-slide="prev">
-        <span class="sr-only">Previous</span>
+      <a class="left carousel-control" href="#<%= clients_carousel_id %>" role="button" data-slide="prev">
+        <span class="sr-only">Anterior</span>
       </a>
-      <a class="right carousel-control" href="#clients-carousel" role="button" data-slide="next">
-        <span class="sr-only">Next</span>
+      <a class="right carousel-control" href="#<%= clients_carousel_id %>" role="button" data-slide="next">
+        <span class="sr-only">Próximo</span>
       </a>
     </div>
-  </section>
-</div>
+  </div>
+</section>

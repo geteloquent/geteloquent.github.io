@@ -1,0 +1,115 @@
+$title-font-size: 23px;
+$quote-border: 2px solid $gray-2;
+
+.client-summary {
+  padding: 0 $gutter;
+  text-align: center;
+
+  @media (min-width: $screen-md-min) {
+    display: flex;
+    text-align: left;
+  }
+}
+
+.client-summary__name {
+  margin: 0;
+  font-size: $title-font-size;
+
+  @media (min-width: $screen-md-min) {
+    font-size: $title-font-size * 2;
+  }
+}
+
+.client-summary__pitch {
+  margin-bottom: 0;
+
+  .client-summary__name +
+  & {
+    margin-top: $gutter;
+  }
+}
+
+.client-summary__role {
+  display: block;
+
+  .client-summary__pitch +
+  & {
+    margin-top: $gutter;
+  }
+}
+
+.client-summary__quote-wrapper {
+  display: flex;
+  margin: 0;
+  padding: $gutter 0;
+  border-left: none;
+  border-top: $quote-border;
+  border-bottom: $quote-border;
+
+  .client-summary__role +
+  & {
+    margin-top: $gutter;
+  }
+}
+
+.client-summary__quote-author-avatar {
+  align-self: center;
+  border-radius: 50%;
+}
+
+.client-summary__quote-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+  text-align: left;
+
+  .client-summary__quote-author-avatar +
+  & {
+    margin-left: $gutter;
+  }
+}
+
+.client-summary__quote-content {
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+.client-summary__quote-author {
+  font-weight: bold;
+
+  .client-summary__quote-content +
+  & {
+    margin-top: $gutter;
+  }
+}
+
+.client-summary__quote-author-role {
+  color: rgb(106, 106, 106);
+  font-weight: 300;
+}
+
+.client-summary__content {
+  @media (min-width: $screen-md-min) {
+    flex: 0 0 350px;
+  }
+}
+
+.client-summary__product-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .client-summary__content +
+  & {
+    margin-top: $gutter;
+  }
+
+  @media (min-width: $screen-md-min) {
+    .client-summary__content +
+    & {
+      margin-top: 0;
+      margin-left: $gutter;
+    }
+  }
+}
