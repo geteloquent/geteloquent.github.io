@@ -1,15 +1,32 @@
-<section class="footer container-fluid">
-  <div class="row">
-    <ul class="footer-nav col-sm-2 col-sm-push-1">
-      <li><%= link_to "Home", nil %></li>
-      <li><%= link_to "O que fazemos?", nil %></li>
-      <li><%= link_to "Como trabalhamos?", nil %></li>
-      <li><%= link_to "Contato", nil %></li>
-    </ul>
-    <ul class="sn col-sm-2 pull-right">
-      <li><%= link_to "Facebook", nil, class: 'facebook' %></li>
-      <li><%= link_to "Twitter", nil, class: 'twitter' %></li>
-      <li><%= link_to "Github", nil, class: 'github' %></li>
-    </ul>
+<% pages = locals[:pages] || data.pages.items %>
+<% feeds = locals[:feeds] || data.feeds.items %>
+<% social_networks = locals[:social_networks] || data.social_networks.items %>
+<% made_by = locals[:made_by] || data.made_by %>
+
+<footer class="footer">
+  <div class="footer__body">
+    <nav class="footer__site-nav">
+      <% pages.each do |page| %>
+        <%= link_to page.name, page.link, class: "footer__link footer__site-link" %>
+      <% end %>
+    </nav>
+    <nav class="footer__feed-nav">
+      <span class="footer__feed-nav-title">Feed</span>
+      <ul class="footer__feed-list">
+        <% feeds.each do |feed| %>
+          <li class="footer__feed-item">
+            <%= link_to feed[:title], feed[:link], class: "footer__link footer__feed-link", title: feed[:title] %>
+          </li>
+        <% end %>
+      </ul>
+    </nav>
+    <div class="footer__social-networks">
+      <% social_networks.each do |social_network| %>
+        <%= link_to social_network[:name], social_network[:link], class: "footer__social-network footer__social-network--#{social_network[:type]}", title: social_network[:name] %>
+      <% end %>
+    </div>
   </div>
-</section>
+  <div class="footer__made-by">
+    <%= link_to made_by.company, made_by.link, class: "footer__made-by-link", title: "Feito por #{made_by.company}" %>
+  </div>
+</footer>

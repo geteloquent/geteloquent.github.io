@@ -1,0 +1,14 @@
+items:
+  -
+    type: facebook
+    name: Facebook
+    link: https://www.facebook.com/geteloquent/
+  -
+    type: twitter
+    name: Twitter
+    link: https://twitter.com/geteloquent
+
+  -
+    type: github
+    name: Github
+    link: https://github.com/geteloquent
