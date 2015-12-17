@@ -1,0 +1,57 @@
+$__decorator-height: 30px
+$__decorator-color: $guava-1
+
+$__content-color: $gray-1
+
+$__author-color: rgb(0, 0, 0)
+$__author-decorator-color: rgb(122, 122, 122)
+
+.core-value-quote
+  position: relative
+  margin: 0
+  padding: ($__decorator-height + $gutter) $gutter $gutter
+  text-align: center
+  border: none
+
+  &:before
+    position: absolute
+    top: -0
+    left: 50%
+    color: $__decorator-color
+    font-size: 130px
+    line-height: 1
+    content: '“'
+    transform: translateX(-50%)
+
+  &__content
+    color: $__content-color
+    font-size: 15px
+    font-style: italic
+    font-weight: 300
+
+    @media (min-width: $screen-sm-min)
+      font-size: 16px
+
+  &__author
+    display: flex
+    align-items: center
+    justify-content: center
+    color: $__author-color
+    font-size: 14px
+
+    @media (min-width: $screen-sm-min)
+      font-size: 16px
+
+    &:before,
+    &:after
+      display: inline-block
+      width: 50px
+      height: 1px
+      background-color: $__author-decorator-color
+      content: ""
+
+    &:before
+      margin-right: $gutter
+
+    &:after
+      margin-left: $gutter
