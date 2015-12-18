@@ -89,12 +89,6 @@ $quote-border: 2px solid $gray-2;
   font-weight: 300;
 }
 
-.client-summary__content {
-  @media (min-width: $screen-md-min) {
-    flex: 0 0 350px;
-  }
-}
-
 .client-summary__product-image-wrapper {
   display: flex;
   justify-content: center;
