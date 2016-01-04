@@ -14,3 +14,11 @@ $ ->
       return false
 
     return
+
+  $headerMenuToggle = $('.js-header__menu-toggle')
+  $headerMenuToggle.click ->
+    $layout = $('.js-layout')
+    $layout.toggleClass('is-closed')
+    return
+
+  return

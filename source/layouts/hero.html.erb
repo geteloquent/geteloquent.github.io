@@ -1,8 +1,13 @@
 <% wrap_layout :base do %>
-  <%= partial :header %>
-  <%= partial :hero %>
-  <main class="layout__main">
-    <%= yield %>
-  </main>
-  <%= partial :footer %>
+  <div class="layout__wrapper js-layout__wrapper">
+    <%= partial :header %>
+    <%= partial :hero %>
+    <main class="layout__main">
+      <%= yield %>
+    </main>
+    <%= partial :footer %>
+  </div>
+  <aside class="layout__aside">
+    <%= partial :aside %>
+  </aside>
 <% end %>

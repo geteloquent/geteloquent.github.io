@@ -17,6 +17,9 @@ $__menu-toggle-font-size: 28px
   border-bottom: 1px solid $border-color
   background-image: url($background-image-url)
 
+  @media (min-width: $screen-sm-min)
+    display: none
+
   &__logo
     +replace-text-with-dimensions($__logo-background-image-url)
     height: $__logo-height
@@ -32,9 +35,8 @@ $__menu-toggle-font-size: 28px
     color: $__menu-toggle-color
     font-size: $__menu-toggle-font-size
 
-    &__page-name +
-    &
-      margin-left: $gutter
+  &__page-name + &__menu-icon
+    margin-left: $gutter
 
   &__page-name
     margin: 0

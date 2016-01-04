@@ -25,3 +25,8 @@ $link-color: $guava;
 
 $gutter: 15px;
 $gutter--outer: $gutter * 2;
+
+$z-index--layout__wrapper: 10;
+$z-index--layout__aside: $z-index--layout__wrapper - 1;
+
+$header-height: 65px

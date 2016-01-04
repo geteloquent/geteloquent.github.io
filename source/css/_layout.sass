@@ -1,0 +1,58 @@
+$phone-width: 320px
+$header-toggle-width: 56px
+$__aside-width: $phone-width - $header-toggle-width
+$__aside-background-color: rgb(33, 33, 33)
+
+$layout: ".layout"
+
+#{$layout}
+  background-color: $__aside-background-color
+
+  // http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+  &.has-sticky-footer
+    #{$layout}__main-wrapper
+      display: flex
+      flex-direction: column
+      height: 100%
+
+    #{$layout}__main
+      flex-grow: 1
+
+  &.is-closed
+    #{$layout}__wrapper
+      transform: translate3d(-$__aside-width, 0, 0)
+
+    #{$layout}__aside
+      display: block
+
+  &__wrapper
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: $z-index--layout__wrapper
+    display: flex
+    flex-direction: column
+    transition: transform .3s
+    background-color: $white
+
+    @media (min-width: $screen-sm-min)
+      position: static
+
+  &__main-wrapper
+    overflow-y: auto
+    -webkit-overflow-scrolling: touch
+
+  &__aside
+    display: none
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    z-index: $z-index--layout__aside
+    width: $__aside-width
+    padding: $gutter
+    overflow-y: auto
+    background-color: $__aside-background-color
+
+    @media (min-width: $screen-sm-min)
+      display: none

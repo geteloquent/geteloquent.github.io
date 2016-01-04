@@ -1,0 +1,26 @@
+$__link-color: rgb(147, 147, 147)
+$__link--is-active-background-color: rgb(22, 21, 21)
+$__link--is-active-color: $guava-1
+
+.aside-nav
+  &__list
+    margin: 0
+    padding: 0
+    list-style: none
+
+  &__link
+    display: block
+    padding: $gutter
+    color: $__link-color
+    font-size: 16px
+    font-weight: 300
+    text-transform: uppercase
+
+    &:hover,
+    &:focus
+      text-decoration: none
+
+    &.is-active
+      color: $__link--is-active-color
+      font-weight: bold
+      background-color: $__link--is-active-background-color
