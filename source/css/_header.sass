@@ -1,0 +1,48 @@
+$height: 65px
+$border-color: rgb(175, 29, 34)
+$background-image-url: "../img/hero-backdrop.png"
+
+$__logo-background-image-url: "../img/logo-hero.png"
+$__logo-height: $height * .7
+
+$__menu-toggle-color: $white
+$__menu-toggle-font-size: 28px
+
+.header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: $height
+  padding: 0 $gutter
+  border-bottom: 1px solid $border-color
+  background-image: url($background-image-url)
+
+  &__logo
+    +replace-text-with-dimensions($__logo-background-image-url)
+    height: $__logo-height
+    width: (+image-width($__logo-background-image-url) * $__logo-height) / +image-height($__logo-background-image-url)
+    margin: 0
+    background-size: cover
+
+  &__menu-toggle
+    display: flex
+    align-items: center
+
+  &__menu-icon
+    color: $__menu-toggle-color
+    font-size: $__menu-toggle-font-size
+
+    &__page-name +
+    &
+      margin-left: $gutter
+
+  &__page-name
+    margin: 0
+    max-width: 135px
+    color: $__menu-toggle-color
+    font-size: $__menu-toggle-font-size
+    font-style: normal
+    font-weight: normal
+    text-transform: uppercase
+    letter-spacing: -1px
+    +text-overflow
