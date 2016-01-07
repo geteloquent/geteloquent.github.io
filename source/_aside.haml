@@ -1,6 +1,6 @@
 %nav.aside-nav
   %ul.aside-nav__list
-    %li
-      %a.aside-nav__link.is-active Home
-    %li
-      %a.aside-nav__link Valores
+    - navigation_pages.each do |page|
+      %li
+        - is_active_class = current_page.url == page.url ? "is-active" : ""
+        = link_to page.data.title, page.url, class: "aside-nav__link #{is_active_class}"

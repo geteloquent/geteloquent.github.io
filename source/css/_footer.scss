@@ -30,7 +30,8 @@ $made-by-link-color: rgb(195, 195, 195);
   color: $link-color;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &.is-active {
     color: $link-color--active;
     text-decoration: none;
   }

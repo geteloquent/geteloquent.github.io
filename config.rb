@@ -84,3 +84,9 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+helpers do
+  def navigation_pages
+    sitemap.where(primary_navigation: true).order_by(:weight).all
+  end
+end
