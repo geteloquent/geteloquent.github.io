@@ -10,7 +10,9 @@
       <%= client.role %>
     </span>
     <blockquote class="client-summary__quote-wrapper">
-      <img class="client-summary__quote-author-avatar" src="img/<%= client.author_avatar %>" alt="<%= client.author_name %>" title="<%= client.author_name %>">
+      <div class="client-summary__quote-author-avatar-wrapper">
+        <img class="client-summary__quote-author-avatar" src="img/<%= client.author_avatar %>" alt="<%= client.author_name %>" title="<%= client.author_name %>">
+      </div>
       <div class="client-summary__quote-content-wrapper">
         <p class="client-summary__quote-content">
           “<%= client.quote %>”
