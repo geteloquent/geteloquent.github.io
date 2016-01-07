@@ -22,7 +22,9 @@
     </nav>
     <div class="footer__social-networks">
       <% social_networks.each do |social_network| %>
-        <%= link_to social_network[:name], social_network[:link], class: "footer__social-network footer__social-network--#{social_network[:type]}", title: social_network[:name] %>
+        <% link_to social_network[:link], class: "footer__social-network", title: social_network[:name] do %>
+          <% content_tag :span, nil, class: "fa fa-#{social_network[:icon]}" %>
+        <% end %>
       <% end %>
     </div>
   </div>
