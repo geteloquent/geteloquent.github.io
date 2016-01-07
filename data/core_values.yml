@@ -1,0 +1,29 @@
+committed:
+  title: Comprometida
+  description:
+    "Pois nós lutamos as batalhas dos nossos clientes. Por isso é importante que os objetivos e propósitos dos nossos clientes estejam alinhados com o que consideramos certo."
+
+agile:
+  title: Ágil
+  description:
+    "Ágil é a soma de todos os valores. Para termos agilidade, precisamos nos adaptar às mudanças, ao invés de evitá-la; para sermos ágeis, precisamos nos comprometer, como equipe, às entregas; para sermos ágeis precisamos ter opiniões embasadas na experiência e, acima de tudo, saber dizer não."
+
+charming:
+  title: Charmosa
+  description:
+    "Queremos ser os melhores no que fazemos e, como todas as pessoas que são os melhores de um determinado domínio, não nos afobamos quando nos defrontamos com problemas novos. Escutamos, análisamos, sintetizamos e oferecemos uma solução. Por isso a marca deve ser elegante. "
+
+creative:
+  title: Criativa
+  description:
+    "Pois nós oferecemos soluções simples para problemas complexos. Por simples, não entender simplista, pois muitas vezes quando mais simples é a solução mais trabalho precisamos ter para chegar a ela."
+
+team:
+  title: Time
+  description:
+    "Todas as pessoas que fazem parte do Eloquent Studio são empreendedores que já possuiram ou trabalharam startups. São pessoas que aprenderam da maneira difícil o que é construir um produto sob condições de extrema incerteza e carregam consigo diversas lições aprendidas."
+
+quote:
+  author: Kent Beck
+  content:
+    "The business changes. The technology changes. The team changes. The team members change. The problem isn't change, per se, because change is going to happen; the problem, rather, is the inability to cope with change when it comes."

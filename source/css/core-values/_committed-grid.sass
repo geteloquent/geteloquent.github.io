@@ -1,0 +1,48 @@
+$__image--committed-01: "../img/core-values__committed-01.png"
+$__image--committed-02: "../img/core-values__committed-02.png"
+
+.committed-grid
+  display: flex
+  flex-direction: column
+
+  @media (min-width: $screen-sm-min)
+    flex-direction: row
+
+  &__left
+    order: 2
+    height: $grid-height
+    background-image: url($__image--committed-02)
+    background-size: cover
+
+    @media (min-width: $screen-sm-min)
+      order: 1
+      flex-grow: 1
+      height: auto
+
+  &__right
+    display: flex
+    flex-direction: column
+    order: 1
+
+    @media (min-width: $screen-sm-min)
+      order: 2
+      flex-basis: +image-width($__image--committed-01)
+
+  &__top
+    display: flex
+    order: 2
+
+    @media (min-width: $screen-sm-min)
+      flex-basis: $grid-height
+      order: 1
+
+  &__bottom
+    order: 1
+    height: $grid-height
+    background-image: url($__image--committed-01)
+    background-size: cover
+
+    @media (min-width: $screen-sm-min)
+      flex-basis: +image-height($__image--committed-01)
+      order: 2
+      height: auto
