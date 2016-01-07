@@ -3,8 +3,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: calc(100vh - #{$header-height});
   padding: 0 20px;
   background: url("../img/hero-backdrop.png");
+
+  @media (min-width: $screen-sm-min) {
+    height: 100vh;
+  }
 }
 
 .hero__body {

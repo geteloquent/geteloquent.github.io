@@ -3,8 +3,6 @@
 //= require bootstrap/carousel
 
 $ ->
-  $('.js-full-height').height $(window).height()
-
   # Smooth scrolling.
   $('a[href*=#]:not([href=#])').click ->
     target = $(@hash)

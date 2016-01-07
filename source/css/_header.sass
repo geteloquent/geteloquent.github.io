@@ -1,9 +1,8 @@
-$height: 65px
 $border-color: rgb(175, 29, 34)
 $background-image-url: "../img/hero-backdrop.png"
 
 $__logo-background-image-url: "../img/logo-hero.png"
-$__logo-height: $height * .7
+$__logo-height: $header-height * .7
 
 $__menu-toggle-color: $white
 $__menu-toggle-font-size: 28px
@@ -12,7 +11,7 @@ $__menu-toggle-font-size: 28px
   display: flex
   justify-content: space-between
   align-items: center
-  height: $height
+  min-height: $header-height
   padding: 0 $gutter
   border-bottom: 1px solid $border-color
   background-image: url($background-image-url)
