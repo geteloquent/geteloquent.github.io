@@ -1,0 +1,65 @@
+$height: 95px
+$box-shadow-color: $lightgray
+$box-shadow-margin: 10px
+$border-bottom-color: $gray-3
+$background-color: $white
+
+$__logo-height: $height * .7
+$__logo-background-image-url: "../img/logo-navbar.png"
+
+$__link-color: rgb(112,112,112)
+$__link--is-hovered-color: rgb(51, 51, 51)
+$__link--is-active-color: rgb(0, 0, 0)
+$__link--is-active-border-bottom-color: $guava
+
+.nav-bar
+  position: relative
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  min-height: $height
+  padding: 0 $gutter
+  background-color: $background-color
+  box-shadow: $box-shadow-color 0 1px $box-shadow-margin
+  border-bottom: 1px solid $border-bottom-color
+  margin-bottom: $box-shadow-margin
+
+  & + *
+    margin-top: -$box-shadow-margin
+
+  @media (max-width: $screen-xs-max)
+    display: none
+
+  &__logo
+    +replace-text-with-dimensions($__logo-background-image-url)
+    margin: 0
+    background-size: cover
+
+  &__list
+    margin: 0
+    padding: 0
+    list-style: none
+
+  &__list-item
+    display: inline-block
+
+  &__list-item + &__list-item
+    margin-left: $gutter * 2
+
+  &__link
+    display: inline-block
+    color: $__link-color
+    font-size: 16px
+    font-weight: 300
+    text-transform: uppercase
+
+    &:hover,
+    &:focus
+      color: $__link--is-hovered-color
+      text-decoration: none
+
+    &.is-active
+      font-weight: bold
+      color: $__link--is-active-color
+      border-bottom: 3px solid $__link--is-active-border-bottom-color

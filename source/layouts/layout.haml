@@ -1,8 +1,9 @@
 = wrap_layout :base do
-  .layout__wrapper.js-layout__wrapper
+  .layout__wrapper
     = partial :header
     .layout__main-wrapper
       %main.layout__main
+        = partial :nav
         = yield
         = partial :footer
   %aside.layout__aside= partial :aside

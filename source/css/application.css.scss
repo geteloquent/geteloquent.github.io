@@ -10,7 +10,6 @@
 @import "layout";
 @import "footer";
 @import "hero";
-@import "navbar";
 @import "buttons";
 @import "main";
 @import "services";
@@ -21,6 +20,7 @@
 @import "core-values/index";
 @import "header";
 @import "aside-nav";
+@import "nav-bar";
 
 .section-title {
   color: $lightgray;
