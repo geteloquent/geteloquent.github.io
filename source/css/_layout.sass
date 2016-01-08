@@ -1,22 +1,14 @@
-$phone-width: 320px
-$header-toggle-width: 56px
 $__aside-width: $phone-width - $header-toggle-width
 $__aside-background-color: rgb(33, 33, 33)
 
-$layout: ".layout"
+$__nav-bar-box-shadow-color: $lightgray
+$__nav-bar-box-shadow-margin: 10px
 
+$__wrapper-background-color: $white
+
+$layout: ".layout"
 #{$layout}
   background-color: $__aside-background-color
-
-  // http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
-  &.has-sticky-footer
-    #{$layout}__main-wrapper
-      display: flex
-      flex-direction: column
-      height: 100%
-
-    #{$layout}__main
-      flex-grow: 1
 
   &.is-closed
     #{$layout}__wrapper
@@ -33,14 +25,40 @@ $layout: ".layout"
     display: flex
     flex-direction: column
     transition: transform .3s
-    background-color: $white
+    background-color: $__wrapper-background-color
 
     @media (min-width: $screen-sm-min)
-      position: static
+      position: initial
+      display: block
+
+    &.is-fixed
+      @media (min-width: $screen-sm-min)
+        padding-top: $header--phone-up-height
+
+      #{$layout}__nav-bar
+        position: fixed
+        top: 0
+        z-index: $z-index--layout__nav-bar
+        width: 100%
+
+  &__nav-bar
+    position: relative
+    box-shadow: $__nav-bar-box-shadow-color 0 1px $__nav-bar-box-shadow-margin
+    margin-bottom: $__nav-bar-box-shadow-margin
+
+    @media (max-width: $screen-xs-max)
+      display: none
+
+  &__nav-bar + &__main
+    @media (min-width: $screen-sm-min)
+      margin-top: -$__nav-bar-box-shadow-margin
 
   &__main-wrapper
     overflow-y: auto
     -webkit-overflow-scrolling: touch
+
+    @media (min-width: $screen-sm-min)
+      overflow-y: initial
 
   &__aside
     display: none

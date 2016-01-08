@@ -1,10 +1,7 @@
-$height: 95px
-$box-shadow-color: $lightgray
-$box-shadow-margin: 10px
 $border-bottom-color: $gray-3
 $background-color: $white
 
-$__logo-height: $height * .7
+$__logo-height: $header--phone-up-height * .7
 $__logo-background-image-url: "../img/logo-navbar.png"
 
 $__link-color: rgb(112,112,112)
@@ -13,23 +10,16 @@ $__link--is-active-color: rgb(0, 0, 0)
 $__link--is-active-border-bottom-color: $guava
 
 .nav-bar
-  position: relative
   display: flex
   justify-content: space-between
   align-items: center
-  width: 100%
-  min-height: $height
+  min-height: $header--phone-up-height
   padding: 0 $gutter
   background-color: $background-color
-  box-shadow: $box-shadow-color 0 1px $box-shadow-margin
   border-bottom: 1px solid $border-bottom-color
-  margin-bottom: $box-shadow-margin
 
-  & + *
-    margin-top: -$box-shadow-margin
-
-  @media (max-width: $screen-xs-max)
-    display: none
+  @media (min-width: $screen-md-min)
+    padding: 0 ($gutter * 4)
 
   &__logo
     +replace-text-with-dimensions($__logo-background-image-url)
