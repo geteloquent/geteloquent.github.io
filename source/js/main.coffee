@@ -4,7 +4,7 @@
 
 $ ->
   # Smooth scrolling.
-  $('a[href*=#]:not([href=#])').click ->
+  $('.js-smooth-scrolling').click ->
     target = $(@hash)
 
     if target.length
