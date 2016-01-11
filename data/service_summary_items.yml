@@ -25,13 +25,13 @@ services:
     clients:
       -
         name: Fuelzee
-        logo_url:
+        logo_file_name: client_03.png
       -
         name: Mercado Eletrônico
-        logo_url:
+        logo_file_name: client_04.png
       -
         name: Trustvox
-        logo_url:
+        logo_file_name: client_05.png
   -
     type: agile-enterprises
     title:
@@ -50,7 +50,7 @@ services:
     clients:
       -
         name: Fuelzee
-        logo_url:
+        logo_file_name: client_03.png
   -
     type: redu-deployment
     title:
@@ -66,8 +66,8 @@ services:
           O Redu é uma plataforma opensource de educação a distância que provê um ambiente motivador para alunos, professores e gestores se engajarem na aprendizagem online.
     clients:
       -
-        name: Fuelzee
-        logo_url:
+        name: Mercado Eletrônico
+        logo_file_name: client_04.png
       -
-        name: Fuelzee
-        logo_url:
+        name: Trustvox
+        logo_file_name: client_05.png
