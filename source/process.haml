@@ -27,3 +27,10 @@ weight: 4
         %ul.step-outputs
           - step.outputs.each do |output|
             %li.step-outputs__item= output.name
+
+.process-footer
+  - quote = process.quote
+
+  %blockquote.quote.quote--inverse
+    %span.quote__content= quote.content
+    %cite.quote__author= quote.author

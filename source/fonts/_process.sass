@@ -58,3 +58,20 @@ $process-intro__title-color: $guava
 
   &__content
     margin: 0
+
+
+// Process footer
+
+$process-footer-background-image: '../img/hero-backdrop.png'
+
+.process-footer
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  padding: 0 $gutter
+  text-align: center
+  background-image: url($process-footer-background-image)
+
+  @media (min-width: $screen-sm-min)
+    padding: ($gutter * 2) 20%
