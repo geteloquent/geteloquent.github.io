@@ -1,1 +1,28 @@
-.process
+$process-hero-background-color: rgba(240, 72, 73, .4)
+$process-hero-background-image: '../img/process-intro-background-image.png'
+$process-hero__title-color: $white
+
+.process-hero
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 0 50px
+  height: $phone-width
+  background-image: linear-gradient($process-hero-background-color, $process-hero-background-color), url($process-hero-background-image)
+  background-size: cover
+
+  @media (min-width: $screen-sm-min)
+    height: +image-height($process-hero-background-image) / 2
+
+  &__title
+    margin: 0
+    color: $process-hero__title-color
+    font-size: 27px
+    font-style: normal
+    font-weight: bold
+    text-align: center
+    text-transform: uppercase
+    text-shadow: 1px 2px 3px rgb(44, 44, 44)
+
+    @media (min-width: $screen-sm-min)
+      font-size: 55px
