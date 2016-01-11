@@ -4,3 +4,26 @@ layout: layout
 primary_navigation: true
 weight: 4
 ---
+
+- process = data.process
+
+.process-hero
+  %h2.process-hero__title= process.hero
+
+%section.section
+  .process-intro
+    %h2.process-intro__title= process.intro.title
+    %p.process-intro__content= process.intro.content
+
+%section.section
+  %h2.process-intro__title= process.methodology.name
+  %ol.process-list
+    - process.methodology.steps.each_with_index do |step, i|
+      %li.process-list__item
+        = link_to step.slug, class: "process-list__link" do
+          %span.process-list__index= i
+          %h3.step__name= step.name
+        .step__content= step.content
+        %ul.step-outputs
+          - step.outputs.each do |output|
+            %li.step-outputs__item= output.name
