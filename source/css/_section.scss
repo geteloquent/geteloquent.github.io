@@ -8,6 +8,10 @@ $navbar-container-horizontal-padding: 50px;
   background-color: $background-color;
   background-image: $background-image--odd;
 
+  &--sparce {
+    padding: ($gutter * 6) 0;
+  }
+
   &:nth-child(even) {
     background-image: none;
   }
@@ -26,14 +30,16 @@ $navbar-container-horizontal-padding: 50px;
     content: "//";
   }
 
-  @media (min-width: $screen-sm-min) {
-    text-align: left;
-    padding-left: $gutter;
-  }
+  &--padding {
+    @media (min-width: $screen-sm-min) {
+      text-align: left;
+      padding-left: $gutter;
+    }
 
-  @media (min-width: $screen-md-min) {
-    // Align with logo.
-    padding-left: $navbar-container-horizontal-padding + $gutter;
+    @media (min-width: $screen-md-min) {
+      // Align with logo.
+      padding-left: $navbar-container-horizontal-padding + $gutter;
+    }
   }
 
   & +

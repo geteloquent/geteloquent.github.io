@@ -1,14 +1,14 @@
 items:
   -
-    type: facebook
+    icon: facebook
     name: Facebook
     link: https://www.facebook.com/geteloquent/
   -
-    type: twitter
+    icon: twitter
     name: Twitter
     link: https://twitter.com/geteloquent
 
   -
-    type: github
+    icon: github-alt
     name: Github
     link: https://github.com/geteloquent

@@ -52,8 +52,16 @@ $quote-border: 2px solid $gray-2;
   }
 }
 
-.client-summary__quote-author-avatar {
+.client-summary__quote-author-avatar-wrapper {
+  flex: 1 0 auto; // Fix Safari overlap bug: http://stackoverflow.com/a/32695233
   align-self: center;
+
+  @media (min-width: $screen-sm-min) {
+    flex: 0 1 auto;
+  }
+}
+
+.client-summary__quote-author-avatar {
   border-radius: 50%;
 }
 
@@ -64,7 +72,7 @@ $quote-border: 2px solid $gray-2;
   font-size: 14px;
   text-align: left;
 
-  .client-summary__quote-author-avatar +
+  .client-summary__quote-author-avatar-wrapper +
   & {
     margin-left: $gutter;
   }

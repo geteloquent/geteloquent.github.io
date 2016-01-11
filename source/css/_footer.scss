@@ -3,11 +3,12 @@ $body-background-color: rgb(36, 36, 36);
 $link-color: $body-color;
 $link-color--active: $guava-1;
 $feed-item-border-color: rgb(66, 66, 66);
-$social-facebook-url: "sn-facebook.png";
-$social-github-url: "sn-github.png";
-$social-twitter-url: "sn-twitter.png";
 $made-by-background-color: rgb(19, 19, 19);
 $made-by-link-color: rgb(195, 195, 195);
+$social-dimension: 40px;
+$social-dimension--phone-up: 30px;
+$social-background-color: $guava-1;
+$social-color: rgb(36, 36, 36);
 
 .footer {
   color: $body-color;
@@ -30,7 +31,8 @@ $made-by-link-color: rgb(195, 195, 195);
   color: $link-color;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &.is-active {
     color: $link-color--active;
     text-decoration: none;
   }
@@ -93,7 +95,27 @@ $made-by-link-color: rgb(195, 195, 195);
 }
 
 .footer__social-network {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: $social-dimension;
+  height: $social-dimension;
+  font-size: 24px;
+  background-color: $social-background-color;
+  border-radius: 50%;
+
+  @media (min-width: $screen-sm-min) {
+    width: $social-dimension--phone-up;
+    height: $social-dimension--phone-up;
+    font-size: 16px;
+  }
+
+  &,
+  &:hover,
+  &:focus {
+    color: $social-color;
+    text-decoration: none;
+  }
 
   &:focus,
   &:hover {
@@ -104,18 +126,6 @@ $made-by-link-color: rgb(195, 195, 195);
   & {
     margin-left: $gutter;
   }
-}
-
-.footer__social-network--facebook {
-  @include replace-text-with-dimensions($social-facebook-url);
-}
-
-.footer__social-network--github {
-  @include replace-text-with-dimensions($social-github-url);
-}
-
-.footer__social-network--twitter {
-  @include replace-text-with-dimensions($social-twitter-url);
 }
 
 .footer__made-by {

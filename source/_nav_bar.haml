@@ -1,0 +1,7 @@
+%nav.nav-bar
+  %h1.nav-bar__logo Eloquent Studio
+  %ul.nav-bar__list
+    - navigation_pages.each do |page|
+      %li.nav-bar__list-item
+        - is_active_class = current_page.url == page.url ? "is-active" : ""
+        = link_to page.data.title, page.url, class: "nav-bar__link #{is_active_class}"

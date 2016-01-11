@@ -2,6 +2,7 @@
  * = require fonts
  */
 
+@import "font-awesome";
 @import "compass";
 @import "vars";
 @import "bootstrap_override";
@@ -9,15 +10,18 @@
 @import "layout";
 @import "footer";
 @import "hero";
-@import "navbar";
 @import "buttons";
 @import "main";
-@import "services";
+@import "service";
 @import "section";
 @import "carousel";
 @import "services-summary";
 @import "clients-summary";
 @import "core-values/index";
+@import "header";
+@import "aside-nav";
+@import "nav-bar";
+@import "indicators";
 
 .section-title {
   color: $lightgray;
