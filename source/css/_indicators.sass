@@ -1,5 +1,5 @@
 $dimension: 13px
-$gutter: $gutter / 2
+$spacing: $gutter / 2
 
 $__item-background-color: $gray-3
 $__item--is-active-background-color: $guava
@@ -17,7 +17,7 @@ $indicators: '.indicators'
     flex-direction: column
 
     #{$indicators}__item + #{$indicators}__item
-      margin-top: $gutter
+      margin-top: $spacing
       margin-left: 0
 
   &__item
@@ -31,4 +31,4 @@ $indicators: '.indicators'
       background-color: $__item--is-active-background-color
 
     & + &
-      margin-left: $gutter
+      margin-left: $spacing
