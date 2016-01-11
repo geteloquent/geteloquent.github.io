@@ -2,28 +2,72 @@ services:
   -
     type: startup-design-dev
     title:
-      <strong>Desgin</strong> e <strong>Desenvolvimento</strong> para <strong>Startups</strong>
-    description:
+      <strong>Design</strong> e <strong>Desenvolvimento</strong> para <strong>Startups</strong>
+    summary_description:
       Nós transformamos sua visão em produtos excepcionais, utilizando práticas e processos enxutos.
     call_to_action_text: &create_scalable_products
       Criação de produtos escaláveis
     call_to_action_link: &create_scalable_products_link
       #
+    descriptions:
+      -
+        title: Processos enxutos
+        content:
+          Um conceito que é importante para startups é o de aprendizado validado. Startups são organizações que precisam construir modelos de negócios replicáveis e escaláveis dentro de condições de extrema incerteza. Neste contexto é importante qu e os empreendedores sejam capazes de perceber, numa escala pequena, se o modelo proposto é realmente escalável. Uma forma de adquirir este aprendizado é através de métricas. Antes mesmo de construir determinada funcionalidade do produto, é importante que sejam definidas métricas tangíveis do objetivo daquela funcionalidade.Nós iremos ajudar a você a definir este conjunto de métricas. Todas as funcionalidades criadas pelo nosso time são construídas e entregues juntamente com um painel de suporte onde você poderá acompanhar o progresso do seu produto.
+      -
+        title: Conhecimento de quem aprendeu na prática
+        content:
+          Todas as pessoas do nosso time já possuiram ou trabalharam em startups. Somos empreendedores e conosco você estará aproveitando as habilidades de quem já sentiu na pele o que significa construir produtos em ambientes onde a incerteza e mudança são constantes.
+    quote:
+      content:
+        We are entering an era  where the dominant question that innovators are facing isn’t “can something be built” but “should it be built”.
+      author: Eric Ries
+    clients:
+      -
+        name: Fuelzee
+        logo_url:
+      -
+        name: Mercado Eletrônico
+        logo_url:
+      -
+        name: Trustvox
+        logo_url:
   -
     type: agile-enterprises
     title:
       <strong>Agilidade</strong> em grandes <strong>empresas</strong>
-    description:
+    summary_description:
       Seja mais competitivo através da melhoria de processos de desenvolvimento.
     call_to_action_text:
       Empresas estabelecidas que querem melhorar um produto já existente
     call_to_action_link:
       #
+    descriptions:
+      -
+        title:
+        content:
+          Já possui uma empresa bem estabelecida e gostaria de acelerar o desenvolvimento de um novo produto? Traga a cultura de startups e desenvolvimento ágil para dentro da sua equipe. Dentro de uma empresa grande com estrutura e hierarquia bem definidas pode ser difícil criar novos produtos. Nós podemos fazer parte da sua equipe e trazer a velocidade de startups para dentro do seu negócio.
+    clients:
+      -
+        name: Fuelzee
+        logo_url:
   -
     type: redu-deployment
     title:
       Implantação do <strong>Redu</strong>
-    description:
+    summary_description:
       Ambiente motivador para cursos a distância.
     call_to_action_text: *create_scalable_products
     call_to_action_link: *create_scalable_products_link
+    descriptions:
+      -
+        title:
+        content:
+          O Redu é uma plataforma opensource de educação a distância que provê um ambiente motivador para alunos, professores e gestores se engajarem na aprendizagem online.
+    clients:
+      -
+        name: Fuelzee
+        logo_url:
+      -
+        name: Fuelzee
+        logo_url:

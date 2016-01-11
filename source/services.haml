@@ -4,3 +4,20 @@ layout: layout
 primary_navigation: true
 weight: 3
 ---
+
+- services = data.service_summary_items.services
+
+- services.each do |service|
+  %section.section.is-inverse
+    .service.service-summary{ class: "service-summary--#{service.type}" }
+      %h2.service__title.service-summary__title= service.title
+      - descriptions = service.descriptions
+
+      - if descriptions.size == 1
+        .service__description
+          %p.service__description-content= descriptions.first.content
+      - else
+        - descriptions.each do |description|
+          .service__description
+            %h3.service__description-title= description.title
+            %p.service__description-content= description.content

@@ -1,0 +1,17 @@
+.service
+  display: flex
+  flex-direction: column
+
+  &__title + &__description,
+  &__description + &__description,
+  &__description-title + &__description-content
+    margin-top: $gutter
+
+  &__description
+    padding: 0 $gutter
+
+  &__description-title
+    margin: 0
+
+  &__description-content
+    margin-bottom: 0
