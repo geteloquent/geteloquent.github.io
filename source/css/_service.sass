@@ -1,10 +1,15 @@
+.services-summary-list-wrapper
+  @media (max-width: $screen-xs-max)
+    display: none
+
 .service
   display: flex
   flex-direction: column
 
   &__title + &__description,
   &__description + &__description,
-  &__description-title + &__description-content
+  &__description-title + &__description-content,
+  &__title + &__call-to-action,
     margin-top: $gutter
 
   &__description
@@ -15,3 +20,18 @@
 
   &__description-content
     margin-bottom: 0
+
+  &__call-to-action
+    display: inline-block
+    padding: 10px 30px
+    font-weight: 300
+    text-align: center
+    text-transform: uppercase
+    background-color: $lightgray
+    border-radius: 3px
+
+    &,
+    &:hover,
+    &:focus
+      color: $white
+      text-decoration: none
