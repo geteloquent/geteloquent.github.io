@@ -17,16 +17,34 @@ weight: 4
 
 %section.section
   %h2.process-intro__title= process.methodology.name
-  %ol.process-list
-    - process.methodology.steps.each_with_index do |step, i|
-      %li.process-list__item
-        = link_to step.slug, class: "process-list__link" do
-          %span.process-list__index= i
-          %h3.step__name= step.name
-        .step__content= step.content
-        %ul.step-outputs
-          - step.outputs.each do |output|
-            %li.step-outputs__item= output.name
+  .process-intro__content
+    .methodology-steps__wrapper
+      %ol.methodology-steps
+        - process.methodology.steps.each_with_index do |step, i|
+          %li.methodology-steps__item
+            .methodology-steps__background
+            - isOpenClass = i == 0 ? "is-open" : ""
+
+            .methodology-step.js-methodology-step{ class: isOpenClass }
+              - id = slugify(step.name)
+
+              = link_to "##{id}", class: "methodology-step__link methodology-step__link--step-#{i + 1}", data: { toggle: :collapse } do
+                %h3.methodology-step__name= step.name
+                %span.methodology-step__caret.fa.fa-angle-down
+
+              - collapseInClass = i == 0 ? "in" : ""
+
+              .methodology-step__content-wrapper.collapse.js-methodology-step__content-wrapper{ id: id, class: collapseInClass }
+                .methodology-step__content= step.content
+                %ul.methodology-step__outputs
+                  - step.outputs.each do |output|
+                    %li.methodology-step__outputs-item
+                      %span.methodology-step__outputs-icon-wrapper
+                        %span.methodology-step__outputs-icon{ class: "methodology-step__outputs-icon--#{output.icon}" }
+                        .methodology-step__outputs-content-wrapper
+                          %span.methodology-step__outputs-name= output.name
+                          %span.methodology-step__outputs-content= output.content
+      .methodology-iteration Iteração
 
 .process-footer
   - quote = process.quote

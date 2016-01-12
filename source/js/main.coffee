@@ -46,4 +46,15 @@ $ ->
 
     return
 
+  # Toggle caret rotate class when collapsing methodology step.
+  do ->
+    $methodologyStepContentWrappers = $('.js-methodology-step__content-wrapper')
+    stepSelector = '.js-methodology-step'
+    isOpenClass = 'is-open'
+
+    $methodologyStepContentWrappers.on 'show.bs.collapse', -> $(this).closest(stepSelector).addClass isOpenClass
+    $methodologyStepContentWrappers.on 'hide.bs.collapse', -> $(this).closest(stepSelector).removeClass isOpenClass
+
+    return
+
   return
