@@ -23,6 +23,9 @@
     %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"}
     :javascript
       window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')
+    - current_page.data.append_js.each do |js_file|
+      = javascript_include_tag js_file
+    - end if current_page.data.append_js
     %script{:src => "js/plugins.js"}
     %script{:src => "js/main.js"}
     / Google Analytics: change UA-XXXXX-X to be your site's ID.
