@@ -1,0 +1,32 @@
+$background-alpha-transparency: .4
+$background-color: rgba($guava, $background-alpha-transparency)
+$background-image: '../img/process-intro-background-image.png'
+
+$__title-color: $white
+$__title-font-size: 27px
+$__title-text-shadow-color: rgb(44, 44, 44)
+
+.process-hero
+  display: flex
+  align-items: center
+  justify-content: center
+  height: $phone-width
+  padding: 0 50px
+  background-image: linear-gradient($background-color, $background-color), url($background-image)
+  background-size: cover
+
+  @media (min-width: $screen-sm-min)
+    height: +image-height($background-image) / 2
+
+  &__title
+    margin: 0
+    color: $__title-color
+    font-size: $__title-font-size
+    font-style: normal
+    font-weight: bold
+    text-align: center
+    text-shadow: 1px 2px 3px $__title-text-shadow-color
+    text-transform: uppercase
+
+    @media (min-width: $screen-sm-min)
+      font-size: $__title-font-size * 2
