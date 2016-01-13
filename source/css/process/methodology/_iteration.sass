@@ -1,0 +1,15 @@
+$background-image: '../img/methodology-iteration.png'
+
+.methodology-iteration
+  display: flex
+  align-items: center
+  justify-content: center
+  height: +image-height($background-image)
+  font-size: 16px
+  text-transform: uppercase
+  background-image: url($background-image)
+  background-position: 50% 0
+  background-repeat: no-repeat
+
+  .methodology-steps + &
+    margin-top: $methodology-gutter - 5px
