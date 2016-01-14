@@ -97,6 +97,10 @@ $quote-border: 2px solid $gray-2;
   font-weight: 300;
 }
 
+.client-summary__content {
+  flex: 1;
+}
+
 .client-summary__product-image-wrapper {
   display: flex;
   justify-content: center;

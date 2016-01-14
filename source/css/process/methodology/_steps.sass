@@ -102,7 +102,7 @@ $outputs-content-wrapper-position: 130%
       width: 250px
 
   &__item-block
-    flex-basis: 50%
+    flex: 1
 
     & + &
       padding: 40px $gutter $gutter ($gutter + $__item-counter--desktop-dimension / 2)
@@ -239,6 +239,7 @@ $methodology-step: '.methodology-step'
     box-sizing: content-box
 
   &__outputs-icon
+    display: inline-block
     width: 30px
     height: 20px
     background-size: contain
@@ -281,6 +282,7 @@ $methodology-step: '.methodology-step'
     text-align: left
 
   &__outputs-name
+    display: inline-block
     font-size: 16px
     font-weight: 300
     color: $guava
