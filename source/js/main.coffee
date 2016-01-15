@@ -57,4 +57,44 @@ $ ->
 
     return
 
+  do ->
+    return unless window.google
+
+    mapCanvas = document.querySelector('.js-contact-location-map')
+    return unless mapCanvas
+
+    $contactLocations = $('.js-contact-location')
+    $firstContactLocation = $contactLocations.first()
+    centerLat = $firstContactLocation.data('lat')
+    centerLng = $firstContactLocation.data('lng')
+
+    # Center map in the first location.
+    mapOptions =
+      center: new google.maps.LatLng(centerLat, centerLng)
+      zoom: 16
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    map = new google.maps.Map(mapCanvas, mapOptions)
+
+    # Add markers for every location.
+    for contactLocation in $contactLocations
+      $contactLocation = $(contactLocation)
+      lat = $contactLocation.data('lat')
+      lng = $contactLocation.data('lng')
+
+      new google.maps.Marker
+        position: new google.maps.LatLng(lat, lng)
+        map: map
+
+    # Change map center on location's click.
+    $contactLocations.click ->
+      $location = $(this)
+      lat = $location.data('lat')
+      lng = $location.data('lng')
+
+      map.setCenter new google.maps.LatLng(lat, lng)
+
+      return
+
+    return
+
   return

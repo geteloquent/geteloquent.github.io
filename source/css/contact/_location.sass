@@ -1,0 +1,50 @@
+$color: $lightgray
+
+$__name-color: rgb(0, 0, 0)
+
+$__icon-color: $guava
+
+.contact-location
+  display: flex
+  flex-direction: column
+  color: $color
+  font-size: 16px
+  font-weight: 300
+  cursor: pointer
+
+  &__name
+    padding-left: 23px
+    font-weight: bold
+    font-size: 17px
+    color: $__name-color
+    text-transform: uppercase
+
+    @media (min-width: $screen-sm-min)
+      font-size: 24px
+
+  &__address
+    display: flex
+    flex-direction: column
+
+  &__icon
+    color: $__icon-color
+
+    &--top
+      align-self: flex-start
+
+  &__name + &__info
+    margin-top: $gutter / 2
+
+  &__info
+    display: flex
+    align-items: center
+
+    & + &
+      margin-top: $gutter / 2
+
+    > *:first-child
+      width: 15px
+      text-align: center
+
+    > *:last-child
+      margin-left: $gutter / 2

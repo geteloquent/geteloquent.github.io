@@ -28,6 +28,7 @@ $social-color: rgb(36, 36, 36);
 }
 
 .footer__link {
+  display: inline-block;
   color: $link-color;
 
   &:hover,
