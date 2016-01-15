@@ -6,6 +6,6 @@
     <p class="service-summary__description">
       <%= service_summary.summary_description %>
     </p>
-    <%= link_to service_summary.call_to_action_text, service_summary.call_to_action_link, class: "service-summary__call-to-action" %>
+    <%= link_to service_summary.call_to_action_text, "/services.html##{service_summary.type}", class: "service-summary__call-to-action" %>
   </div>
 </li>
