@@ -5,6 +5,7 @@ intro:
     Numa startup, aprendizado validado é a medida de sucesso. É este aprendizado que indica o quão replicável e escalável será modelo de negócio. Com a experiência de quem já empreendeu, criamos um processo que, seguindo as premissas do Lean Startup, permite que suas hipóteses sejam transformadas em produtos e, muito mais importante, em aprendizado para o seu negócio. O seu produto será construído de forma incremental. Isso quer dizer que entregaremos uma versão funcional após um período curto de desenvolvimento. Dessa forma estamos preparados para mudanças de escopo e objetivos.
 methodology:
   name: Metodologia
+  interaction: Interação
   steps:
     -
       name: Análise do negócio

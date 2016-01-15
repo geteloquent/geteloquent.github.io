@@ -6,6 +6,7 @@ weight: 3
 ---
 
 - services = data.services.items
+- services_buttons = data.services.buttons
 
 %section.section.section--sparce.services-summary-list-wrapper
   %ul.services-summary-list
@@ -13,7 +14,7 @@ weight: 3
       %li.services-summary-list__item
         .service-summary{ class: "service-summary--#{service.type}" }
           %h4.service__title.service-summary__title= service.title
-          = link_to "Descubra mais", "##{service.type}", class: "service__call-to-action js-smooth-scrolling"
+          = link_to services_buttons.find_out_more, "##{service.type}", class: "service__call-to-action js-smooth-scrolling"
 
 - services.each_with_index do |service, service_index|
   %section.section{ id: service.type }
@@ -49,11 +50,11 @@ weight: 3
               %li.indicators__item{ class: (service_indicator_index == service_index ? "is-active" : "") }
 
       .service__call-to-actions
-        = link_to "Como trabalhamos", "/process.html", class: "service__call-to-action-action service__call-to-action service__call-to-action--process"
-        = link_to "Entre em contato conosco", "/contact.html", class: "service__call-to-action-action service__call-to-action"
+        = link_to services_buttons.how_we_work, "/process.html", class: "service__call-to-action-action service__call-to-action service__call-to-action--process"
+        = link_to services_buttons.get_in_touch, "/contact.html", class: "service__call-to-action-action service__call-to-action"
 
       .service__clients
-        .service__clients-title.section__header Clientes
+        .service__clients-title.section__header= data.services.clients
         %ul.service__clients-list
           - clients = service.clients
 

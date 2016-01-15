@@ -66,3 +66,8 @@ items:
       -
         name: Trustvox
         logo_file_name: client_05.png
+buttons:
+  find_out_more: Descubra mais
+  how_we_work: Como trabalhamos
+  get_in_touch: Entre em contato conosco
+clients: Clientes
