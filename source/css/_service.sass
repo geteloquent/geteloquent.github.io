@@ -23,7 +23,7 @@ $gutter--double: $gutter * 2
   &__content
     display: flex
     flex-direction: column
-    flex-grow: 1
+    flex: 1
 
   &__content + &__indicator
     @media (min-width: $screen-sm-min)
@@ -92,13 +92,14 @@ $gutter--double: $gutter * 2
     margin-left: $gutter
 
   &__description-and-quote-description
-    flex-grow: 1
+    flex: 1
 
   &__description-and-quote-quote
     display: none
 
     @media (min-width: $screen-sm-min)
       display: block
+      flex-basis: 40%
 
   &__content-wrapper + &__call-to-actions
     margin-top: $gutter
@@ -110,7 +111,7 @@ $gutter--double: $gutter * 2
       display: block
 
   &__call-to-action-action
-    width: 225px
+    width: 250px
 
     & + &
       margin-left: $gutter

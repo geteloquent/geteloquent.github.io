@@ -1,0 +1,297 @@
+// Methodology Steps
+
+$__item-counter-dimension: 30px
+$__item-counter--desktop-dimension: $__item-counter-dimension * 2
+$__item-counter-color: $white
+$__item-counter-background-color: $guava
+$__background-border-color: $gray-3
+
+$methodology-step__link--step-background-color: rgba(44, 44, 44, .5)
+$methodology-step-1-background-image: '../img/methodology-step-1-background-image.png'
+$methodology-step-2-background-image: '../img/methodology-step-2-background-image.png'
+$methodology-step-3-background-image: '../img/methodology-step-3-background-image.png'
+$methodology-step-4-background-image: '../img/methodology-step-4-background-image.png'
+$methodology-step-5-background-image: '../img/methodology-step-5-background-image.png'
+
+$output__roadmap-icon: '../img/output__roadmap.png'
+$output__backlog-icon: '../img/output__backlog.png'
+$output__data-icon: '../img/output__data.png'
+$output__graphic-interface-icon: '../img/output__graphic-interface.png'
+$output__implemented-metrics-icon: '../img/output__implemented-metrics.png'
+$output__metrics-icon: '../img/output__metrics.png'
+$output__screencast-icon: '../img/output__screencast.png'
+$output__functionality-icon: '../img/output__functionality.png'
+
+$outputs-content-wrapper-position: 130%
+
+
+.methodology-steps-wrapper
+  padding: 0 $gutter
+
+  @media (min-width: $screen-sm-min)
+    width: 85%
+    margin: 0 auto
+
+.methodology-steps
+  list-style: none
+  margin: 0
+  padding: 0
+
+  @media (min-width: $screen-sm-min)
+    display: none
+
+  &--desktop
+    display: none
+
+    @media (min-width: $screen-sm-min)
+      display: block
+
+    .methodology-steps__background
+      width: calc(50% + 1px)
+
+    .methodology-steps__item
+      display: flex
+      flex-wrap: wrap
+      min-height: 115px
+
+      &:before
+        top: 30px
+        left: calc(50% - #{$__item-counter--desktop-dimension / 2})
+        height: $__item-counter--desktop-dimension
+        width: $__item-counter--desktop-dimension
+        font-size: 24px
+
+    .methodology-step__name
+      color: inherit
+      font-size: 24px
+      font-weight: 300
+
+    .methodology-steps__content-wrapper
+      display: flex
+      align-items: center
+      justify-content: space-between
+      width: 100%
+
+    .methodology-steps__content-wrapper + .methodology-step__content
+      margin-top: $gutter
+
+    .methodology-step__content
+      padding: 0
+      text-align: left
+
+    .methodology-step__caret
+      &:hover,
+      &:focus
+        color: $gray-3
+        text-decoration: none
+
+    .methodology-step__link
+      position: relative
+      z-index: $z-index--methodology-step
+      height: auto
+
+    .methodology-step__outputs-wrapper
+      flex-basis: 100%
+
+    .methodology-step__outputs
+      position: relative
+      z-index: $z-index--methodology-steps-item
+      margin-top: $methodology-gutter
+
+    .methodology-step__outputs-content-wrapper
+      width: 250px
+
+  &__item-block
+    flex: 1
+
+    & + &
+      padding: 40px $gutter $gutter ($gutter + $__item-counter--desktop-dimension / 2)
+      background-color: rgb(250, 250, 250)
+
+  &__item
+    position: relative
+    counter-increment: step-counter
+
+    & + &
+      margin-top: $methodology-gutter
+
+    &:before
+      position: absolute
+      z-index: $z-index--methodology-steps-item
+      top: $__item-counter-dimension / 2
+      left: $__item-counter-dimension / 2
+      display: flex
+      align-items: center
+      justify-content: center
+      width: $__item-counter-dimension
+      height: $__item-counter-dimension
+      content: counter(step-counter)
+      color: $__item-counter-color
+      background-color: $__item-counter-background-color
+      border-radius: 50%
+
+  &__background
+    position: absolute
+    width: 50%
+    height: calc(100% + #{$methodology-gutter})
+    border-right: 3px solid $__background-border-color
+    z-index: $z-index--methodology-steps-background
+    top: 0
+
+$methodology-step: '.methodology-step'
+#{$methodology-step}
+  position: relative
+  z-index: $z-index--methodology-step
+
+  &.is-open
+    #{$methodology-step}__caret
+      transform: rotate(180deg)
+
+  &__link
+    display: flex
+    align-items: center
+    justify-content: space-between
+    height: 60px
+    padding: 0 $gutter 0 ($gutter * 2 + $__item-counter-dimension)
+    background-size: cover
+
+    &:hover,
+    &:focus
+      text-decoration: none
+
+    &--step-1
+      background-image: linear-gradient($methodology-step__link--step-background-color, $methodology-step__link--step-background-color), url($methodology-step-1-background-image)
+
+    &--step-2
+      background-image: linear-gradient($methodology-step__link--step-background-color, $methodology-step__link--step-background-color), url($methodology-step-2-background-image)
+
+    &--step-3
+      background-image: linear-gradient($methodology-step__link--step-background-color, $methodology-step__link--step-background-color), url($methodology-step-3-background-image)
+
+    &--step-4
+      background-image: linear-gradient($methodology-step__link--step-background-color, $methodology-step__link--step-background-color), url($methodology-step-4-background-image)
+
+    &--step-5
+      background-image: linear-gradient($methodology-step__link--step-background-color, $methodology-step__link--step-background-color), url($methodology-step-5-background-image)
+
+  &__name
+    margin: 0
+    color: $white
+    font-size: 16px
+    font-weight: 400
+    font-style: italic
+    text-align: left
+
+  &__caret
+    color: $gray-3
+    font-size: 40px
+    transition: transform .3s ease-in-out
+
+  &__content
+    padding: $gutter
+    text-align: center
+    background-color: rgb(250, 250, 250)
+
+    p
+      margin-bottom: 0
+
+    p + p
+      margin-top: $gutter
+
+  &__content + &__outputs
+    margin-top: $methodology-gutter
+
+  &__outputs
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin: 0
+    padding: 0
+    list-style: none
+
+  &__outputs-item
+    display: flex
+    justify-content: center
+
+    & + &
+      margin-top: $gutter
+
+    &:nth-child(even)
+      .methodology-step__outputs-content-wrapper
+        left: auto
+        right: $outputs-content-wrapper-position
+        text-align: right
+
+  $icon-wrapper-border-width: 5px
+  $icon-wrapper-height: 40px
+
+  &__outputs-icon-wrapper
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    width: $icon-wrapper-height
+    height: $icon-wrapper-height
+    border-radius: 50%
+    background-color: $guava
+    border: $icon-wrapper-border-width solid rgba($guava, .5)
+    background-clip: content-box
+    box-sizing: content-box
+
+  &__outputs-icon
+    display: inline-block
+    width: 30px
+    height: 20px
+    background-size: contain
+    background-position: 50% 50%
+    background-repeat: no-repeat
+
+    &--roadmap
+      background-image: url($output__roadmap-icon)
+
+    &--backlog
+      background-image: url($output__backlog-icon)
+
+    &--data
+      background-image: url($output__data-icon)
+
+    &--graphic-interface
+      background-image: url($output__graphic-interface-icon)
+
+    &--implemented-metrics
+      background-image: url($output__implemented-metrics-icon)
+
+    &--metrics
+      background-image: url($output__metrics-icon)
+
+    &--screencast
+      background-image: url($output__screencast-icon)
+
+    &--functionality
+      background-image: url($output__functionality-icon)
+
+  &__outputs-content-wrapper
+    position: absolute
+    top: -$icon-wrapper-border-width
+    left: $outputs-content-wrapper-position
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 115px
+    height: $icon-wrapper-height + 2 * $icon-wrapper-border-width
+    text-align: left
+
+  &__outputs-name
+    display: inline-block
+    font-size: 16px
+    font-weight: 300
+    color: $guava
+    text-transform: uppercase
+
+  &__outputs-name + &__outputs-content
+    margin-top: 5px
+
+  &__outputs-content
+    font-size: 14px
+    font-weight: normal
+    color: $lightgray

@@ -1,0 +1,32 @@
+title: Manda um <strong>alô</strong> pra gente!
+form:
+  name:
+    placeholder: Nome
+  email:
+    placeholder: E-mail
+  message:
+    placeholder: Messagem
+  submit: Enviar
+locations:
+  -
+    name: Recife
+    address:
+      street: Rua Jacó Vesolino, 145
+      neighborhood: Casa Forte
+      city: PE - Brasil
+    phone: +55 81 3071.8924
+    email: contato@geteloquent.com
+    position:
+      lat: -8.03600
+      lng: -34.91889
+  -
+    name: Recife
+    address:
+      street: Rua do Bom Jesus, 180
+      neighborhood: Bairro do Recife
+      city: PE - Brasil
+    phone: +55 81 3024.7080
+    email: contato@geteloquent.com
+    position:
+      lat: -8.06241
+      lng: -34.87155

@@ -1,0 +1,75 @@
+hero: Tire suas ideias do papel
+intro:
+  title: De hipóteses a produtos
+  content:
+    Numa startup, aprendizado validado é a medida de sucesso. É este aprendizado que indica o quão replicável e escalável será modelo de negócio. Com a experiência de quem já empreendeu, criamos um processo que, seguindo as premissas do Lean Startup, permite que suas hipóteses sejam transformadas em produtos e, muito mais importante, em aprendizado para o seu negócio. O seu produto será construído de forma incremental. Isso quer dizer que entregaremos uma versão funcional após um período curto de desenvolvimento. Dessa forma estamos preparados para mudanças de escopo e objetivos.
+methodology:
+  name: Metodologia
+  steps:
+    -
+      name: Análise do negócio
+      content:
+        <p>Esta fase tem como objetivo identificar e entender o objetivo geral do projeto, e criar um alinhamento entre o cliente e a equipe de desenvolvimento. Além disso, esta será a primeira oportunidade para, dado o objetivo macro, possibilitar a priorização de objetivos específicos.</p>
+      outputs:
+        -
+          name: Roadmap
+          content:
+          icon: roadmap
+    -
+      name: Planejamento
+      content:
+        <p>Acontece no início da iteração e é time-boxed. Nesta ocasião a equipe define o <strong>escopo</strong> das tarefas e estima o <strong>esforço</strong> necessário para executá-las.</p>
+        <p>O <strong>escopo</strong>, além de servir de suporte para a <strong>estimativa</strong>, sintetiza para o cliente as questões em aberto e a dimensão de uma funcionalidade. As estimativas permitem que o cliente possua uma medida relativa sobre a complexidade das tarefas além de ser possível prever quanto tempo elas levarão para serem criadas.</p>
+      outputs:
+        -
+          name: Backlog
+          content: funcionalidades detalhadas e estimadas
+          icon: backlog
+    -
+      name: Proposta de interface gráfica
+      content:
+        <p>É nesta fase que acontece o ciclo de design conforme descrito em “Como fazemos Design?”. O Designer de Interação, colaborando com clientes e usuários finais <strong>valida</strong> e <strong>define métricas</strong> para a funcionalidade.</p>
+        <p><strong>Validação</strong> com usuários do sistema é uma atividade muito essencial para ser deixada para o fim do processo. Aqui serão utilizadas abordagens integrativas para combinar insights e ideias numa solução.</p>
+        <p>Um conceito que é importante para startups é o de aprendizado validado. É importante que os empreendedores sejam capazes de perceber, numa escala pequena, se o modelo proposto é realmente escalável. Uma forma de adquirir este aprendizado é através de métricas. Nesta fase o Designer de Interação, junto com o cliente, irão definir indicativos e <strong>métricas</strong> para que seja possível medir se a funcionalidade atingiu seu objetivo</p>
+        <p>No fim desta fase o Designer de Interação gravará um <strong>screencast</strong> mostrando uma síntese do racional seguido na criação da funcionalidade.</p>
+      outputs:
+        -
+          name: Interface gráfica
+          content: screencast
+          icon: graphic-interface
+        -
+          name: Métricas
+          content:
+          icon: metrics
+    -
+      name: Desenvolvimento
+      content:
+        <p>O nosso time começará da dar vida à proposta à interface gráfica. Durante esta fase, lançaremos uma versão funcional para que você e alguns usuários finais possam testar.</p>
+        <p>Utilizamos desenvolvimento orientado a testes, o que faz com que o software esteja preparado para modificações e evoluções constantes.</p>
+        <p>No fim desta fase o Engenheiro de Software gravará um <strong>screencast</strong> mostrando como utilizar a funcionalidade. Você mesmo poderá testa-la em um ambiente controlado.</p>
+      outputs:
+        -
+          name: Funcionalidade
+          content: acessível para testes
+          icon: functionality
+        -
+          name: Screencast
+          content:
+          icon: screencast
+        -
+          name: Métricas implementadas
+          content:
+          icon: implemented-metrics
+    -
+      name: Validação
+      content:
+        <p>Com a funcionalidade liberada para o usuário final, ofereceremos ao cliente formas de monitorar as métricas definidas. Estes dados darão insumos e embasamento para melhorias e funcionalidades novas.</p>
+      outputs:
+        -
+          name: Dados
+          content:
+          icon: data
+quote:
+  author: Kent Beck
+  content:
+    The business changes. The technology changes. The team changes. The team members change. The problem isn't change, per se, because change is going to happen; the problem, rather, is the inability to cope with change when it comes.

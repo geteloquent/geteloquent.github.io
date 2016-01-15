@@ -1,13 +1,18 @@
 $__decorator-height: 30px
 $__decorator-color: $guava-1
+$__decorator--inverse-color: $white
 
 $__content-color: $gray-1
+$__content--inverse-color: $white
 
 $__author-color: rgb(0, 0, 0)
-$__author-decorator-color: rgb(122, 122, 122)
+$__author-decorator-color: $__content-color
+$__author-decorator--inverse-color: $__author-color
 
-.core-value-quote
+$quote: '.quote'
+#{$quote}
   position: relative
+  width: 100%
   margin: 0
   padding: ($__decorator-height + $gutter) $gutter $gutter
   text-align: center
@@ -55,3 +60,15 @@ $__author-decorator-color: rgb(122, 122, 122)
 
     &:after
       margin-left: $gutter
+
+  &--inverse
+    &:before
+      color: $__decorator--inverse-color
+
+    #{$quote}__content
+      color: $__content--inverse-color
+
+    #{$quote}__author
+      &:before,
+      &:after
+        background-color: $__author-decorator--inverse-color
