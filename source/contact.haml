@@ -12,12 +12,15 @@ append_js:
 %section.contact-section
   %h3.contact-section__title= contact.title
   .contact-section__form
-    %form.contact-form
-      - form = contact.form
-      %input.contact-form__input{ name: :name, type: :text, placeholder: form.name.placeholder }
+    - form = contact.form
+    %form.contact-form{ method: :post, action: "http://formspree.io/#{form.send_to}" }
+      %input{ type: :hidden, name: :_next, value: "http://geteloquent.com/#{form.thank_you_page}" }
+      %input{ type: :hidden, name: :_subject, value: form.subject }
+      %input{ type: :hidden, name: :_gotcha, style: "display: none" }
+      %input.contact-form__input{ name: :full_name, type: :text, placeholder: form.name.placeholder }
       %input.contact-form__input{ name: :email, type: :email, placeholder: form.email.placeholder }
       %textarea.contact-form__input{ name: :message, placeholder: form.message.placeholder, rows: 5 }
-      %button.contact-form__submit= form.submit
+      %button.contact-form__submit{ type: :submit }= form.submit
 
 %section.contact-section
   %ul.contact-locations-list

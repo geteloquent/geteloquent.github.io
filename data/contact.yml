@@ -6,7 +6,10 @@ form:
     placeholder: E-mail
   message:
     placeholder: Messagem
+  subject: Novo contato
   submit: Enviar
+  send_to: filipewl@geteloquent.com
+  thank_you_page: contact-thank-you.html
 locations:
   -
     name: Recife

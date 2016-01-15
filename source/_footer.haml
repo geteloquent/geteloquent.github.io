@@ -1,0 +1,23 @@
+- feeds = locals[:feeds] || data.feeds.items
+- social_networks = locals[:social_networks] || data.social_networks.items
+- made_by = locals[:made_by] || data.made_by
+
+%footer.footer
+  .footer__body
+    %nav.footer__site-nav
+      - navigation_pages.each do |page|
+        - is_active_class = current_page.url == page.url ? "is-active" : ""
+        = link_to page.data.title, page.url, class: "footer__link footer__site-link #{is_active_class}"
+
+    - if sitemap.where(title: 'Feed').first.data.primary_navigation
+      %nav.footer__feed-nav
+        %span.footer__feed-nav-title Feed
+        %ul.footer__feed-list
+          - feeds.each do |feed|
+            %li.footer__feed-item
+              = link_to feed[:title], feed[:link], class: "footer__link footer__feed-link", title: feed[:title]
+
+    .footer__social-networks
+      - social_networks.each do |social_network|
+        = link_to social_network[:link], class: "footer__social-network", title: social_network[:name] do
+          %span.fa{ class: "fa-#{social_network[:icon]}" }

@@ -1,0 +1,32 @@
+---
+title: Home
+layout: hero
+primary_navigation: true
+weight: 1
+---
+
+- home = data.home
+
+%section.section
+  %h2.section__header.section__header--padding= home.services
+  .section__body
+    %ul.services-summary-list= partial "home/service_summary", collection: data.services.items
+
+%section.section
+  %h2.section__header.section__header--padding= home.clients
+  .section__body
+    - clients_carousel_id = "clients-carousel"
+    - clients = data.client_summary_items.clients
+    - active_index = 0
+    .carousel.slide{ id: clients_carousel_id, data: { ride: :carousel } }
+      %ol.carousel-indicators
+        - clients.size.times do |i|
+          = content_tag :li, nil, class: (i == active_index ? "active" : ""), data: { target: "##{clients_carousel_id}", slide: { to: i } }
+      .carousel-inner{ role: :listbox }
+        - clients.each_with_index do |client, i|
+          %div{ class: (i == active_index ? "item active" : "item") }
+            = partial "home/client_summary", locals: { client: client }
+      %a.left.carousel-control{ href: "##{clients_carousel_id}", role: :button, data: { slide: :prev } }
+        %span.sr-only= home.carousel.previous
+      %a.right.carousel-control{ href: "##{clients_carousel_id}", role: :button, data: { slide: :next } }
+        %span.sr-only= home.carousel.next

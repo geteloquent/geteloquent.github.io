@@ -1,0 +1,21 @@
+-# https://medium.com/slack-developer-blog/everything-you-ever-wanted-to-know-about-unfurling-but-were-afraid-to-ask-or-how-to-make-your-e64b4bb9254#.fjx6o18ra
+
+- meta = data.meta
+- title = "Eloquent Studio — #{current_page.data.title}"
+
+-# Facebook open graph tags
+%meta{content: "website", property: "og:type"}/
+%meta{content: meta.url, property: "og:url"}/
+%meta{content: title, property: "og:title"}/
+%meta{content: meta.description, property: "og:description"}/
+-# %meta{content: meta.image, property: "og:image"}/
+
+-# Twitter card tags additive with the og: tags
+%meta{content: "summary_large_image", name: "twitter:card"}
+%meta{name: "twitter:domain", value: meta.domain}/
+%meta{name: "twitter:title", value: title}/
+%meta{name: "twitter:description", value: meta.description}/
+-# %meta{content: meta.image, name: "twitter:image"}/
+%meta{name: "twitter:url", value: meta.url}/
+%meta{name: "twitter:label1", value: meta.label1}/
+%meta{name: "twitter:data1", value: meta.data1}/

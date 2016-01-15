@@ -12,3 +12,11 @@ items:
     icon: github-alt
     name: Github
     link: https://github.com/geteloquent
+  -
+    icon: instagram
+    name: Instagram
+    link: https://www.instagram.com/explore/tags/geteloquent/
+  -
+    icon: linkedin
+    name: LinkedIn
+    link: https://www.linkedin.com/company/eloquent-studio

@@ -1,0 +1,105 @@
+$body-color: rgb(147, 147, 147)
+$body-background-color: rgb(36, 36, 36)
+$link-color: $body-color
+$link-color--active: $guava-1
+$feed-item-border-color: rgb(66, 66, 66)
+$social-dimension: 40px
+$social-dimension--phone-up: 30px
+$social-background-color: $guava-1
+$social-color: rgb(36, 36, 36)
+
+.footer
+  color: $body-color
+
+  &__body
+    display: flex
+    justify-content: space-around
+    align-items: center
+    height: 70px
+    padding: 0 $gutter
+    background-color: $body-background-color
+
+    @media (min-width: $screen-sm-min)
+      height: 230px
+
+  &__link
+    color: $link-color
+
+    &:hover,
+    &:focus,
+    &.is-active
+      color: $link-color--active
+      text-decoration: none
+
+  &__site-nav
+    display: none
+
+    @media (min-width: $screen-sm-min)
+      display: flex
+      flex-direction: column
+
+  &__site-link
+    font-weight: normal
+    text-transform: uppercase
+
+    & + &
+      margin-top: 5px
+
+  &__feed-nav
+    display: none
+
+    @media (min-width: $screen-sm-min)
+      display: flex
+      flex-direction: column
+
+  &__feed-nav-title
+    font-weight: bold
+    text-transform: uppercase
+
+  &__feed-list
+    list-style: none
+    margin: 0
+    padding: 0
+
+  &__feed-item
+    padding: 5px
+    border-bottom: 1px solid $feed-item-border-color
+
+  &__feed-link
+    +text-overflow
+
+    display: inline-block
+    max-width: 250px
+    font-style: italic
+    font-weight: 300
+
+  &__social-networks
+    display: inline-flex
+
+  &__social-network
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    width: $social-dimension
+    height: $social-dimension
+    font-size: 24px
+    background-color: $social-background-color
+    border-radius: 50%
+
+    @media (min-width: $screen-sm-min)
+      width: $social-dimension--phone-up
+      height: $social-dimension--phone-up
+      font-size: 16px
+
+    &,
+    &:hover,
+    &:focus
+      color: $social-color
+      text-decoration: none
+
+    &:focus,
+    &:hover
+      opacity: .9
+
+    & + &
+      margin-left: $gutter

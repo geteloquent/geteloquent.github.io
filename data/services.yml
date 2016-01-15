@@ -7,8 +7,6 @@ items:
       Nós transformamos sua visão em produtos excepcionais, utilizando práticas e processos enxutos.
     call_to_action_text: &create_scalable_products
       Criação de produtos escaláveis
-    call_to_action_link: &create_scalable_products_link
-      #
     descriptions:
       -
         title: Processos enxutos
@@ -40,8 +38,6 @@ items:
       Seja mais competitivo através da melhoria de processos de desenvolvimento.
     call_to_action_text:
       Empresas estabelecidas que querem melhorar um produto já existente
-    call_to_action_link:
-      #
     descriptions:
       -
         title:
@@ -58,7 +54,6 @@ items:
     summary_description:
       Ambiente motivador para cursos a distância.
     call_to_action_text: *create_scalable_products
-    call_to_action_link: *create_scalable_products_link
     descriptions:
       -
         title:
@@ -71,3 +66,8 @@ items:
       -
         name: Trustvox
         logo_file_name: client_05.png
+buttons:
+  find_out_more: Descubra mais
+  how_we_work: Como trabalhamos
+  get_in_touch: Entre em contato conosco
+clients: Clientes
