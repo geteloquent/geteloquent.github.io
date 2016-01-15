@@ -10,16 +10,18 @@
         <%= link_to page.data.title, page.url, class: "footer__link footer__site-link #{is_active_class}" %>
       <% end %>
     </nav>
-    <nav class="footer__feed-nav">
-      <span class="footer__feed-nav-title">Feed</span>
-      <ul class="footer__feed-list">
-        <% feeds.each do |feed| %>
+    <% if sitemap.where(title: 'Feed').first.data.primary_navigation %>
+      <nav class="footer__feed-nav">
+        <span class="footer__feed-nav-title">Feed</span>
+        <ul class="footer__feed-list">
+          <% feeds.each do |feed| %>
           <li class="footer__feed-item">
             <%= link_to feed[:title], feed[:link], class: "footer__link footer__feed-link", title: feed[:title] %>
           </li>
-        <% end %>
-      </ul>
-    </nav>
+          <% end %>
+        </ul>
+      </nav>
+    <% end %>
     <div class="footer__social-networks">
       <% social_networks.each do |social_network| %>
         <% link_to social_network[:link], class: "footer__social-network", title: social_network[:name] do %>
