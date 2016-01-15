@@ -1,0 +1,51 @@
+$indicator-color: $gray-3
+$indicator-color--active: $guava
+$control-left-url: url("../img/left.png")
+$control-right-url: url("../img/right.png")
+$control-img-width: 74px
+$control-final-width: $control-img-width + $gutter
+
+// Overwrites Twitter Bootstrap's carousel.
+.carousel
+  padding-top: $gutter
+
+  @media (min-width: $screen-md-min)
+    padding-top: inherit
+    padding-bottom: 20px
+
+  &-indicators
+    top: 0
+
+    @media (min-width: $screen-md-min)
+      top: inherit
+      bottom: 0
+      margin-bottom: 0
+
+    li
+      background-color: $indicator-color
+
+      &.active
+        background-color: $indicator-color--active
+
+  &-inner
+    @media (min-width: $screen-md-min)
+      padding: 0 $control-final-width
+
+    .item
+      padding-top: $gutter
+
+  &-control
+    display: none
+
+    @media (min-width: $screen-md-min)
+      display: block
+      background: none
+      width: $control-final-width
+
+      &.left
+        left: 0
+        background: $control-left-url center right no-repeat
+
+      &.right
+        right: 0
+        background: $control-right-url center left no-repeat

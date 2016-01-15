@@ -1,0 +1,71 @@
+$background-image: "../img/hero-backdrop.png"
+
+$__logo-image: "logo-hero.png"
+
+$__content-color: $white
+$__content-text-shadow-color: rgba(0, 0, 0, .004)
+
+$__go-to-site-image: "hero-link.png"
+
+.hero
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  height: calc(100vh - #{$header-height})
+  padding: 0 20px
+  background-image: url($background-image)
+
+  @media (min-width: $screen-sm-min)
+    height: 100vh
+
+  &__body
+    display: flex
+    align-items: center
+
+  &__logo
+    display: none
+
+    @media (min-width: $screen-sm-min)
+      display: block
+      margin: 0
+      +replace-text-with-dimensions($__logo-image)
+
+  &__logo + &__content
+    @media (min-width: $screen-sm-min)
+      margin-left: 30px
+
+  &__content
+    color: $__content-color
+    font-weight: 300
+    font-size: 25px
+    text-align: center
+    text-transform: uppercase
+    text-shadow: 1px 1px 1px $__content-text-shadow-color
+    -webkit-font-smoothing: antialiased
+
+    strong
+      font-style: normal
+
+    @media (min-width: $screen-sm-min)
+      width: 346px
+      line-height: 1.2
+      font-size: 28px
+      text-align: left
+
+    @media (min-width: $screen-md-min)
+      width: 585px
+
+  &__body + &__go-to-site-wrapper
+    @media (min-width: $screen-sm-min)
+      margin-top: 90px
+
+  &__go-to-site-wrapper
+    display: none
+
+    @media (min-width: $screen-sm-min)
+      display: flex
+      justify-content: center
+
+  &__go-to-site
+    +replace-text-with-dimensions($__go-to-site-image)
