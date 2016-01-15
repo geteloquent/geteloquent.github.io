@@ -3,8 +3,6 @@ $body-background-color: rgb(36, 36, 36);
 $link-color: $body-color;
 $link-color--active: $guava-1;
 $feed-item-border-color: rgb(66, 66, 66);
-$made-by-background-color: rgb(19, 19, 19);
-$made-by-link-color: rgb(195, 195, 195);
 $social-dimension: 40px;
 $social-dimension--phone-up: 30px;
 $social-background-color: $guava-1;
@@ -125,31 +123,5 @@ $social-color: rgb(36, 36, 36);
   & +
   & {
     margin-left: $gutter;
-  }
-}
-
-.footer__made-by {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 40px;
-  padding: 0 $gutter;
-  background-color: $made-by-background-color;
-
-  @media (min-width: $screen-sm-min) {
-    justify-content: flex-end;
-    height: 60px;
-  }
-}
-
-.footer__made-by-link {
-  font-weight: 100;
-  text-transform: uppercase;
-
-  &,
-  &:hover,
-  &:focus {
-    color: $made-by-link-color;
-    text-decoration: none;
   }
 }
