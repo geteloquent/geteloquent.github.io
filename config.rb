@@ -32,6 +32,10 @@
 # Helpers
 ###
 
+require "lib/custom_helpers"
+
+helpers CustomHelpers
+
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
@@ -85,14 +89,4 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
-end
-
-helpers do
-  def navigation_pages
-    sitemap.where(primary_navigation: true).order_by(:weight).all
-  end
-
-  def slugify(term)
-    term.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-  end
 end
