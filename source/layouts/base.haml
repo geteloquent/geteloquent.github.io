@@ -6,8 +6,8 @@
     %title Eloquent Studio — #{ current_page.data.title }
     = partial :meta_share
     %meta{ content: "width=device-width", name: "viewport" }/
-    %link{ href: "apple-touch-icon.png", rel: "apple-touch-icon" }/
-    %link{ href: "css/application.css", rel: "stylesheet" }/
+    = favicon_tag "apple-touch-icon.png"
+    = stylesheet_link_tag "application"
   %body.layout.js-layout
     /[if lt IE 10]
       <p class="outdated-browser">Você está usando um navegador desatualizado. <a href="http://browsehappy.com/">Atualize seu navegador hoje</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">instale o Google Chrome Frame</a> para melhor experienciar este site.</p>
@@ -18,7 +18,7 @@
     - current_page.data.append_js.each do |js_file|
       = javascript_include_tag js_file
     - end if current_page.data.append_js
-    %script{ src: "js/main.js" }
+    = javascript_include_tag "main"
     :javascript
       var _gaq=[['_setAccount','UA-72489955-1'],['_trackPageview']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
