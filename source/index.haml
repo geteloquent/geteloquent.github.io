@@ -6,27 +6,78 @@ weight: 1
 ---
 
 - home = data.home
+- cases = data.home.cases
+- services_buttons = data.home.buttons
 
 %section.section
   %h2.section__header.section__header--padding= home.services
   .section__body
     %ul.services-summary-list= partial "home/service_summary", collection: data.services.items
 
-%section.section
-  %h2.section__header.section__header--padding= home.clients
-  .section__body
-    - clients_carousel_id = "clients-carousel"
-    - clients = data.client_summary_items.clients
-    - active_index = 0
-    .carousel.slide{ id: clients_carousel_id, data: { ride: :carousel } }
-      %ol.carousel-indicators
-        - clients.size.times do |i|
-          = content_tag :li, nil, class: (i == active_index ? "active" : ""), data: { target: "##{clients_carousel_id}", slide: { to: i } }
-      .carousel-inner{ role: :listbox }
-        - clients.each_with_index do |client, i|
-          %div{ class: (i == active_index ? "item active" : "item") }
-            = partial "home/client_summary", locals: { client: client }
-      %a.left.carousel-control{ href: "##{clients_carousel_id}", role: :button, data: { slide: :prev } }
-        %span.sr-only= home.carousel.previous
-      %a.right.carousel-control{ href: "##{clients_carousel_id}", role: :button, data: { slide: :next } }
-        %span.sr-only= home.carousel.next
+%h2.section__header.section__header--padding= home.cases_header
+- cases.each_with_index do |business_case, business_case_index|
+  %section.section{ id: business_case.type }
+    .case{ class: "service-summary--#{business_case.type}" }
+      %h2.case__title= business_case.title
+      .case__content-wrapper
+        .case__content
+          - descriptions = business_case.descriptions
+
+          - if descriptions.size == 1
+            .case__description
+              %p.case__description-content.case__description-content--highlight= descriptions.first.content
+          - else
+            - descriptions.each_with_index do |description, description_index|
+              - if description_index == descriptions.size - 1
+                .case__description-and-quote-wrapper
+                  .case__description-and-quote-description
+                    .case__description
+                      %h3.case__description-title= description.title
+                      %p.case__description-content= description.content
+                  .case__description-and-quote-quote
+                    %blockquote.quote
+                      %span.quote__content= business_case.quote.content
+                      %cite.quote__author= business_case.quote.author
+              - else
+                .case__description
+                  %h3.case__description-title= description.title
+                  %p.case__description-content= description.content
+
+        .case__indicator
+          %ol.indicators.indicators--vertical
+            - cases.each_with_index do |business_case, business_case_indicator_index|
+              %li.indicators__item{ class: (business_case_indicator_index == business_case_index ? "is-active" : "") }
+
+      .case__call-to-actions
+        = link_to services_buttons.how_we_work, "/process.html", class: "service__call-to-action-action service__call-to-action service__call-to-action--process"
+        = link_to services_buttons.get_in_touch, "/contact.html", class: "service__call-to-action-action service__call-to-action"
+
+      -# Isso pode ser usado para explicar nosso papel em cada case
+      -# .service__clients
+      -#   .service__clients-title.section__header= data.services.clients
+      -#   %ul.service__clients-list
+      -#     - clients = business_case.clients
+      -#
+      -#     - clients.each do |client|
+      -#       %li
+      -#         = link_to client.link do
+      -#           = image_tag client.logo_file_name, alt: client.name, title: client.name
+-# Faz mais sentido ter cases de clientes na primeira página direto
+-# %section.section
+-#   %h2.section__header.section__header--padding= home.clients
+-#   .section__body
+-#     - clients_carousel_id = "clients-carousel"
+-#     - clients = data.client_summary_items.clients
+-#     - active_index = 0
+-#     .carousel.slide{ id: clients_carousel_id, data: { ride: :carousel } }
+-#       %ol.carousel-indicators
+-#         - clients.size.times do |i|
+-#           = content_tag :li, nil, class: (i == active_index ? "active" : ""), data: { target: "##{clients_carousel_id}", slide: { to: i } }
+-#       .carousel-inner{ role: :listbox }
+-#         - clients.each_with_index do |client, i|
+-#           %div{ class: (i == active_index ? "item active" : "item") }
+-#             = partial "home/client_summary", locals: { client: client }
+-#       %a.left.carousel-control{ href: "##{clients_carousel_id}", role: :button, data: { slide: :prev } }
+-#         %span.sr-only= home.carousel.previous
+-#       %a.right.carousel-control{ href: "##{clients_carousel_id}", role: :button, data: { slide: :next } }
+-#         %span.sr-only= home.carousel.next
