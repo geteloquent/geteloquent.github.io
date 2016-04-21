@@ -4,6 +4,8 @@ $list-item-separator-color: rgb(198, 198, 198)
 $title-color: rgb(0, 0, 0)
 $call-to-action-color: $gray-1
 $startup-design-dev-url: "../img/service-dds.png"
+$trustvox-url: "../img/logo-trustvox.png"
+$bewiser-url: "../img/logo-bewiser.png"
 $agile-enterprises-url: "../img/service-enterprise.png"
 $redu-deployment-url: "../img/service-redu-deployment.png"
 
@@ -34,7 +36,7 @@ $redu-deployment-url: "../img/service-redu-deployment.png"
       width: calc(#{100% / $items-count} - #{$gutter * 2})
       padding: 0
 
-.service-summary
+.service-summary, .case-summary
   padding-top: +image-height($startup-design-dev-url) + $gutter
   text-align: center
   background-position: center top
@@ -48,6 +50,17 @@ $redu-deployment-url: "../img/service-redu-deployment.png"
 
   &--redu-deployment
     background-image: url($redu-deployment-url)
+
+  &--trustvox
+    background-image: url($trustvox-url)
+    background-size: image-width($trustvox-url) image-height($trustvox-url)
+    background-position: center $gutter
+    padding-top: +image-height($startup-design-dev-url) + $gutter
+
+  &--bewiser
+    background-image: url($bewiser-url)
+    background-size: image-width($bewiser-url) image-height($bewiser-url)
+    padding-top: +image-height($bewiser-url) + $gutter
 
   &__title
     margin: 0

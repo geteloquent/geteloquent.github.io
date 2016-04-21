@@ -15,44 +15,39 @@ weight: 1
     %ul.services-summary-list= partial "home/service_summary", collection: data.services.items
 
 %h2.section__header.section__header--padding= home.cases_header
-- cases.each_with_index do |business_case, business_case_index|
-  %section.section{ id: business_case.type }
-    .case{ class: "service-summary--#{business_case.type}" }
-      %h2.case__title= business_case.title
-      .case__content-wrapper
-        .case__content
-          - descriptions = business_case.descriptions
+- business_case = cases.first
+%section.section{ id: business_case.type }
+  .service{ class: "service-summary--#{business_case.type}" }
+    %h2.service__title= business_case.title
+    .service__content-wrapper
+      .service__content
+        - descriptions = business_case.descriptions
 
-          - if descriptions.size == 1
-            .case__description
-              %p.case__description-content.case__description-content--highlight= descriptions.first.content
-          - else
-            - descriptions.each_with_index do |description, description_index|
-              - if description_index == descriptions.size - 1
-                .case__description-and-quote-wrapper
-                  .case__description-and-quote-description
-                    .case__description
-                      %h3.case__description-title= description.title
-                      %p.case__description-content= description.content
-                  .case__description-and-quote-quote
-                    %blockquote.quote
-                      %span.quote__content= business_case.quote.content
-                      %cite.quote__author= business_case.quote.author
-              - else
-                .case__description
-                  %h3.case__description-title= description.title
-                  %p.case__description-content= description.content
+        - if descriptions.size == 1
+          .service__description
+            %p.service__description-content.service__description-content--highlight= descriptions.first.content
+        - else
+          - descriptions.each_with_index do |description, description_index|
+            - if description_index == descriptions.size - 1
+              .service__description-and-quote-wrapper
+                .service__description-and-quote-description
+                  .service__description
+                    %h3.service__description-title= description.title
+                    %p.service__description-content= description.content
+                .service__description-and-quote-quote
+                  %blockquote.quote
+                    %span.quote__content= business_case.quote.content
+                    %cite.quote__author= business_case.quote.author
+            - else
+              .service__description
+                %h3.service__description-title= description.title
+                %p.service__description-content= description.content
 
-        .case__indicator
-          %ol.indicators.indicators--vertical
-            - cases.each_with_index do |business_case, business_case_indicator_index|
-              %li.indicators__item{ class: (business_case_indicator_index == business_case_index ? "is-active" : "") }
 
-      .case__call-to-actions
-        = link_to services_buttons.how_we_work, "/process.html", class: "service__call-to-action-action service__call-to-action service__call-to-action--process"
-        = link_to services_buttons.get_in_touch, "/contact.html", class: "service__call-to-action-action service__call-to-action"
+    .service__call-to-actions
+      = link_to services_buttons.how_we_work, "/process.html", class: "service__call-to-action-action service__call-to-action service__call-to-action--process"
+      = link_to services_buttons.get_in_touch, "/contact.html", class: "service__call-to-action-action service__call-to-action"
 
-      -# Isso pode ser usado para explicar nosso papel em cada case
       -# .service__clients
       -#   .service__clients-title.section__header= data.services.clients
       -#   %ul.service__clients-list
