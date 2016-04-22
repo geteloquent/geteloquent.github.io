@@ -5,47 +5,40 @@ carousel:
   next: Próximo
 
 cases:
-  -
-    type: trustvox
+  trustvox:
+    id: trustvox
     title:
       <strong>Trustvox</strong>, sinceridade <strong>não</strong> tem preço
-    summary_description:
-      Nós transformamos sua visão em produtos excepcionais, utilizando práticas e processos enxutos.
-    call_to_action_text: &create_scalable_products
-      Criação de produtos escaláveis
-    descriptions:
-      -
-        content:
-          <p>A <a href="http://site.trustvox.com.br">Trustvox</a> é uma certificadora de reviews on-line. Através da Trustvox, donos de e-commerce podem gerar mais vendas, mais confiança e melhorar sua reputação através de reviews de consumidores reais que passaram por sua loja. A Trustvox é utilizada por grandes e-commerces do Brasil tais como <a href="http://boticario.com.br">Boticário</a>, <a href="http://www.staples.com.br">Staples</a>, <a href="http://www.polishop.com.br">Polishop</a>, <a href="http://wtennis.com.br">World Tennis</a> e <a href="http://compracerta.com.br">Compra Certa</a> gerando de 20% a 40% de aumento na taxa de conversão. Além desses clientes, a Trustvox é utilizada por mais de <a href="http://site.trustvox.com.br/#clientes">500 e-commerces de médio e pequeno porte</a>.
-      -
-        title: Nossa participação
-        content:
-          <p>Nós fazemos parte do DNA da Trustvox e somos responsáveis por toda área de tecnologia da empresa. Em 2013, construímos o MVP do produto, fomos responsáveis pela integração com diversas plataformas de e-commerce e pela escala tecnológica do produto.</p>
-          <p>Uma vez que a Trustvox está presente em parte dos maiores e-commerces do Brasil, em períodos de grande trafégo (eg. Black Friday, Natal, Dia dos Namorados) o produto tem que suportar o tráfego de todos esses e-commerces somados.</p>
-          <p>Além de excelência técnica, por ser um negócio em fase de crescimento, precisamos nos integrar muito bem com as outras áreas da empresa. Temos que garantir que o negócio não deixe de entregar valor enquanto cresce. Nós criamos e executamos um processo de gestão de demandas que conversa com as áreas de Customer Success, Customer Suport e Produto da empresa e permite que nossa equipe acompanhe o passo de crescimento da Trustvox.</p>
+    main_description:
+      <p>A <a href="http://site.trustvox.com.br">Trustvox</a> é uma certificadora de reviews on-line. Através da Trustvox, donos de e-commerce podem gerar mais vendas, mais confiança e melhorar sua reputação através de reviews de consumidores reais que passaram por sua loja. A Trustvox é utilizada por grandes e-commerces do Brasil tais como <a href="http://boticario.com.br">Boticário</a>, <a href="http://www.staples.com.br">Staples</a>, <a href="http://www.polishop.com.br">Polishop</a>, <a href="http://wtennis.com.br">World Tennis</a> e <a href="http://compracerta.com.br">Compra Certa</a> gerando de 20% a 40% de aumento na taxa de conversão. Além desses clientes, a Trustvox é utilizada por mais de <a href="http://site.trustvox.com.br/#clientes">500 e-commerces de médio e pequeno porte</a>.
+    service:
+      title: Nossa participação
+      description:
+        <p>Nós fazemos parte do DNA da Trustvox e somos responsáveis por toda área de tecnologia da empresa. Em 2013, construímos o MVP do produto, fomos responsáveis pela integração com diversas plataformas de e-commerce e pela escala tecnológica do produto.</p>
+        <p>Uma vez que a Trustvox está presente em parte dos maiores e-commerces do Brasil, em períodos de grande trafégo (eg. Black Friday, Natal, Dia dos Namorados) o produto tem que suportar o tráfego de todos esses e-commerces somados.</p>
+        <p>Além de excelência técnica, por ser um negócio em fase de crescimento, precisamos nos integrar muito bem com as outras áreas da empresa. Temos que garantir que o negócio não deixe de entregar valor enquanto cresce. Nós criamos e executamos um processo de gestão de demandas que conversa com as áreas de Customer Success, Customer Suport e Produto da empresa e permite que nossa equipe acompanhe o passo de crescimento da Trustvox.</p>
     quote:
       content:
         <strong>21% das opiniões</strong> de e-commerces são de usuários que nunca compraram e experimentaram o produto
       author: YouGov
-  -
-    type: bewiser
+
+  bewiser:
+    id: bewiser
     title:
       <strong>Bewiser</strong>. Na prática, a teoria é outra!
-    summary_description:
-      Seja mais competitivo através da melhoria de processos de desenvolvimento.
-    call_to_action_text:
-      Empresas estabelecidas que querem melhorar um produto já existente
-    descriptions:
-      -
-        title: Foo
-        content:
-          A Bewiser é uma rede que oferta cursos práticos e workshops sobre negócios, tecnologia, e design. Experts dessas áreas podem encontrar na Bewiser espaços inspiradores (Hackerspace, coworkings, fab labs, etc) e uma rede de divulgação para atrair potenciais interessados. Além disso, espaços que possuem lugares ociosos, podem rentabilizar estes locais ofertando-os como espaço para cursos que serão relevantes e engajadores para as suas comunidades.
-    clients:
-      -
-        name: Fuelzee
-        logo_file_name: client_03.png
+    main_description:
+      <p>A <a href="http://bewiser.io">Bewiser</a> é uma rede que oferta cursos práticos e workshops sobre negócios, tecnologia, e design. Experts dessas áreas podem encontrar na Bewiser espaços inspiradores (<a href="http://hackerspaces.org/">Hackerspace</a>, <a href="http://coworking.com/">coworkings</a>, <a href="http://www.fabfoundation.org/fab-labs/what-is-a-fab-lab/">fab labs</a>, etc) e uma rede de divulgação para atrair potenciais interessados. Além disso, espaços que possuem lugares ociosos, podem rentabilizar estes locais ofertando-os como espaço para cursos que serão relevantes e engajadores para as suas comunidades.</p>
+    images_mosaic:
+      - https://scontent-gru2-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/11043082_883885641663118_3713556068796737572_n.jpg?oh=104a1e54aaf217474df1986cfd9ee64a&oe=57ABE877
+      - https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xlp1/v/t1.0-9/11751408_847163192046947_7919570478368168751_n.jpg?oh=bc085d6b2095089572210aa37a68894d&oe=57ABED7C&__gda__=1467206766_88128ec0715471ca6c54580c2fd13001
+      - https://files.slack.com/files-pri/T024ZG632-F12U8A528/berlim_digital__6.jpg
+      - https://files.slack.com/files-pri/T024ZG632-F12UJLR9T/berlim_digital__4.jpg
+    service:
+      title: Nossa participação
+      description:
+        Estamos envolvidos na Bewiser desde o <em>day 1</em>, somos responsáveis pelas decisões de produto, design e tecnologia. Aplicamos a primeira fase do <a href="http://market-by-numbers.com/customer-development/">Customer Development</a>, o Customer Discovery, e criamos o MVP que foi lançado no 1º semestre de 2016. Desde então, estamos focados em entender o comportamento do usuário e validar nossas hipóteses de mercado.
 buttons:
   find_out_more: Descubra mais
   how_we_work: Como trabalhamos
   get_in_touch: Entre em contato conosco
-cases_header: Cases
+cases_header: Case

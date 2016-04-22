@@ -1,5 +1,5 @@
 $background-color: $white
-$background-image--odd: "../img/services-background.png"
+$background-image--even: "../img/services-background.png"
 
 $__header-color: $lightgray
 
@@ -8,12 +8,12 @@ $navbar-container-horizontal-padding: 50px
 .section
   padding: $gutter--outer 0
   background-color: $background-color
-  background-image: url($background-image--odd)
+  background-image: url($background-image--even)
 
   &--sparce
     padding: ($gutter * 6) 0
 
-  &:nth-child(even)
+  &:nth-child(odd)
     background-image: none
 
   &__header

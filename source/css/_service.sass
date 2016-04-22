@@ -66,6 +66,24 @@ $gutter--double: $gutter * 2
       @media (min-width: $screen-sm-min)
         font-size: 24px
 
+  &__description-mosaic
+    overflow: hidden
+    margin-bottom: $gutter
+
+    &-image
+      float: left
+      width: 25%
+      max-height: 200px
+
+  &__description-video
+    width: 80%
+    display: block
+    margin: 0 auto
+    border-radius: 3px
+
+    @media (min-width: $screen-lg-min)
+      width: 50%
+
   &__call-to-action
     display: inline-block
     padding: 10px 30px
