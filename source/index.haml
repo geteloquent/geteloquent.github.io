@@ -51,6 +51,47 @@ weight: 1
             %h3.service__description-title= bewiser.service.title
             %p.service__description-content= bewiser.service.description
 
+- salesim = cases.salesim
+%section.section{ id: salesim.id }
+  %h2.section__header.section__header--padding= home.cases_header
+  .service{ class: "service-summary--#{salesim.id}" }
+    %h2.service__title= salesim.title
+    .service__content-wrapper
+      .service__content
+        .service__description
+          %p.service__description-content= salesim.main_description
+          %video.service__description-video{ src: salesim.video.url, poster: salesim.video.poster, autoplay: true, controls: true, loop: true }
+        .service__description-and-quote-wrapper
+          .service__description-and-quote-description
+            .service__description
+              %h3.service__description-title= salesim.partners.title
+              %p.service__description-content= salesim.partners.description
+          .service__description-and-quote-quote
+            %blockquote.quote
+              %span.quote__content= salesim.quote.content
+              %cite.quote__author= salesim.quote.author
+        .service__description-wrapper
+          .service__description
+            %h3.service__description-title= salesim.service.title
+            %p.service__description-content= salesim.service.description
+
+- fullprofile = cases.fullprofile
+%section.section{ id: fullprofile.id }
+  %h2.section__header.section__header--padding= home.cases_header
+  .service{ class: "service-summary--#{fullprofile.id}" }
+    %h2.service__title= fullprofile.title
+    .service__content-wrapper
+      .service__content
+        .service__description
+          %p.service__description-content= fullprofile.main_description
+        .service__description-wrapper
+          .service__description
+            %p.service__description-content= fullprofile.partners.description
+        .service__description-wrapper
+          .service__description
+            %h3.service__description-title= fullprofile.service.title
+            %p.service__description-content= fullprofile.service.description
+
     .service__call-to-actions
       = link_to services_buttons.how_we_work, "/process.html", class: "service__call-to-action-action service__call-to-action service__call-to-action--process"
       = link_to services_buttons.get_in_touch, "/contact.html", class: "service__call-to-action-action service__call-to-action"
