@@ -29,10 +29,10 @@ cases:
     main_description:
       <p>A <a href="http://bewiser.io">Bewiser</a> é uma rede que oferta cursos práticos e workshops sobre negócios, tecnologia, e design. Experts dessas áreas podem encontrar na Bewiser espaços inspiradores (<a href="http://hackerspaces.org/">Hackerspace</a>, <a href="http://coworking.com/">coworkings</a>, <a href="http://www.fabfoundation.org/fab-labs/what-is-a-fab-lab/">fab labs</a>, etc) e uma rede de divulgação para atrair potenciais interessados. Além disso, espaços que possuem lugares ociosos, podem rentabilizar estes locais ofertando-os como espaço para cursos que serão relevantes e engajadores para as suas comunidades.</p>
     images_mosaic:
-      - https://scontent-gru2-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/11043082_883885641663118_3713556068796737572_n.jpg?oh=104a1e54aaf217474df1986cfd9ee64a&oe=57ABE877
-      - https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xlp1/v/t1.0-9/11751408_847163192046947_7919570478368168751_n.jpg?oh=bc085d6b2095089572210aa37a68894d&oe=57ABED7C&__gda__=1467206766_88128ec0715471ca6c54580c2fd13001
-      - https://files.slack.com/files-pri/T024ZG632-F12U8A528/berlim_digital__6.jpg
-      - https://files.slack.com/files-pri/T024ZG632-F12UJLR9T/berlim_digital__4.jpg
+      - bewiser-recife-jam.jpg
+      - bewiser-andre.jpg
+      - bewiser-berlim-digital.jpg
+      - bewiser-berlim-digital-2.jpg
     service:
       title: Nossa participação
       description:
