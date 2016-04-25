@@ -14,6 +14,10 @@ weight: 1
   .section__body
     %ul.services-summary-list= partial "home/service_summary", collection: data.services.items
 
+  .service
+    .service__call-to-actions
+    = link_to services_buttons.get_in_touch, "/contact.html", class: "service__call-to-action-action service__call-to-action"
+
 - trustvox = cases.trustvox
 %section.section{ id: trustvox.id }
   %h2.section__header.section__header--padding= home.cases_header
@@ -93,5 +97,4 @@ weight: 1
             %p.service__description-content= fullprofile.service.description
 
     .service__call-to-actions
-      = link_to services_buttons.how_we_work, "/process.html", class: "service__call-to-action-action service__call-to-action service__call-to-action--process"
-      = link_to services_buttons.get_in_touch, "/contact.html", class: "service__call-to-action-action service__call-to-action"
+      = link_to services_buttons.get_in_touch, "/contact.html", class: "service__call-to-action-action service__call-to-action service__call-to-action--contact"
