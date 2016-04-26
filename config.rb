@@ -71,8 +71,6 @@ set :js_dir, 'js'
 
 set :images_dir, 'img'
 
-set :build_dir, 'future-site'
-
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
