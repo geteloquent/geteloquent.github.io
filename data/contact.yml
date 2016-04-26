@@ -8,17 +8,17 @@ form:
     placeholder: Messagem
   subject: Novo contato
   submit: Enviar
-  send_to: filipewl@geteloquent.com
-  thank_you_page: contact-thank-you.html
+  send_to: olar@geteloquent.com
+  thank_you_page: thank_you
 locations:
   -
     name: Recife
     address:
-      street: Rua Jacó Vesolino, 145
+      street: Rua Jacó Velosino, 145
       neighborhood: Casa Forte
       city: PE - Brasil
     phone: +55 81 3071.8924
-    email: contato@geteloquent.com
+    email: olar@geteloquent.com
     position:
       lat: -8.03600
       lng: -34.91889
@@ -29,7 +29,10 @@ locations:
       neighborhood: Bairro do Recife
       city: PE - Brasil
     phone: +55 81 3024.7080
-    email: contato@geteloquent.com
+    email: olar@geteloquent.com
     position:
       lat: -8.06241
       lng: -34.87155
+thank_you_modal:
+  title: Obrigada!
+  message: Sua mensagem foi enviada. <br/> Em breve entraremos em contato.
