@@ -8,7 +8,7 @@
     %meta{ content: "width=device-width", name: "viewport" }/
     = favicon_tag "apple-touch-icon.png"
     = stylesheet_link_tag "application"
-  %body.layout.js-layout
+  %body{ class: "layout js-layout #{page_classes}" }
     /[if lt IE 10]
       <p class="outdated-browser">Você está usando um navegador desatualizado. <a href="http://browsehappy.com/">Atualize seu navegador hoje</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">instale o Google Chrome Frame</a> para melhor experienciar este site.</p>
     = yield

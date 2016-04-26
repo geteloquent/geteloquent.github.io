@@ -2,6 +2,7 @@
 //= require bootstrap/affix
 //= require bootstrap/collapse
 //= require bootstrap/carousel
+//= require bootstrap/modal
 
 $ ->
   $layoutWrapper = $('.js-layout__wrapper')
@@ -95,6 +96,10 @@ $ ->
 
       return
 
+    return
+
+  do ->
+    $('.contact-thanks__modal').modal('show')
     return
 
   return

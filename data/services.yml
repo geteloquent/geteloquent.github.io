@@ -33,7 +33,7 @@ items:
   -
     type: agile-enterprises
     title:
-      <strong>Agilidade</strong> em grandes <strong>empresas</strong>
+      <strong>Agilidade</strong> e <strong>inovação</strong> para <strong>empresas</strong>
     summary_description:
       Seja mais competitivo através da melhoria de processos de desenvolvimento.
     call_to_action_text:
@@ -47,25 +47,6 @@ items:
       -
         name: Fuelzee
         logo_file_name: client_03.png
-  -
-    type: redu-deployment
-    title:
-      Implantação do <strong>Redu</strong>
-    summary_description:
-      Ambiente motivador para cursos a distância.
-    call_to_action_text: *create_scalable_products
-    descriptions:
-      -
-        title:
-        content:
-          O Redu é uma plataforma opensource de educação a distância que provê um ambiente motivador para alunos, professores e gestores se engajarem na aprendizagem online.
-    clients:
-      -
-        name: Mercado Eletrônico
-        logo_file_name: client_04.png
-      -
-        name: Trustvox
-        logo_file_name: client_05.png
 buttons:
   find_out_more: Descubra mais
   how_we_work: Como trabalhamos

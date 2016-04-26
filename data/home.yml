@@ -5,56 +5,82 @@ carousel:
   next: Próximo
 
 cases:
-  -
-    type: startup-design-dev
+  trustvox:
+    id: trustvox
     title:
-      <strong>Design</strong> e <strong>Desenvolvimento</strong> para <strong>Startups</strong>
-    summary_description:
-      Nós transformamos sua visão em produtos excepcionais, utilizando práticas e processos enxutos.
-    call_to_action_text: &create_scalable_products
-      Criação de produtos escaláveis
-    descriptions:
-      -
-        title: Processos enxutos
-        content:
-          Um conceito que é importante para startups é o de aprendizado validado. Startups são organizações que precisam construir modelos de negócios replicáveis e escaláveis dentro de condições de extrema incerteza. Neste contexto é importante qu e os empreendedores sejam capazes de perceber, numa escala pequena, se o modelo proposto é realmente escalável. Uma forma de adquirir este aprendizado é através de métricas. Antes mesmo de construir determinada funcionalidade do produto, é importante que sejam definidas métricas tangíveis do objetivo daquela funcionalidade.Nós iremos ajudar a você a definir este conjunto de métricas. Todas as funcionalidades criadas pelo nosso time são construídas e entregues juntamente com um painel de suporte onde você poderá acompanhar o progresso do seu produto.
-      -
-        title: Conhecimento de quem aprendeu na prática
-        content:
-          Todas as pessoas do nosso time já possuiram ou trabalharam em startups. Somos empreendedores e conosco você estará aproveitando as habilidades de quem já sentiu na pele o que significa construir produtos em ambientes onde a incerteza e mudança são constantes.
+      <strong>Trustvox</strong>, sinceridade <strong>não</strong> tem preço
+    main_description:
+      <p>A <a href="http://site.trustvox.com.br">Trustvox</a> é uma certificadora de reviews on-line. Através da Trustvox, donos de e-commerce podem gerar mais vendas, mais confiança e melhorar sua reputação através de reviews de consumidores reais que passaram por sua loja. A Trustvox é utilizada por grandes e-commerces do Brasil tais como <a href="http://boticario.com.br">Boticário</a>, <a href="http://www.staples.com.br">Staples</a>, <a href="http://www.polishop.com.br">Polishop</a>, <a href="http://wtennis.com.br">World Tennis</a> e <a href="http://compracerta.com.br">Compra Certa</a> gerando de 20% a 40% de aumento na taxa de conversão. Além desses clientes, a Trustvox é utilizada por mais de <a href="http://site.trustvox.com.br/#clientes">500 e-commerces de médio e pequeno porte</a>.
+    video:
+      url: https://d2p1e9awn3tn6.cloudfront.net/rGAx4kSxq0.mp4
+      poster: https://d2p1e9awn3tn6.cloudfront.net/rGAx4kSxq0.jpg
+    service:
+      title: Nossa participação
+      description:
+        <p>Nós fazemos parte do DNA da Trustvox desde o início e colaboramos com a equipe interna para lidar com toda área de tecnologia da empresa. Em 2013, construímos o MVP do produto, fomos responsáveis pela integração com diversas plataformas de e-commerce e pela escala tecnológica do produto. Após um período de interação produtivo, e considerando a relevância da Trustvox no mercado de e-commerce, nós nos tornamos sócios através de um processo de <em>vesting</em>.</p>
+        <p>Uma vez que a Trustvox está presente em parte dos maiores e-commerces do Brasil, em períodos de grande trafégo (eg. Black Friday, Natal, Dia dos Namorados) o produto tem que suportar o tráfego de todos esses e-commerces somados.</p>
+        <p>Além de excelência técnica, por ser um negócio em fase de crescimento, precisamos nos integrar muito bem com as outras áreas da empresa. Temos que garantir que o negócio não deixe de entregar valor enquanto cresce. Nós criamos e executamos um processo de gestão de demandas que conversa com as áreas de Customer Success, Customer Suport e Produto da empresa e permite que nossa equipe acompanhe o passo de crescimento da Trustvox.</p>
     quote:
       content:
-        We are entering an era  where the dominant question that innovators are facing isn’t “can something be built” but “should it be built”.
-      author: Eric Ries
-    clients:
-      -
-        name: Fuelzee
-        logo_file_name: client_03.png
-      -
-        name: Mercado Eletrônico
-        logo_file_name: client_04.png
-      -
-        name: Trustvox
-        logo_file_name: client_05.png
-  -
-    type: agile-enterprises
+        <strong>21% das opiniões</strong> de e-commerces são de usuários que nunca compraram e experimentaram o produto
+      author: YouGov
+
+  bewiser:
+    id: bewiser
     title:
-      <strong>Agilidade</strong> em grandes <strong>empresas</strong>
-    summary_description:
-      Seja mais competitivo através da melhoria de processos de desenvolvimento.
-    call_to_action_text:
-      Empresas estabelecidas que querem melhorar um produto já existente
-    descriptions:
-      -
-        title:
-        content:
-          Já possui uma empresa bem estabelecida e gostaria de acelerar o desenvolvimento de um novo produto? Traga a cultura de startups e desenvolvimento ágil para dentro da sua equipe. Dentro de uma empresa grande com estrutura e hierarquia bem definidas pode ser difícil criar novos produtos. Nós podemos fazer parte da sua equipe e trazer a velocidade de startups para dentro do seu negócio.
-    clients:
-      -
-        name: Fuelzee
-        logo_file_name: client_03.png
+      <strong>Bewiser</strong>. Na prática, a teoria é outra!
+    main_description:
+      <p>A <a href="http://bewiser.io">Bewiser</a> é uma rede que oferta cursos práticos e workshops sobre negócios, tecnologia, e design. Experts dessas áreas podem encontrar na Bewiser espaços inspiradores (<a href="http://hackerspaces.org/">Hackerspace</a>, <a href="http://coworking.com/">coworkings</a>, <a href="http://www.fabfoundation.org/fab-labs/what-is-a-fab-lab/">fab labs</a>, etc) e uma rede de divulgação para atrair potenciais interessados. Além disso, espaços que possuem lugares ociosos, podem rentabilizar estes locais ofertando-os como espaço para cursos que serão relevantes e engajadores para as suas comunidades.</p>
+    images_mosaic:
+      - bewiser-recife-jam.jpg
+      - bewiser-andre.jpg
+      - bewiser-berlim-digital.jpg
+      - bewiser-berlim-digital-2.jpg
+    service:
+      title: Nossa participação
+      description:
+        Estamos envolvidos na Bewiser desde o <em>day 1</em>, somos responsáveis pelas decisões de produto, design e tecnologia. Aplicamos a primeira fase do <a href="http://market-by-numbers.com/customer-development/">Customer Development</a>, o Customer Discovery, e criamos o MVP que foi lançado no 1º semestre de 2016. Desde então, estamos focados em entender o comportamento do usuário e validar nossas hipóteses de mercado.
+
+  salesim:
+    id: salesim
+    title:
+      <strong>SaleSIM</strong>, aumente o desempenho da sua força de vendas
+    main_description:
+      <p>O SaleSIM é uma plataforma orientada a dados que aumenta a produtividade de equipes de venda ao focar na gestão, treinamento e engajamento dos gestores e vendedores. O foco é aumentar o desempenho da equipe, para isso ele integra workflow, gestão à vista, <a href="http://blog.salesim.com.br/5-dicas-para-campanhas-de-vendas-vencedoras/">campanhas motivacionais</a> e <a href="http://blog.salesim.com.br/treinamento-de-vendas-a-distancia-vale-a-pena/">treinamento</a> em um único ambiente. No SaleSIM, o gestor recebe recomendações baseadas nos indicadores de desempenho da sua equipe e tem a capacidade de identificar padrões e práticas de alto desempenho baseado no histórico.</p>
+      <p>O SaleSIM dá suporte às decisões dos gestores ao identificar, através dos <a href="http://blog.salesim.com.br/indicadores-de-desempenho-de-vendas-6-principais-kpis-para-acelerar-a-forca-de-vendas/">indicadores de desempenho</a> da equipe, padrões dos vendedores e possibilitar a identificação padrões e práticas de alto desempenho <a href="http://blog.salesim.com.br/3851-2/">baseado no histórico</a>.</p>
+    video:
+      url: https://d2p1e9awn3tn6.cloudfront.net/W6INiV04ba.mp4
+      poster: https://d2p1e9awn3tn6.cloudfront.net/6JbReBBQs6.jpg
+    partners:
+      title: Parceiros e Clientes
+      description:
+        <p>Com parceiros nas áreas de treinamento, metodologia de gestão de vendas e avaliação sistemática da efetividade de treinamento para maximizar os ganhos do gestor, alguns destes parceiros são a <a href"http://www.toyota.com.br/">Toyota</a>, <a href="https://endeavor.org.br/">Endeavor Brasil</a> e <a href="https://www.facebook.com/MorosConsulting">Moros Consulting</a>.</p>
+        <p>O SaleSIM é utilizado por franquias da <a href="http://www.microlins.com.br/">Microlins</a>, localizadas no Nordeste, e aumentou a produtividade das equipes de vendas em média 100%. Indicadores relevantes para o segmento da Microlins tiveram alterações expressivas com o uso do SaleSIM, houve um aumento de 188,75% de indicações, 78,19% de agendamentos e 100% de matrículas.</p>
+    service:
+      title: Nossa participação
+      description:
+        <p>Nossas atividades compreenderam atividades e decisões de UX, tecnologia e produto. Começamos dando foco ao gerente da equipe de vendas, que não tinha visibilidade sobre os indicadores que mais fortemente contribuem para a produtividade da equipe. Através de observação, prototipação e validação com os gestores, chegamos a um conjunto minímo de funcionalidades que dão um raio-x dos elementos que tornam um vendedor mais produtivo.</p>
+        <p>O próximo passo foi utilizar este conhecimento para identificar comportamentos positivos e negativos e gerar pontos de atenção para o gerente da equipe. Tais pontos de atenção são convertidos em atividades que podem ser atribuidas para os membros de equipe com objetivo de provocar mudanças de comportamento.</p>
+    quote:
+      content:
+        O SalePodio motiva-me pelo fato de ser uma disputa diária. A cada atualização, <strong>ficamos estimulados para manter e melhorar nossa produtividade</strong> a cada minuto que se passa durante o dia e sem contar o fato que é ótimo ver nossa foto e a da equipe nas primeiras colocações.
+      author: Gestor comercial, Microlins
+  fullprofile:
+    id: fullprofile
+    title:
+      <strong>FullProfile</strong>, Gain More Insight
+    main_description:
+      <p>O FullProfile permite que equipes de marketing facilmente consigam informações sobre seus leads necessárias para aumentar a conversão de vendas e engajamento dos usuários. Ao prover informações sobre a audiência, o FullProfile embasa as campanhas de marketing e direciona atividades cruciais como <a href="http://marketingland.com/study-70-brands-personalizing-emails-missing-higher-transaction-rates-revenue-73241">personalização de email</a>, <a href="https://blog.kissmetrics.com/geo-targeting/">segmentação baseada em localização</a>, otimimização de preço, <a href="https://mixpanel.com/blog/2015/11/17/introducing-predict-see-who-will-convert-before-they-do">habilidades de predição</a>, e <a href="https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/">análises <em>Cohort</em></a>. De forma simples, a produtividade e efetividade da equipe de marketing é maximizada, pois o produto vai além da análise.<p>
+      <p>À partir de um dado praticamente anônimo como o email, o FullProfile enriquece o perfil com o nome da pessoa, até dados mais valiosos como onde ela trabalha, qual cargo exerce, qual o faturamento da empresa, etc.</p>
+    partners:
+      description:
+        <p>Teve como primeiro cliente o <a href="http://frame.io/">Frame.io</a> que obteve melhora na conversão de vendas em pouco mais de uma semana. Também é usado por consultorias de marketing fortemente embasadas em dados como a <a href="http://effinamazing.com/">Effin Amazing</a>.</p>
+    service:
+      title: Nossa participação
+      description:
+        <p>Nós fomos responsáveis por todas as atividades de desenvolvimento na criação do MVP que compreendeu diversas integrações com serviços de enriquecimento de dados, bem como a escala tecnológica do produto. Em conjunto com estas atividades, temos como responsabilidade dar insumos técnicos para embasar as decisões da equipe interna de produto.</p>
 buttons:
   find_out_more: Descubra mais
   how_we_work: Como trabalhamos
   get_in_touch: Entre em contato conosco
-cases_header: Cases
+cases_header: Case
