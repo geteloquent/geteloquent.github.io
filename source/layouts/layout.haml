@@ -1,8 +1,0 @@
-= wrap_layout :base do
-  .layout__wrapper.is-fixed.js-layout__wrapper
-    = partial :header
-    .layout__main-wrapper
-      %header.layout__nav-bar.js-layout__nav-bar= partial :nav_bar
-      %main.layout__main= yield
-      = partial :footer
-  %aside.layout__aside= partial :aside
