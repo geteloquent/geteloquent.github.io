@@ -75,6 +75,10 @@ weight: 1
               %span.quote__content= salesim.quote.content
               %cite.quote__author= salesim.quote.author
         .service__description-wrapper
+          .service__description-mosaic
+            - salesim.partners.images_mosaic.each do |image|
+              = image_tag image, class: 'service__description-mosaic-image'
+        .service__description-wrapper
           .service__description
             %h3.service__description-title= salesim.service.title
             %p.service__description-content= salesim.service.description

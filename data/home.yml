@@ -56,6 +56,11 @@ cases:
       description:
         <p>Com parceiros nas áreas de treinamento, metodologia de gestão de vendas e avaliação sistemática da efetividade de treinamento para maximizar os ganhos do gestor, alguns destes parceiros são a <a href"http://www.toyota.com.br/">Toyota</a>, <a href="https://endeavor.org.br/">Endeavor Brasil</a> e <a href="https://www.facebook.com/MorosConsulting">Moros Consulting</a>.</p>
         <p>O SaleSIM é utilizado por franquias da <a href="http://www.microlins.com.br/">Microlins</a>, localizadas no Nordeste, e aumentou a produtividade das equipes de vendas em média 100%. Indicadores relevantes para o segmento da Microlins tiveram alterações expressivas com o uso do SaleSIM, houve um aumento de 188,75% de indicações, 78,19% de agendamentos e 100% de matrículas.</p>
+      images_mosaic:
+        - salesim-graph-calls.svg
+        - salesim-graph-visits.svg
+        - salesim-graph-subscriptions.svg
+        - salesim-graph-references.svg
     service:
       title: Nossa participação
       description:
