@@ -103,4 +103,12 @@ $ ->
     $('.contact-thanks__modal').modal('show')
     return
 
+  do ->
+    cookieKey = 'sawEloquentHero'
+    if document.cookie.indexOf(cookieKey) > -1
+      heroBottom = $('.hero').next().offset().top
+      $('html, body').animate({ scrollTop: heroBottom }, 500);
+    else
+      document.cookie = "#{cookieKey}=1"
+
   return
