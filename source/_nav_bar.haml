@@ -1,5 +1,6 @@
 %nav.nav-bar
-  %h1.nav-bar__logo Eloquent Studio
+  = link_to "/" do
+    %h1.nav-bar__logo Eloquent Studio
   %ul.nav-bar__list
     - navigation_pages.each do |page|
       %li.nav-bar__list-item
