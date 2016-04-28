@@ -70,20 +70,33 @@ $gutter--double: $gutter * 2
     overflow: hidden
     margin-bottom: $gutter
 
+    @media (max-width: $screen-xs-max)
+      display: none
+
+    #salesim &
+      display: block
+
+      &-image
+        @media (max-width: $screen-xs-max)
+          margin-bottom: 50px
+          width: 100%
+          display: none
+
+          &:first-child, &:last-child
+            display: block
+
     &-image
       float: left
       width: 25%
-
-      #salesim &
-        @media (max-width: $screen-md-max)
-          width: 50%
-          margin-bottom: 30px
 
   &__description-video
     width: 80%
     display: block
     margin: 0 auto
     border-radius: 3px
+
+    @media (max-width: $screen-xs-max)
+      display: none
 
   &__call-to-action
     display: inline-block
