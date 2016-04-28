@@ -73,6 +73,7 @@ $ ->
     mapOptions =
       center: new google.maps.LatLng(centerLat, centerLng)
       zoom: 16
+      scrollwheel: false
       mapTypeId: google.maps.MapTypeId.ROADMAP
     map = new google.maps.Map(mapCanvas, mapOptions)
 
