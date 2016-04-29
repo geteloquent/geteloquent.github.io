@@ -104,11 +104,17 @@ $ ->
     return
 
   do ->
-    cookieKey = 'sawEloquentHero'
-    if document.cookie.indexOf(cookieKey) > -1
-      heroBottom = $('.hero').next().offset().top
-      $('html, body').animate({ scrollTop: heroBottom }, 500);
-    else
-      document.cookie = "#{cookieKey}=1"
+    if window.location.pathname == '/'
+      if window.location.hash == '#cases'
+        casesTop = $('#cases').offset().top
+        $('html, body').animate({ scrollTop: casesTop - 130 }, 500);
+      else
+        cookieKey = 'sawEloquentHero'
+
+        if document.cookie.indexOf(cookieKey) > -1
+          heroBottom = $('.hero').next().offset().top
+          $('html, body').animate({ scrollTop: heroBottom }, 500);
+        else
+          document.cookie = "#{cookieKey}=1"
 
   return

@@ -18,87 +18,88 @@ weight: 1
     .service__call-to-actions
     = link_to services_buttons.get_in_touch, "/contact.html", class: "service__call-to-action-action service__call-to-action"
 
-- trustvox = cases.trustvox
-%section.section{ id: trustvox.id }
-  %h2.section__header.section__header--padding= home.cases_header
-  .service{ class: "service-summary--#{trustvox.id}" }
-    %h2.service__title= trustvox.title
-    .service__content-wrapper
-      .service__content
-        .service__description
-          %p.service__description-content= trustvox.main_description
-          %video.service__description-video{ src: trustvox.video.url, poster: trustvox.video.poster, autoplay: true, controls: true, loop: true }
-        .service__description-and-quote-wrapper
-          .service__description-and-quote-description
+#cases
+  - trustvox = cases.trustvox
+  %section.section{ id: trustvox.id }
+    %h2.section__header.section__header--padding= home.cases_header
+    .service{ class: "service-summary--#{trustvox.id}" }
+      %h2.service__title= trustvox.title
+      .service__content-wrapper
+        .service__content
+          .service__description
+            %p.service__description-content= trustvox.main_description
+            %video.service__description-video{ src: trustvox.video.url, poster: trustvox.video.poster, autoplay: true, controls: true, loop: true }
+          .service__description-and-quote-wrapper
+            .service__description-and-quote-description
+              .service__description
+                %h3.service__description-title= trustvox.service.title
+                %p.service__description-content= trustvox.service.description
+            .service__description-and-quote-quote
+              %blockquote.quote
+                %span.quote__content= trustvox.quote.content
+                %cite.quote__author= trustvox.quote.author
+
+  - bewiser = cases.bewiser
+  %section.section{ id: bewiser.id }
+    %h2.section__header.section__header--padding= home.cases_header
+    .service{ class: "service-summary--#{bewiser.id}" }
+      %h2.service__title= bewiser.title
+      .service__content-wrapper
+        .service__content
+          .service__description
+            %p.service__description-content= bewiser.main_description
+            .service__description-mosaic
+              - bewiser.images_mosaic.each do |image|
+                = image_tag image, class: 'service__description-mosaic-image'
+          .service__description-wrapper
             .service__description
-              %h3.service__description-title= trustvox.service.title
-              %p.service__description-content= trustvox.service.description
-          .service__description-and-quote-quote
-            %blockquote.quote
-              %span.quote__content= trustvox.quote.content
-              %cite.quote__author= trustvox.quote.author
+              %h3.service__description-title= bewiser.service.title
+              %p.service__description-content= bewiser.service.description
 
-- bewiser = cases.bewiser
-%section.section{ id: bewiser.id }
-  %h2.section__header.section__header--padding= home.cases_header
-  .service{ class: "service-summary--#{bewiser.id}" }
-    %h2.service__title= bewiser.title
-    .service__content-wrapper
-      .service__content
-        .service__description
-          %p.service__description-content= bewiser.main_description
-          .service__description-mosaic
-            - bewiser.images_mosaic.each do |image|
-              = image_tag image, class: 'service__description-mosaic-image'
-        .service__description-wrapper
+  - salesim = cases.salesim
+  %section.section{ id: salesim.id }
+    %h2.section__header.section__header--padding= home.cases_header
+    .service{ class: "service-summary--#{salesim.id}" }
+      %h2.service__title= salesim.title
+      .service__content-wrapper
+        .service__content
           .service__description
-            %h3.service__description-title= bewiser.service.title
-            %p.service__description-content= bewiser.service.description
-
-- salesim = cases.salesim
-%section.section{ id: salesim.id }
-  %h2.section__header.section__header--padding= home.cases_header
-  .service{ class: "service-summary--#{salesim.id}" }
-    %h2.service__title= salesim.title
-    .service__content-wrapper
-      .service__content
-        .service__description
-          %p.service__description-content= salesim.main_description
-          %video.service__description-video{ src: salesim.video.url, poster: salesim.video.poster, autoplay: true, controls: true, loop: true }
-        .service__description-and-quote-wrapper
-          .service__description-and-quote-description
+            %p.service__description-content= salesim.main_description
+            %video.service__description-video{ src: salesim.video.url, poster: salesim.video.poster, autoplay: true, controls: true, loop: true }
+          .service__description-and-quote-wrapper
+            .service__description-and-quote-description
+              .service__description
+                %h3.service__description-title= salesim.partners.title
+                %p.service__description-content= salesim.partners.description
+            .service__description-and-quote-quote
+              %blockquote.quote
+                %span.quote__content= salesim.quote.content
+                %cite.quote__author= salesim.quote.author
+          .service__description-wrapper
+            .service__description-mosaic
+              - salesim.partners.images_mosaic.each do |image|
+                = image_tag image, class: 'service__description-mosaic-image'
+          .service__description-wrapper
             .service__description
-              %h3.service__description-title= salesim.partners.title
-              %p.service__description-content= salesim.partners.description
-          .service__description-and-quote-quote
-            %blockquote.quote
-              %span.quote__content= salesim.quote.content
-              %cite.quote__author= salesim.quote.author
-        .service__description-wrapper
-          .service__description-mosaic
-            - salesim.partners.images_mosaic.each do |image|
-              = image_tag image, class: 'service__description-mosaic-image'
-        .service__description-wrapper
-          .service__description
-            %h3.service__description-title= salesim.service.title
-            %p.service__description-content= salesim.service.description
+              %h3.service__description-title= salesim.service.title
+              %p.service__description-content= salesim.service.description
 
-- fullprofile = cases.fullprofile
-%section.section{ id: fullprofile.id }
-  %h2.section__header.section__header--padding= home.cases_header
-  .service{ class: "service-summary--#{fullprofile.id}" }
-    %h2.service__title= fullprofile.title
-    .service__content-wrapper
-      .service__content
-        .service__description
-          %p.service__description-content= fullprofile.main_description
-        .service__description-wrapper
+  - fullprofile = cases.fullprofile
+  %section.section{ id: fullprofile.id }
+    %h2.section__header.section__header--padding= home.cases_header
+    .service{ class: "service-summary--#{fullprofile.id}" }
+      %h2.service__title= fullprofile.title
+      .service__content-wrapper
+        .service__content
           .service__description
-            %p.service__description-content= fullprofile.partners.description
-        .service__description-wrapper
-          .service__description
-            %h3.service__description-title= fullprofile.service.title
-            %p.service__description-content= fullprofile.service.description
+            %p.service__description-content= fullprofile.main_description
+          .service__description-wrapper
+            .service__description
+              %p.service__description-content= fullprofile.partners.description
+          .service__description-wrapper
+            .service__description
+              %h3.service__description-title= fullprofile.service.title
+              %p.service__description-content= fullprofile.service.description
 
-    .service__call-to-actions
-      = link_to services_buttons.get_in_touch, "/contact.html", class: "service__call-to-action-action service__call-to-action service__call-to-action--contact"
+      .service__call-to-actions
+        = link_to services_buttons.get_in_touch, "/contact.html", class: "service__call-to-action-action service__call-to-action service__call-to-action--contact"
