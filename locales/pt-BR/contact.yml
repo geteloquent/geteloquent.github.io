@@ -3,6 +3,7 @@ pt-BR:
   contact:
     title: Manda um <strong>alô</strong> pra gente!
     form:
+      thank_you_page: thank_you
       name:
         placeholder: Nome
       email:

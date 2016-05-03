@@ -3,6 +3,7 @@ en:
   contact:
     title: Send us a <strong>hello</strong>!
     form:
+      thank_you_page: en/thank_you
       name:
         placeholder: Name
       email:

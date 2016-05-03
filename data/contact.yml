@@ -1,6 +1,5 @@
 form:
   send_to: olar@geteloquent.com
-  thank_you_page: thank_you
   subject: Novo contato
 locations:
   -

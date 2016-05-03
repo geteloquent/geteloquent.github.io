@@ -14,7 +14,7 @@ append_js:
   .contact-section__form
     - form = contact.form
     %form.contact-form{ method: :post, action: "http://formspree.io/#{form.send_to}" }
-      %input{ type: :hidden, name: :_next, value: "http://geteloquent.com/#{I18n.locale}/#{form.thank_you_page}" }
+      %input{ type: :hidden, name: :_next, value: "http://geteloquent.com/#{form.thank_you_page}" }
       %input{ type: :hidden, name: :_subject, value: form.subject }
       %input{ type: :hidden, name: :_gotcha, style: "display: none" }
       %input.contact-form__input{ name: :full_name, type: :text, placeholder: t(:'contact.form.name.placeholder') }
