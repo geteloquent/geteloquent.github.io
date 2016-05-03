@@ -7,4 +7,10 @@ module CustomHelpers
   def slugify(term)
     term.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
   end
+
+  def localized_path(path)
+    locale = I18n.locale == :'pt-BR' ? '' : I18n.locale
+
+    "#{locale}#{path}"
+  end
 end
