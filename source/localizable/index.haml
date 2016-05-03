@@ -86,20 +86,20 @@ weight: 1
 
   - fullprofile = cases.fullprofile
   %section.section{ id: fullprofile.id }
-    %h2.section__header.section__header--padding= home.cases_header
+    %h2.section__header.section__header--padding= t :'cases.headers.case'
     .service{ class: "service-summary--#{fullprofile.id}" }
-      %h2.service__title= fullprofile.title
+      %h2.service__title= t fullprofile.title
       .service__content-wrapper
         .service__content
           .service__description
-            %p.service__description-content= fullprofile.main_description
+            %p.service__description-content= t fullprofile.main_description
           .service__description-wrapper
             .service__description
-              %p.service__description-content= fullprofile.partners.description
+              %p.service__description-content= t fullprofile.partners.description
           .service__description-wrapper
             .service__description
-              %h3.service__description-title= fullprofile.service.title
-              %p.service__description-content= fullprofile.service.description
+              %h3.service__description-title= t fullprofile.service.title
+              %p.service__description-content= t fullprofile.service.description
 
       .service__call-to-actions
         = link_to services_buttons.get_in_touch, "/contact.html", class: "service__call-to-action-action service__call-to-action service__call-to-action--contact"

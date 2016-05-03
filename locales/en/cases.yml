@@ -49,3 +49,15 @@ en:
         content:
           SalePodio motivates me by the fact of being a daily challenge. Every update <strong>inspire us to maintain and improve our productivity</strong> through every minute spent during the day, besides the fact that is aewsome to see our photo and team's one at first positions.
         author: Comercial manager, Microlins
+    fullprofile:
+      title:
+        <strong>FullProfile</strong>, Gain More Insight
+      main_description:
+        <p>FullProfile allows marketing teams to easily get leads' information necessary to increase conversion and user engagement. While providing information about the audiente, FullProfile gives support to marketing campaigns and drivers crucial activities like <a href="http://marketingland.com/study-70-brands-personalizing-emails-missing-higher-transaction-rates-revenue-73241">email personalization</a>, <a href="https://blog.kissmetrics.com/geo-targeting/">geo targeting</a>, price optimization, <a href="https://mixpanel.com/blog/2015/11/17/introducing-predict-see-who-will-convert-before-they-do">prediction</a>, and <a href="https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/"><em>Cohort</em> analysis</a>. In a simple way, marketing team's productivity and efectiveness are maximized, since the product goes beyond analysis.<p>
+        <p>From a almost anonymous data like an email address, FullProfile enriches the profile with person's name, to more valuable data like where she works, which position, company's revenue, etc.</p>
+      partners:
+        description:
+          <p>Its first client, <a href="http://frame.io/">Frame.io</a>, obtained improvements at conversion rates in a little over one week. It's also used by marketing consultancies strongly datadriven like <a href="http://effinamazing.com/">Effin Amazing</a>.</p>
+      service:
+        description:
+          <p>We were responsible for all development activities of its MVP, which comprehended several integrations with enrichment data services, as well as product scalability. With these activities, we give technical inputs to drive internal product team's decicions.</p>
