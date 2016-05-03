@@ -7,22 +7,16 @@ carousel:
 cases:
   trustvox:
     id: trustvox
-    title:
-      <strong>Trustvox</strong>, sinceridade <strong>não</strong> tem preço
-    main_description:
-      <p>A <a href="http://site.trustvox.com.br">Trustvox</a> é uma certificadora de reviews on-line. Através da Trustvox, donos de e-commerce podem gerar mais vendas, mais confiança e melhorar sua reputação através de reviews de consumidores reais que passaram por sua loja. A Trustvox é utilizada por grandes e-commerces do Brasil tais como <a href="http://boticario.com.br">Boticário</a>, <a href="http://www.staples.com.br">Staples</a>, <a href="http://www.polishop.com.br">Polishop</a>, <a href="http://wtennis.com.br">World Tennis</a> e <a href="http://compracerta.com.br">Compra Certa</a> gerando de 20% a 40% de aumento na taxa de conversão. Além desses clientes, a Trustvox é utilizada por mais de <a href="http://site.trustvox.com.br/#clientes">500 e-commerces de médio e pequeno porte</a>.
+    title: 'cases.trustvox.title'
+    main_description: 'cases.trustvox.main_description'
     video:
       url: https://d2p1e9awn3tn6.cloudfront.net/rGAx4kSxq0.mp4
       poster: https://d2p1e9awn3tn6.cloudfront.net/rGAx4kSxq0.jpg
     service:
-      title: Nossa participação
-      description:
-        <p>Nós fazemos parte do DNA da Trustvox desde o início e colaboramos com a equipe interna para lidar com toda área de tecnologia da empresa. Em 2013, construímos o MVP do produto, fomos responsáveis pela integração com diversas plataformas de e-commerce e pela escala tecnológica do produto. Após um período de interação produtivo, e considerando a relevância da Trustvox no mercado de e-commerce, nós nos tornamos sócios através de um processo de <em>vesting</em>.</p>
-        <p>Uma vez que a Trustvox está presente em parte dos maiores e-commerces do Brasil, em períodos de grande trafégo (eg. Black Friday, Natal, Dia dos Namorados) o produto tem que suportar o tráfego de todos esses e-commerces somados.</p>
-        <p>Além de excelência técnica, por ser um negócio em fase de crescimento, precisamos nos integrar muito bem com as outras áreas da empresa. Temos que garantir que o negócio não deixe de entregar valor enquanto cresce. Nós criamos e executamos um processo de gestão de demandas que conversa com as áreas de Customer Success, Customer Suport e Produto da empresa e permite que nossa equipe acompanhe o passo de crescimento da Trustvox.</p>
+      title: 'cases.headers.our_participation'
+      description: 'cases.trustvox.service.description'
     quote:
-      content:
-        <strong>21% das opiniões</strong> de e-commerces são de usuários que nunca compraram e experimentaram o produto
+      content: 'cases.trustvox.quote.content'
       author: YouGov
 
   bewiser:

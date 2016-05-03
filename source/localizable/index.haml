@@ -21,22 +21,22 @@ weight: 1
 #cases
   - trustvox = cases.trustvox
   %section.section{ id: trustvox.id }
-    %h2.section__header.section__header--padding= home.cases_header
+    %h2.section__header.section__header--padding= t :'cases.headers.case'
     .service{ class: "service-summary--#{trustvox.id}" }
-      %h2.service__title= trustvox.title
+      %h2.service__title= t trustvox.title
       .service__content-wrapper
         .service__content
           .service__description
-            %p.service__description-content= trustvox.main_description
+            %p.service__description-content= t trustvox.main_description
             %video.service__description-video{ src: trustvox.video.url, poster: trustvox.video.poster, autoplay: true, controls: true, loop: true }
           .service__description-and-quote-wrapper
             .service__description-and-quote-description
               .service__description
-                %h3.service__description-title= trustvox.service.title
-                %p.service__description-content= trustvox.service.description
+                %h3.service__description-title= t trustvox.service.title
+                %p.service__description-content= t trustvox.service.description
             .service__description-and-quote-quote
               %blockquote.quote
-                %span.quote__content= trustvox.quote.content
+                %span.quote__content= t trustvox.quote.content
                 %cite.quote__author= trustvox.quote.author
 
   - bewiser = cases.bewiser
