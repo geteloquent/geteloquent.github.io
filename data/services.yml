@@ -1,10 +1,8 @@
 items:
   -
     type: startup-design-dev
-    title:
-      <strong>Design</strong> e <strong>Desenvolvimento</strong> para <strong>Startups</strong>
-    summary_description:
-      Nós transformamos sua visão em produtos excepcionais, utilizando práticas e processos enxutos.
+    title: 'services.startup.title'
+    summary_description: 'services.startup.summary_description'
     call_to_action_text: &create_scalable_products
       Criação de produtos escaláveis
     descriptions:
@@ -32,10 +30,8 @@ items:
         logo_file_name: client_05.png
   -
     type: agile-enterprises
-    title:
-      <strong>Agilidade</strong> e <strong>inovação</strong> para <strong>empresas</strong>
-    summary_description:
-      Seja mais competitivo através da melhoria de processos de desenvolvimento.
+    title: 'services.agile.title'
+    summary_description: 'services.agile.summary_description'
     call_to_action_text:
       Empresas estabelecidas que querem melhorar um produto já existente
     descriptions:

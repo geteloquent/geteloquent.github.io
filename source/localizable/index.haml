@@ -10,13 +10,13 @@ weight: 1
 - services_buttons = data.home.buttons
 
 %section.section
-  %h2.section__header.section__header--padding= home.services
+  %h2.section__header.section__header--padding= t :'home.services'
   .section__body
     %ul.services-summary-list= partial "home/service_summary", collection: data.services.items
 
   .service
     .service__call-to-actions
-    = link_to services_buttons.get_in_touch, "/contact.html", class: "service__call-to-action-action service__call-to-action"
+    = link_to t('home.buttons.get_in_touch'), "/contact.html", class: "service__call-to-action-action service__call-to-action"
 
 #cases
   - trustvox = cases.trustvox

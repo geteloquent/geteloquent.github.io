@@ -1,0 +1,13 @@
+---
+pt-BR:
+  services:
+    startup:
+      title:
+        <strong>Design</strong> e <strong>Desenvolvimento</strong> para <strong>Startups</strong>
+      summary_description:
+        Nós transformamos sua visão em produtos excepcionais, utilizando práticas e processos enxutos.
+    agile:
+      title:
+        <strong>Agilidade</strong> e <strong>inovação</strong> para <strong>empresas</strong>
+      summary_description:
+        Seja mais competitivo através da melhoria de processos de desenvolvimento.
