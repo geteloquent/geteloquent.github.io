@@ -25,3 +25,27 @@ en:
       service:
         description:
           We are involved since <em> day 1</em>, responsible for product, design and technology decisions. We applied <a href="http://market-by-numbers.com/customer-development/">Customer Development</a>'s first phase, Customer Discovery, and created the MVP which launched at first half 2016. Since then, we are focused in understanding user behaviour and validate our maket hypothesis.
+    salesim:
+      title:
+        <strong>SaleSIM</strong>, increase your sales performance
+      main_description:
+        <p>SaleSIM is a analytics oriented platform which increases sales team performance by focusing at managers and salespersons's management, training and engagement. The main focus is increasing team's performance, so its integrates workflow, visible management, <a href="http://blog.salesim.com.br/5-dicas-para-campanhas-de-vendas-vencedoras/">motivational campaigns</a> and <a href="http://blog.salesim.com.br/treinamento-de-vendas-a-distancia-vale-a-pena/">training</a> in a single environment. At SaleSIM, the manager receives recommendations based on his team's analytics and has the ability to identify high performance patterns and practices based on historical data.</p>
+        <p>The product gives managers decision making support because it identifies saleperson's patterns, though team's <a href="http://blog.salesim.com.br/indicadores-de-desempenho-de-vendas-6-principais-kpis-para-acelerar-a-forca-de-vendas/">performance indicators</a>, and allows high performance practices and patterns identification <a href="http://blog.salesim.com.br/3851-2/">based on historical data</a>.</p>
+      partners:
+        title: Partners and Customers
+        description:
+          <p>With partnership in fields like training, sales management methodology and sistematical evaluation of training effectiveness to maximizes manager's gains, some of these partners are <a href"http://www.toyota.com.br/">Toyota</a>, <a href="https://endeavor.org.br/">Endeavor Brasil</a> and <a href="https://www.facebook.com/MorosConsulting">Moros Consulting</a>.</p>
+          <p>SaleSIM is used by <a href="http://www.microlins.com.br/">Microlins</a>' frachises, in Northeast Brasil, and it increased sales teams productivity on average by 100%. Relevantes indicators for Microlins' segment had expressive changes because of SaleSIM usage, there were increases of 188,75% of references, 78,19% of schedules and 100% of subscriptions.</p>
+        images_mosaic:
+          - salesim-graph-calls-en.svg
+          - salesim-graph-visits-en.svg
+          - salesim-graph-subscriptions-en.svg
+          - salesim-graph-references-en.svg
+      service:
+        description:
+          <p>Our job comprehended UX, technology and product related activities and decisions. We started focusing on sales team' manager, who hadn't visibility of which indicators had more impact on team's productivity. Through observation, prototyping e validation with managers, we agreed on a minimum features set that can give us a x-ray of which elements builds a more productive salesperson.</p>
+          <p>Aftewards, this knowledge was used to identify positive and negative behaviours and generate attention pointos for the team's manager. Such attention points are converted in activities that can be assigned to team members to induce behaviour changes.</p>
+      quote:
+        content:
+          SalePodio motivates me by the fact of being a daily challenge. Every update <strong>inspire us to maintain and improve our productivity</strong> through every minute spent during the day, besides the fact that is aewsome to see our photo and team's one at first positions.
+        author: Comercial manager, Microlins

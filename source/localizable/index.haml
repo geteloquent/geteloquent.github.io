@@ -58,31 +58,31 @@ weight: 1
 
   - salesim = cases.salesim
   %section.section{ id: salesim.id }
-    %h2.section__header.section__header--padding= home.cases_header
+    %h2.section__header.section__header--padding= t :'cases.headers.case'
     .service{ class: "service-summary--#{salesim.id}" }
-      %h2.service__title= salesim.title
+      %h2.service__title= t salesim.title
       .service__content-wrapper
         .service__content
           .service__description
-            %p.service__description-content= salesim.main_description
+            %p.service__description-content= t salesim.main_description
             %video.service__description-video{ src: salesim.video.url, poster: salesim.video.poster, autoplay: true, controls: true, loop: true }
           .service__description-and-quote-wrapper
             .service__description-and-quote-description
               .service__description
-                %h3.service__description-title= salesim.partners.title
-                %p.service__description-content= salesim.partners.description
+                %h3.service__description-title= t salesim.partners.title
+                %p.service__description-content= t salesim.partners.description
             .service__description-and-quote-quote
               %blockquote.quote
-                %span.quote__content= salesim.quote.content
-                %cite.quote__author= salesim.quote.author
+                %span.quote__content= t salesim.quote.content
+                %cite.quote__author= t salesim.quote.author
           .service__description-wrapper
             .service__description-mosaic
-              - salesim.partners.images_mosaic.each do |image|
+              - t(salesim.partners.images_mosaic).each do |image|
                 = image_tag image, class: 'service__description-mosaic-image'
           .service__description-wrapper
             .service__description
-              %h3.service__description-title= salesim.service.title
-              %p.service__description-content= salesim.service.description
+              %h3.service__description-title= t salesim.service.title
+              %p.service__description-content= t salesim.service.description
 
   - fullprofile = cases.fullprofile
   %section.section{ id: fullprofile.id }

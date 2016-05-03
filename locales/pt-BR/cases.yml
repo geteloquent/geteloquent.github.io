@@ -25,3 +25,28 @@ pt-BR:
       service:
         description:
           Estamos envolvidos na Bewiser desde o <em>day 1</em>, somos responsáveis pelas decisões de produto, design e tecnologia. Aplicamos a primeira fase do <a href="http://market-by-numbers.com/customer-development/">Customer Development</a>, o Customer Discovery, e criamos o MVP que foi lançado no 1º semestre de 2016. Desde então, estamos focados em entender o comportamento do usuário e validar nossas hipóteses de mercado.
+    salesim:
+      title:
+        <strong>SaleSIM</strong>, aumente o desempenho da sua força de vendas
+      main_description:
+        <p>O SaleSIM é uma plataforma orientada a dados que aumenta a produtividade de equipes de venda ao focar na gestão, treinamento e engajamento dos gestores e vendedores. O foco é aumentar o desempenho da equipe, para isso ele integra workflow, gestão à vista, <a href="http://blog.salesim.com.br/5-dicas-para-campanhas-de-vendas-vencedoras/">campanhas motivacionais</a> e <a href="http://blog.salesim.com.br/treinamento-de-vendas-a-distancia-vale-a-pena/">treinamento</a> em um único ambiente. No SaleSIM, o gestor recebe recomendações baseadas nos indicadores de desempenho da sua equipe e tem a capacidade de identificar padrões e práticas de alto desempenho baseado no histórico.</p>
+        <p>O SaleSIM dá suporte às decisões dos gestores ao identificar, através dos <a href="http://blog.salesim.com.br/indicadores-de-desempenho-de-vendas-6-principais-kpis-para-acelerar-a-forca-de-vendas/">indicadores de desempenho</a> da equipe, padrões dos vendedores e possibilitar a identificação padrões e práticas de alto desempenho <a href="http://blog.salesim.com.br/3851-2/">baseado no histórico</a>.</p>
+      partners:
+        title: Parceiros e Clientes
+        description:
+          <p>Com parceiros nas áreas de treinamento, metodologia de gestão de vendas e avaliação sistemática da efetividade de treinamento para maximizar os ganhos do gestor, alguns destes parceiros são a <a href"http://www.toyota.com.br/">Toyota</a>, <a href="https://endeavor.org.br/">Endeavor Brasil</a> e <a href="https://www.facebook.com/MorosConsulting">Moros Consulting</a>.</p>
+          <p>O SaleSIM é utilizado por franquias da <a href="http://www.microlins.com.br/">Microlins</a>, localizadas no Nordeste, e aumentou a produtividade das equipes de vendas em média 100%. Indicadores relevantes para o segmento da Microlins tiveram alterações expressivas com o uso do SaleSIM, houve um aumento de 188,75% de indicações, 78,19% de agendamentos e 100% de matrículas.</p>
+        images_mosaic:
+          - salesim-graph-calls.svg
+          - salesim-graph-visits.svg
+          - salesim-graph-subscriptions.svg
+          - salesim-graph-references.svg
+      service:
+        title: Nossa participação
+        description:
+          <p>Nossas atividades compreenderam atividades e decisões de UX, tecnologia e produto. Começamos dando foco ao gerente da equipe de vendas, que não tinha visibilidade sobre os indicadores que mais fortemente contribuem para a produtividade da equipe. Através de observação, prototipação e validação com os gestores, chegamos a um conjunto minímo de funcionalidades que dão um raio-x dos elementos que tornam um vendedor mais produtivo.</p>
+          <p>O próximo passo foi utilizar este conhecimento para identificar comportamentos positivos e negativos e gerar pontos de atenção para o gerente da equipe. Tais pontos de atenção são convertidos em atividades que podem ser atribuidas para os membros de equipe com objetivo de provocar mudanças de comportamento.</p>
+      quote:
+        content:
+          O SalePodio motiva-me pelo fato de ser uma disputa diária. A cada atualização, <strong>ficamos estimulados para manter e melhorar nossa produtividade</strong> a cada minuto que se passa durante o dia e sem contar o fato que é ótimo ver nossa foto e a da equipe nas primeiras colocações.
+        author: Gestor comercial, Microlins
