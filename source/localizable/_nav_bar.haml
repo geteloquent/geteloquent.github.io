@@ -1,5 +1,5 @@
 %nav.nav-bar
-  = link_to localized_path('/') do
+  = link_to t('paths.root') do
     %h1.nav-bar__logo Eloquent Studio
   %ul.nav-bar__list
     - navigation_pages.each do |page|

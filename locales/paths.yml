@@ -1,0 +1,7 @@
+---
+pt-BR:
+  paths:
+    root: /
+en:
+  paths:
+    root: /en
