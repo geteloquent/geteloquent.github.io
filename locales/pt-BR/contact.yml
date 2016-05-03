@@ -1,0 +1,15 @@
+---
+pt-BR:
+  contact:
+    title: Manda um <strong>alô</strong> pra gente!
+    form:
+      name:
+        placeholder: Nome
+      email:
+        placeholder: E-mail
+      message:
+        placeholder: Messagem
+      submit: Enviar
+    thank_you_modal:
+      title: Obrigada!
+      message: Sua mensagem foi enviada. <br/> Em breve entraremos em contato.

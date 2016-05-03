@@ -1,0 +1,15 @@
+---
+en:
+  contact:
+    title: Send us a <strong>hello</strong>!
+    form:
+      name:
+        placeholder: Name
+      email:
+        placeholder: Email
+      message:
+        placeholder: Message
+      submit: Send
+    thank_you_modal:
+      title: Thanks!
+      message: Your message was sent. <br/> We'll get in touch soon.

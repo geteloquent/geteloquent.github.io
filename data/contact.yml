@@ -1,15 +1,7 @@
-title: Manda um <strong>alô</strong> pra gente!
 form:
-  name:
-    placeholder: Nome
-  email:
-    placeholder: E-mail
-  message:
-    placeholder: Messagem
-  subject: Novo contato
-  submit: Enviar
   send_to: olar@geteloquent.com
   thank_you_page: thank_you
+  subject: Novo contato
 locations:
   -
     name: Recife
