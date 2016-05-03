@@ -3,7 +3,7 @@
   %head
     %meta{ charset: "utf-8" }/
     %meta{ content: "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible" }/
-    %title Eloquent Studio — #{ current_page.data.title }
+    %title Eloquent Studio — #{ t "title.#{current_page.data.title}" }
     = partial :meta_share
     %meta{ content: "width=device-width", name: "viewport" }/
     = favicon_tag "apple-touch-icon.png"
