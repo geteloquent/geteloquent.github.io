@@ -9,8 +9,11 @@ module CustomHelpers
   end
 
   def localized_path(path)
-    locale = I18n.locale == :'pt-BR' ? '' : I18n.locale
+    unless development?
+      return path
+    end
 
-    "#{locale}#{path}"
+    locale = I18n.locale == :'pt-BR' ? '' : I18n.locale
+    "#{locale}/#{path}"
   end
 end

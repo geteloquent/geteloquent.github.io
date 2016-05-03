@@ -15,7 +15,7 @@ weight: 1
 
   .service
     .service__call-to-actions
-    = link_to t('home.buttons.get_in_touch'), localized_path("/contact"), class: "service__call-to-action-action service__call-to-action"
+    = link_to t('home.buttons.get_in_touch'), localized_path("contact"), class: "service__call-to-action-action service__call-to-action"
 
 #cases
   - trustvox = cases.trustvox
@@ -101,4 +101,4 @@ weight: 1
               %p.service__description-content= t fullprofile.service.description
 
       .service__call-to-actions
-        = link_to t(:'home.buttons.get_in_touch'), localized_path("/contact"), class: "service__call-to-action-action service__call-to-action service__call-to-action--contact"
+        = link_to t(:'home.buttons.get_in_touch'), localized_path('contact'), class: "service__call-to-action-action service__call-to-action service__call-to-action--contact"
