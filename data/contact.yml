@@ -3,7 +3,7 @@ form:
   subject: Novo contato
 locations:
   -
-    name: Recife
+    name: Casa Forte
     address:
       street: Rua Jacó Velosino, 145
       neighborhood: Casa Forte
@@ -14,7 +14,7 @@ locations:
       lat: -8.03600
       lng: -34.91889
   -
-    name: Recife
+    name: Bairro do Recife
     address:
       street: Rua do Bom Jesus, 180
       neighborhood: Bairro do Recife
