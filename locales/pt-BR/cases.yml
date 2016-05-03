@@ -17,3 +17,11 @@ pt-BR:
       quote:
         content:
           <strong>21% das opiniões</strong> de e-commerces são de usuários que nunca compraram e experimentaram o produto
+    bewiser:
+      title:
+        <strong>Bewiser</strong>. Na prática, a teoria é outra!
+      main_description:
+        <p>A <a href="http://bewiser.io">Bewiser</a> é uma rede que oferta cursos práticos e workshops sobre negócios, tecnologia, e design. Experts dessas áreas podem encontrar na Bewiser espaços inspiradores (<a href="http://hackerspaces.org/">Hackerspace</a>, <a href="http://coworking.com/">coworkings</a>, <a href="http://www.fabfoundation.org/fab-labs/what-is-a-fab-lab/">fab labs</a>, etc) e uma rede de divulgação para atrair potenciais interessados. Além disso, espaços que possuem lugares ociosos, podem rentabilizar estes locais ofertando-os como espaço para cursos que serão relevantes e engajadores para as suas comunidades.</p>
+      service:
+        description:
+          Estamos envolvidos na Bewiser desde o <em>day 1</em>, somos responsáveis pelas decisões de produto, design e tecnologia. Aplicamos a primeira fase do <a href="http://market-by-numbers.com/customer-development/">Customer Development</a>, o Customer Discovery, e criamos o MVP que foi lançado no 1º semestre de 2016. Desde então, estamos focados em entender o comportamento do usuário e validar nossas hipóteses de mercado.

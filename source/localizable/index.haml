@@ -41,20 +41,20 @@ weight: 1
 
   - bewiser = cases.bewiser
   %section.section{ id: bewiser.id }
-    %h2.section__header.section__header--padding= home.cases_header
+    %h2.section__header.section__header--padding= t :'cases.headers.case'
     .service{ class: "service-summary--#{bewiser.id}" }
-      %h2.service__title= bewiser.title
+      %h2.service__title= t bewiser.title
       .service__content-wrapper
         .service__content
           .service__description
-            %p.service__description-content= bewiser.main_description
+            %p.service__description-content= t bewiser.main_description
             .service__description-mosaic
               - bewiser.images_mosaic.each do |image|
                 = image_tag image, class: 'service__description-mosaic-image'
           .service__description-wrapper
             .service__description
-              %h3.service__description-title= bewiser.service.title
-              %p.service__description-content= bewiser.service.description
+              %h3.service__description-title= t bewiser.service.title
+              %p.service__description-content= t bewiser.service.description
 
   - salesim = cases.salesim
   %section.section{ id: salesim.id }

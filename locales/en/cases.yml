@@ -17,3 +17,11 @@ en:
       quote:
         content:
           <strong>21% of e-commerce reviews</strong> are from users who never purchased or tried out the product
+    bewiser:
+      title:
+        <strong>Bewiser</strong>. In practice, the theory is another!
+      main_description:
+        <p><a href="http://bewiser.io">Bewiser</a> is a network with relevant and pratical courses and workshops in Business, Technology and Design. Experts in any of these fields can find at Bewiser inspiring spaces (<a href="http://hackerspaces.org/">Hackerspace</a>, <a href="http://coworking.com/">coworkings</a>, <a href="http://www.fabfoundation.org/fab-labs/what-is-a-fab-lab/">fab labs</a>, etc) and a marketing network to attract pontential stakeholders. Beside that, places with idle spots can monetize those spots offering it as workspace for relevant and engaging courses to its community.</p>
+      service:
+        description:
+          We are involved since <em> day 1</em>, responsible for product, design and technology decisions. We applied <a href="http://market-by-numbers.com/customer-development/">Customer Development</a>'s first phase, Customer Discovery, and created the MVP which launched at first half 2016. Since then, we are focused in understanding user behaviour and validate our maket hypothesis.
