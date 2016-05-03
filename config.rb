@@ -52,7 +52,7 @@ activate :autoprefixer do |config|
 end
 
 
-activate :i18n, langs: [:'pt-BR', :en]
+activate :i18n, langs: [:'pt-BR', :en], no_fallbacks: true
 activate :directory_indexes
 
 # Reload the browser automatically whenever files change
