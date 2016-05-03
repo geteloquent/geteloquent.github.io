@@ -57,8 +57,3 @@ cases:
     service:
       title: 'cases.headers.our_participation'
       description: 'cases.fullprofile.service.description'
-buttons:
-  find_out_more: Descubra mais
-  how_we_work: Como trabalhamos
-  get_in_touch: Entre em contato conosco
-cases_header: Case
