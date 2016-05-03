@@ -1,6 +1,5 @@
 url: http://geteloquent.com/
 domain: geteloquent.com
-description:
-  Olá, nós somos Eloquent. Somos uma empresa de Designers, Hackers e Empreeendedores experientes capazes de construir aplicações para negócios ambiciosos.
-label1: Contato
+description: 'general.our_description'
+label1: 'general.contact'
 data1: olar@geteloquent.com
